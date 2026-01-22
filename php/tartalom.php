@@ -1,4 +1,6 @@
-<?php  
+<?php
+
+$autok = new autok($db_kapcsolat,$naplo);  
 
 class autok
 {
@@ -28,9 +30,49 @@ class autok
 		$this->muvelet = 'insert';
  	}
 
- 	public function __destruct() {
+ 	public function __destruct() 
+ 	{
  		$this->naplo->_bejegyez(__CLASS__.' osztály megsemmisült.');
  	}
-}
 
+ 	public function _lista() 
+ 	{
+
+ 	}
+
+ 	public function ment() 
+ 	{
+
+ 	}
+
+ 	public function szerkeszt($kulcs) 
+ 	{
+ 		
+ 	}
+
+ 	public function modosit($kulcs) 
+ 	{
+
+ 	}
+
+ 	public function torol($kulcs)
+ 	{
+
+ 	}
+
+ 	public function elrejt($kulcs)
+ 	{
+
+ 	}
+
+ 	public function oldalbetolt()
+	{
+
+	}
+
+	public function rendez()
+	{
+
+	}
+}
 ?>
