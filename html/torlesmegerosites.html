@@ -1,5 +1,5 @@
 <h2>Valóban törölni szeretné a kiválasztott járművet?</h2>
-<form action="index.php?menupont=jarmuvek&jarmu=torol" method="POST">
+<form action="index.php?menupont=jarmuvek&jarmu=torol&auto_id=<?= $_GET['auto_id'] ?>" method="POST">
 	<input type="submit" value="Törlés">
 </form>
 <a href="index.php?menupont=jarmuvek">Mégsem</a>

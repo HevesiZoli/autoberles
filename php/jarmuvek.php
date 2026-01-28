@@ -30,11 +30,21 @@ $autok = new autok($db_kapcsolat,$naplo);
     						 	}
     							else {include('html/jarmuvek.html');} 
     							break;
-    		case 'torol'	:   if (isset($_GET['auto_id']))
-    						 	{include('html/torlesmegerosites.html');
-    						 	$autok->torles($_GET['auto_id']);}
-    							else {include('html/jarmuvek.html');}
-								break;
+    		case 'torol':		if (isset($_GET['auto_id'])) 
+    							{
+							        if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+							        {
+							            $autok->torles($_GET['auto_id']);
+							            header("Location: index.php?menupont=jarmuvek");
+							            exit;
+							        }
+							        include('html/torlesmegerosites.html');
+							    } 
+							    else 
+							    {
+							        include('html/jarmuvek.html');
+							    }
+							    break;
 			default : 			break;
 			}
 		}

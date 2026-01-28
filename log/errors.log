@@ -150,3 +150,5 @@ Stack trace:
 [25-Jan-2026 19:13:02 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:09 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:10 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[28-Jan-2026 21:30:45 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 51
+[28-Jan-2026 21:31:52 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 48
