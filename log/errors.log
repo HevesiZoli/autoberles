@@ -157,6 +157,7 @@ Stack trace:
 [25-Jan-2026 19:13:02 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:09 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:10 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+<<<<<<< HEAD
 [27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
 [27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
 [27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
@@ -340,3 +341,7 @@ Stack trace:
 [27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
 [27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
 [27-Jan-2026 05:53:55 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 45
+=======
+[28-Jan-2026 21:30:45 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 51
+[28-Jan-2026 21:31:52 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 48
+>>>>>>> 463923b8f106276e69d54b11e2600e4178096de2
