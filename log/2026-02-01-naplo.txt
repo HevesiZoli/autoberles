@@ -800,3 +800,13 @@
 2026-02-01 - 01:45:34pm - Az oldal újratöltődött.
 2026-02-01 - 01:45:37pm - Böngészőben betöltődött az oldal.
 2026-02-01 - 01:45:37pm - Az oldal újratöltődött.
+2026-02-01 - 01:50:48pm - Böngészőben betöltődött az oldal.
+2026-02-01 - 01:50:48pm - Az oldal újratöltődött.
+2026-02-01 - 01:51:43pm - Böngészőben betöltődött az oldal.
+2026-02-01 - 01:51:43pm - Az oldal újratöltődött.
+2026-02-01 - 01:51:43pm - autok osztály létrejött.
+2026-02-01 - 01:51:43pm - SELECT * FROM autok
+2026-02-01 - 01:51:43pm - SELECT * FROM autok
+2026-02-01 - 01:51:43pm - autok osztály létrejött.
+2026-02-01 - 01:51:43pm - autok osztály megsemmisült.
+2026-02-01 - 01:51:43pm - SELECT * FROM autok
