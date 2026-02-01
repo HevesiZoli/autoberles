@@ -150,3 +150,427 @@ Stack trace:
 [25-Jan-2026 19:13:02 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:09 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:10 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[28-Jan-2026 21:30:45 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 51
+[28-Jan-2026 21:31:52 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 48
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 1
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "muvelet" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 1
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 4
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "auto_id" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 4
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 10
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "marka" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 10
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 15
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "modell" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 15
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "evjarat" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "alvazszam" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 30
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "rendszam" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 30
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 35
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "napi_dij" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 35
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 45
+[01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 45
+[01-Feb-2026 09:40:40 Europe/Budapest] PHP Warning:  include(html/felhasznalofelvetel.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 8
+[01-Feb-2026 09:40:40 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalofelvetel.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 8
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 09:42:07 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:02:28 Europe/Budapest] PHP Deprecated:  Creation of dynamic property felhasznalok::$sqlCommand is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 98
+[01-Feb-2026 10:02:28 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM     user
+                              ORDER BY name' at line 8 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:112
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(112): mysqli_query(Object(mysqli), 'SELECT   id,\r\n ...')
+#1 D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html(4): felhasznalok->felhasznalo_lista()
+#2 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(52): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\backend\autoberles\index.php(65): include('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 112
+[01-Feb-2026 10:03:14 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM     user
+                              ORDER BY name' at line 8 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:113
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(113): mysqli_query(Object(mysqli), 'SELECT   id,\r\n ...')
+#1 D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html(4): felhasznalok->felhasznalo_lista()
+#2 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(52): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\backend\autoberles\index.php(65): include('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 113
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:03:31 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:03:35 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM     user
+                              ORDER BY name' at line 8 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:113
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(113): mysqli_query(Object(mysqli), 'SELECT   id,\r\n ...')
+#1 D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html(4): felhasznalok->felhasznalo_lista()
+#2 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(52): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\backend\autoberles\index.php(65): include('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 113
+[01-Feb-2026 10:07:07 Europe/Budapest] PHP Deprecated:  Creation of dynamic property felhasznalok::$muvelet is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 85
+[01-Feb-2026 10:07:07 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM     user
+                              ORDER BY name' at line 8 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:112
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(112): mysqli_query(Object(mysqli), 'SELECT   id,\r\n ...')
+#1 D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html(4): felhasznalok->felhasznalo_lista()
+#2 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(52): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\backend\autoberles\index.php(65): include('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 112
+[01-Feb-2026 10:07:40 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM     user
+                              ORDER BY name' at line 8 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:107
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(107): mysqli_query(Object(mysqli), 'SELECT   id,\r\n ...')
+#1 D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html(4): felhasznalok->felhasznalo_lista()
+#2 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(52): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\backend\autoberles\index.php(65): include('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 107
+[01-Feb-2026 10:07:57 Europe/Budapest] PHP Warning:  Undefined variable $editcommand in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 145
+[01-Feb-2026 10:07:57 Europe/Budapest] PHP Warning:  Undefined variable $deletecommand in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 145
+[01-Feb-2026 10:07:57 Europe/Budapest] PHP Warning:  Undefined variable $activatecommand in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 145
+[01-Feb-2026 10:08:10 Europe/Budapest] PHP Warning:  Undefined array key "state" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 131
+[01-Feb-2026 10:10:20 Europe/Budapest] PHP Parse error:  syntax error, unexpected double-quoted string "<td></td>" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 146
+[01-Feb-2026 10:10:39 Europe/Budapest] PHP Parse error:  syntax error, unexpected double-quoted string "</td><td>" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 146
+[01-Feb-2026 10:10:47 Europe/Budapest] PHP Parse error:  syntax error, unexpected double-quoted string "</td><td>" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 146
+[01-Feb-2026 10:10:48 Europe/Budapest] PHP Parse error:  syntax error, unexpected double-quoted string "</td><td>" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 146
+[01-Feb-2026 10:10:48 Europe/Budapest] PHP Parse error:  syntax error, unexpected double-quoted string "</td><td>" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 146
+[01-Feb-2026 10:10:58 Europe/Budapest] PHP Parse error:  syntax error, unexpected double-quoted string "</td><td>" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 146
+[01-Feb-2026 10:17:14 Europe/Budapest] PHP Warning:  Undefined variable $delcommand in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:17:14 Europe/Budapest] PHP Warning:  Undefined variable $HTMLSorok in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:17:23 Europe/Budapest] PHP Warning:  Undefined variable $delcommand in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:17:23 Europe/Budapest] PHP Warning:  Undefined variable $HTMLSorok in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:17:24 Europe/Budapest] PHP Warning:  Undefined variable $delcommand in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:17:24 Europe/Budapest] PHP Warning:  Undefined variable $HTMLSorok in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:17:25 Europe/Budapest] PHP Warning:  Undefined variable $delcommand in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:17:25 Europe/Budapest] PHP Warning:  Undefined variable $HTMLSorok in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:18:20 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:18:27 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:18:28 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 147
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Undefined variable $activatecommand in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 137
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Undefined variable $HTMLlines in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 137
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:22:26 Europe/Budapest] PHP Warning:  Undefined variable $activatecommand in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 137
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Undefined variable $HTMLlines in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 137
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 120
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:22:35 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 125
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:24:17 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:32 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:54 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:55 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:58 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:25:59 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Attempt to read property "hibauzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:00 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:14 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:15 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:17 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:18 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:31 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 19
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 21
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 23
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Attempt to read property "password1" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 28
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Attempt to read property "password2" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 30
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 10:26:32 Europe/Budapest] PHP Warning:  Attempt to read property "reminder" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 32
+[01-Feb-2026 11:08:25 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 123
+[01-Feb-2026 11:08:25 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 123
+[01-Feb-2026 11:08:25 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 127
+[01-Feb-2026 11:08:25 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 127
+[01-Feb-2026 11:08:25 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 131
+[01-Feb-2026 11:08:25 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 131
+[01-Feb-2026 11:09:10 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 123
+[01-Feb-2026 11:09:10 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 123
+[01-Feb-2026 11:09:10 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 127
+[01-Feb-2026 11:09:10 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 127
+[01-Feb-2026 11:09:10 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 131
+[01-Feb-2026 11:09:10 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 131
+[01-Feb-2026 11:09:10 Europe/Budapest] PHP Warning:  Undefined variable $HTMLSorok in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 133
+[01-Feb-2026 11:09:11 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 123
+[01-Feb-2026 11:09:11 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 123
+[01-Feb-2026 11:09:11 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 127
+[01-Feb-2026 11:09:11 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 127
+[01-Feb-2026 11:09:11 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 131
+[01-Feb-2026 11:09:11 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 131
+[01-Feb-2026 11:09:11 Europe/Budapest] PHP Warning:  Undefined variable $HTMLSorok in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 133
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 134
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 134
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 135
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 135
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 136
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 136
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 137
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 137
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 138
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 138
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 139
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 139
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 140
+[01-Feb-2026 11:10:27 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 140
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 134
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 134
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 135
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 135
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 136
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 136
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 137
+[01-Feb-2026 11:10:59 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 137
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 134
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 134
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 135
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 135
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 136
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 136
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Undefined variable $egysor in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 137
+[01-Feb-2026 11:11:00 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 137
+[01-Feb-2026 11:11:31 Europe/Budapest] PHP Warning:  Undefined array key "id" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 16
+[01-Feb-2026 11:11:31 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 17
+[01-Feb-2026 11:11:31 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 17
+[01-Feb-2026 11:12:07 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 17
+[01-Feb-2026 11:12:07 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 17
+[01-Feb-2026 11:12:08 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 17
+[01-Feb-2026 11:12:08 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 17
+[01-Feb-2026 11:12:35 Europe/Budapest] PHP Warning:  Undefined property: felhasznalok::$auto_id in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 4
+[01-Feb-2026 11:13:45 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function veletlenkaraktersor() in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:209
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(12): felhasznalok->felhasznalo_ment()
+#1 D:\xampp\htdocs\backend\autoberles\index.php(65): include('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 209
+[01-Feb-2026 11:15:13 Europe/Budapest] PHP Deprecated:  Creation of dynamic property felhasznalok::$fingerprint is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 209
+[01-Feb-2026 11:15:26 Europe/Budapest] PHP Deprecated:  Creation of dynamic property felhasznalok::$fingerprint is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 209
+[01-Feb-2026 11:15:26 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'autokolcsonzo.activation' doesn't exist in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:254
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(254): mysqli_query(Object(mysqli), 'INSERT INTO act...')
+#1 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(12): felhasznalok->felhasznalo_ment()
+#2 D:\xampp\htdocs\backend\autoberles\index.php(66): include('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 254
+[01-Feb-2026 11:18:01 Europe/Budapest] PHP Deprecated:  Creation of dynamic property felhasznalok::$fingerprint is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 209
+[01-Feb-2026 11:22:39 Europe/Budapest] PHP Deprecated:  Creation of dynamic property felhasznalok::$fingerprint is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 211
+[01-Feb-2026 11:22:39 Europe/Budapest] PHP Fatal error:  Uncaught Error: Object of class felhasznalok could not be converted to string in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:222
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(12): felhasznalok->felhasznalo_ment()
+#1 D:\xampp\htdocs\backend\autoberles\index.php(66): include('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 222
+[01-Feb-2026 11:32:32 Europe/Budapest] PHP Fatal error:  Uncaught Error: Object of class felhasznalok could not be converted to string in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:224
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(12): felhasznalok->felhasznalo_ment()
+#1 D:\xampp\htdocs\backend\autoberles\index.php(66): include('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 224
+[01-Feb-2026 11:34:04 Europe/Budapest] PHP Warning:  Undefined variable $date in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 224
+[01-Feb-2026 12:07:21 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 38
+[01-Feb-2026 12:08:51 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 38

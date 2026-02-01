@@ -1,0 +1,44 @@
+<?php if ($felhasznalok->muvelet == 'insert')
+              {$felhasznalok_muvelet = 'index.php?menupont=felhasznalok&felhasznalo=ment';} 
+         else 
+              {$felhasznalok_muvelet = 'index.php?menupont=felhasznalok&felhasznalo=modosit&id='.$felhasznalok->id;} 
+  ?>
+
+<form action="<?php echo($felhasznalok_muvelet); ?>" method="POST">
+  <label>Név:</label><br>
+  <input class="" id="name" type="text" name="name"
+         value="<?php echo($felhasznalok->name) ?>"
+         oninput="input_kotelezo('name')"><br>
+
+  <label>Belépési azonosító:</label><br>
+  <input class="" id="loginname" type="text" name="loginname"
+         value="<?php echo($felhasznalok->loginname) ?>"
+         oninput="input_kotelezo('loginname')"><br>
+
+  <label>E-mail cím:</label><br>
+  <input class="" id="email" type="text" name="email"
+         value="<?php echo($felhasznalok->email) ?>"
+         oninput="input_kotelezo('email')"><br>
+
+  <label>Jelszó:</label><br>
+  <input class="" id="password1" type="password" name="password1"
+         value=""
+         oninput="input_kotelezo('password1')"><br>
+
+  <label>Jelszó megerősítés:</label><br>
+  <input class="" id="password2" type="password" name="password2"
+         value=""
+         oninput="input_kotelezo('password2')"><br>
+
+  <label>Jelszó emlékeztető:</label><br>
+  <input class="" id="reminder" type="text" name="reminder"
+         value=""
+         oninput="input_kotelezo('reminder')"><br>
+  <input type="submit" value="Ment">
+</form>
+
+
+<form action="index.php?menupont=felhasznalok" method="POST">
+       <input type="submit" name="" value="Mégsem">
+</form>
+<div id="uzenet"><?php echo($felhasznalok->uzenet); ?></div>

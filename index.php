@@ -14,6 +14,7 @@
 	include('php/naplo.php');
 	
 	try{
+		include('php/fuggvenyek.php');
 		// Minden objektum által elérhető függvényeim
 		//include('php/fuggvenyek.php');
 		// echo(veletlenkaraktersor("user-").date('Y').date('m').date('d')); <-- Itt egy minta, így teszteltem
@@ -59,6 +60,10 @@
 			if(isset($_GET['menupont']) && $_GET['menupont'] == 'jarmuvek')
 			{
 				include('php/jarmuvek.php');
+			}
+			if(isset($_GET['menupont']) && $_GET['menupont'] == 'felhasznalok')
+			{
+				include('php/felhasznalok.php');
 			}
 		}
 	}

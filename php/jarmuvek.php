@@ -30,11 +30,21 @@ $autok = new autok($db_kapcsolat,$naplo);
     						 	}
     							else {include('html/jarmuvek.html');} 
     							break;
-    		case 'torol'	:   if (isset($_GET['auto_id']))
-    						 	{include('html/torlesmegerosites.html');
-    						 	$autok->torles($_GET['auto_id']);}
-    							else {include('html/jarmuvek.html');}
-								break;
+    		case 'torol':		if (isset($_GET['auto_id'])) 
+    							{
+							        if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+							        {
+							            $autok->torles($_GET['auto_id']);
+							            header("Location: index.php?menupont=jarmuvek");
+							            exit;
+							        }
+							        include('html/torlesmegerosites.html');
+							    } 
+							    else 
+							    {
+							        include('html/jarmuvek.html');
+							    }
+							    break;
 			default : 			break;
 			}
 		}
@@ -54,7 +64,6 @@ class autok {
  	public $evjarat;
  	public $alvazszam;
  	public $rendszam;
- 	public $aktualis_telephely_id;
  	public $allapot;
  	public $napi_dij;
 
@@ -118,7 +127,7 @@ class autok {
 				$HTMLSorok .= "<td>".$egysor['rendszam']."</td>";
 				$HTMLSorok .= "<td>".$egysor['allapot']."</td>";
 				$HTMLSorok .= "<td>".$egysor['napi_dij']."</td>";
-				$HTMLSorok .= ' <td><a href="'.$editcommand.'"><i class="fa-solid fa-pen-to-square"></i></a><a href="'.$delcommand.'"><i class="fa-solid fa-trash"></i></a></td>';
+				$HTMLSorok .= ' <td><a href="'.$editcommand.'">Szerkesztés </a><a href="'.$delcommand.'"> Törlés</a></td>';
 				$HTMLSorok .= "</tr>";
 			}
 		}
