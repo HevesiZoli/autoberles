@@ -353,3 +353,12 @@ Stack trace:
 #3 C:\xampp\htdocs\GitHub\autoberles\index.php(28): include('C:\\xampp\\htdocs...')
 #4 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\php\belepes.php on line 84
+[01-Feb-2026 13:23:37 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:24:51 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:24:57 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:24:58 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:25:05 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:25:30 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:25:31 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:25:37 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
+[01-Feb-2026 13:28:55 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
