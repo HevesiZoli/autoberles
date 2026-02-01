@@ -65,7 +65,6 @@ class autok {
  	public $evjarat;
  	public $alvazszam;
  	public $rendszam;
- 	public $aktualis_telephely_id;
  	public $allapot;
  	public $napi_dij;
 
@@ -129,7 +128,7 @@ class autok {
 				$HTMLSorok .= "<td>".$egysor['rendszam']."</td>";
 				$HTMLSorok .= "<td>".$egysor['allapot']."</td>";
 				$HTMLSorok .= "<td>".$egysor['napi_dij']."</td>";
-				$HTMLSorok .= ' <td><a href="'.$editcommand.'"><i class="fa-solid fa-pen-to-square"></i></a><a href="'.$delcommand.'"><i class="fa-solid fa-trash"></i></a></td>';
+				$HTMLSorok .= ' <td><a href="'.$editcommand.'">Szerkesztés </a><a href="'.$delcommand.'"> Törlés</a></td>';
 				$HTMLSorok .= "</tr>";
 			}
 		}

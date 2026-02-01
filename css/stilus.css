@@ -191,3 +191,17 @@ ul li a.active {
 {
   text-align: right;
 }
+
+a
+{
+  text-decoration: none;
+}
+.aktivalasravar
+{
+  color: black;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ff5454;
+  background-color: #ff8a8a;
+  padding: 3px;
+}
