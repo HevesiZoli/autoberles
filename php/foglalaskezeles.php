@@ -212,7 +212,7 @@ class foglalasok
 
 		// Kötelező érték vizsgálata
 		if (empty($this->nev) || empty($this->jarmu) || empty($this->kezdet) ||
-	 	    empty($this->vege) || empty($this->allapot) || empty($this->megjegyzess) || empty($this->letrehozva)) 
+	 	    empty($this->vege) || empty($this->allapot) || empty($this->megjegyzes) || empty($this->letrehozva)) 
 			{$this->uzenet = 'Kérem tötlse ki a pirossal jelölt mezőket!';
 			 $sikeresmentes = false;}
 
@@ -225,13 +225,14 @@ class foglalasok
 			//   ezért elkészítem az SQL lekérdezést!
 
 			$SQLlekerdezes = "UPDATE foglalas 
-							  SET	 marka = '$this->marka',
-							  		 modell = '$this->modell',
-							  		 evjarat = '$this->evjarat',
-							  		 alvazszam = '$this->alvazszam',
-							  		 rendszam = '$this->rendszam',
-							  		 napi_dij = '$this->napi_dij'
-							  WHERE  auto_id = '$this->auto_id' ";
+							  SET	 nev = '$this->nev',
+							  		 jarmu = '$this->jarmu',
+							  		 kezdet = '$this->kezdet',
+							  		 vege = '$this->vege',
+							  		 allapot = '$this->allapot',
+							  		 megjegyzes = '$this->megjegyzes',
+							  		 letrehozva = '$this->letrehozva'
+							  WHERE  foglalas_id = '$this->foglalas_id' ";
 
 			// Lefuttatjuk az SQL lekérdezést!
 			$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
@@ -239,5 +240,22 @@ class foglalasok
 		 // Eláruljuk a hívónak, hogy sikeres volt-e a mentés!
 		 return $sikeresmentes;	
 	}
+	public function torles($foglalas_id) 
+	{
+		// - Beállítom a müveletet, azért, mert a termek.html FORM elemének
+		//   az action url-jét ez alapján fogom változtatani 
+		$this->muvelet = 'delete';
+		$this->foglalas_id = $foglalas_id;
+
+		$SQLlekerdezes = "DELETE FROM foglalas WHERE foglalas_id = $foglalas_id";
+
+		// Lefuttatjuk az SQL lekérdezést!
+		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
+
+		if(isset($sqlhiba))
+		{
+			$this->naplo->_bejegyez($sqlhiba);
+		}
+  }
 }
 ?>
