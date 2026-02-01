@@ -4,6 +4,7 @@ $autok = new autok($db_kapcsolat,$naplo);
 
 		if (isset($_GET['jarmu']))
 		{
+<<<<<<< HEAD
 			switch ($_GET['jarmu']) 
 			{
 				case 'uj'		:   include('html/jarmufelvetel.html');
@@ -48,6 +49,51 @@ $autok = new autok($db_kapcsolat,$naplo);
 								    break;
 				 default : 			
 				}
+=======
+		switch ($_GET['jarmu']) {
+			case 'uj'		:   include('html/jarmufelvetel.html');
+								break;
+			case 'jarmuvek' :  	include('html/jarmuvek.html');
+			 					break;
+			case 'ment'  :   	if ($autok->ment() == true)
+								{
+									include('html/jarmuvek.html');
+								}
+								else
+								{
+									include('html/jarmufelvetel.html');
+								}
+								break;
+			case 'szerkeszt' :  if (isset($_GET['auto_id']))
+    						 	{$autok->szerkeszt($_GET['auto_id']);
+    						  	include('html/jarmufelvetel.html');}
+    							else {include('html/jarmuvek.html');}
+								break;
+			case 'modosit'  :  if (isset($_GET['auto_id']))
+    						 	{if ($autok->modosit($_GET['auto_id']) == true) 
+    						   {include('html/jarmuvek.html');}
+    						  	else {include('html/jarmufelvetel.html');} 
+    						 	}
+    							else {include('html/jarmuvek.html');} 
+    							break;
+    		case 'torol':		if (isset($_GET['auto_id'])) 
+    							{
+							        if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+							        {
+							            $autok->torles($_GET['auto_id']);
+							            header("Location: index.php?menupont=jarmuvek");
+							            exit;
+							        }
+							        include('html/torlesmegerosites.html');
+							    } 
+							    else 
+							    {
+							        include('html/jarmuvek.html');
+							    }
+							    break;
+			default : 			break;
+			}
+>>>>>>> 45dcb847c8b5f5e1f954092536a3d2494ba60beb
 		}
 		else {if (!isset($_POST['auto_id']))
  	    {include('html/jarmuvek.html');}}
@@ -65,7 +111,6 @@ class autok {
  	public $evjarat;
  	public $alvazszam;
  	public $rendszam;
- 	public $aktualis_telephely_id;
  	public $allapot;
  	public $napi_dij;
 
@@ -129,7 +174,7 @@ class autok {
 				$HTMLSorok .= "<td>".$egysor['rendszam']."</td>";
 				$HTMLSorok .= "<td>".$egysor['allapot']."</td>";
 				$HTMLSorok .= "<td>".$egysor['napi_dij']."</td>";
-				$HTMLSorok .= ' <td><a href="'.$editcommand.'"><i class="fa-solid fa-pen-to-square"></i></a><a href="'.$delcommand.'"><i class="fa-solid fa-trash"></i></a></td>';
+				$HTMLSorok .= ' <td><a href="'.$editcommand.'">Szerkesztés </a><a href="'.$delcommand.'"> Törlés</a></td>';
 				$HTMLSorok .= "</tr>";
 			}
 		}
