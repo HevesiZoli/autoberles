@@ -49,8 +49,10 @@ $autok = new autok($db_kapcsolat,$naplo);
 				 default : 			
 				}
 			}
-		else {if (!isset($_POST['auto_id']))
- 	    {include('html/jarmuvek.html');}}
+		else {
+				if (!isset($_POST['auto_id']))
+ 	    		{include('html/jarmuvek.html');}
+ 			}
 
 class autok {
 

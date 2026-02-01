@@ -55,7 +55,7 @@
 		{
 		switch ($_GET['menupont']) {
 			case 'jarmuvek' :  	include('php/jarmuvek.php');
-								include('html/jarmuvek.html');
+								//include('html/jarmuvek.html');
 			 					break;
 			default : 			break;
 			}
