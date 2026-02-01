@@ -103,3 +103,11 @@
 2026-02-01 - 01:28:55pm - autok osztály létrejött.
 2026-02-01 - 01:28:55pm - autok osztály megsemmisült.
 2026-02-01 - 01:28:55pm - SELECT * FROM autok
+2026-02-01 - 01:32:21pm - Böngészőben betöltődött az oldal.
+2026-02-01 - 01:32:21pm - Az oldal újratöltődött.
+2026-02-01 - 01:32:21pm - autok osztály létrejött.
+2026-02-01 - 01:32:21pm - SELECT * FROM autok
+2026-02-01 - 01:32:21pm - SELECT * FROM autok
+2026-02-01 - 01:32:21pm - autok osztály létrejött.
+2026-02-01 - 01:32:21pm - autok osztály megsemmisült.
+2026-02-01 - 01:32:21pm - SELECT * FROM autok
