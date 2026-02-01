@@ -345,3 +345,11 @@ Stack trace:
 [28-Jan-2026 21:30:45 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 51
 [28-Jan-2026 21:31:52 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 48
 >>>>>>> 463923b8f106276e69d54b11e2600e4178096de2
+[01-Feb-2026 13:20:23 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'autokolcsonzo.user' doesn't exist in C:\xampp\htdocs\GitHub\autoberles\php\belepes.php:84
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\belepes.php(84): mysqli_query(Object(mysqli), 'SELECT COUNT(id...')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\belepes.php(135): belep->_belep('admin123', '0192023a7bbd732...')
+#2 C:\xampp\htdocs\GitHub\autoberles\php\belepes.php(10): belep->_belepes('admin123', '0192023a7bbd732...')
+#3 C:\xampp\htdocs\GitHub\autoberles\index.php(28): include('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\belepes.php on line 84
