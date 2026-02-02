@@ -77,7 +77,7 @@
 		 }
 		else 
 		 {
-			include('html/vezerlopult.html');
+			//include('html/vezerlopult.html');
 			if(isset($_GET['menupont']) && $_GET['menupont'] == 'jarmuvek')
 			{
 				include('php/jarmuvek.php');
