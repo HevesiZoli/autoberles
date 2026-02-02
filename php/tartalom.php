@@ -32,7 +32,7 @@ class autok
 
  	public function __destruct() 
  	{
- 		//$this->naplo->_bejegyez(__CLASS__.' osztály megsemmisült.');
+ 		$this->naplo->_bejegyez(__CLASS__.' osztály megsemmisült.');
  	}
 
  	public function _lista() 
