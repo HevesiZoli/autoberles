@@ -55,7 +55,7 @@
 		{
 		switch ($_GET['menupont']) {
 			case 'jarmuvek' :  	include('php/jarmuvek.php');
-								include('html/jarmuvek.html');
+								//include('html/jarmuvek.html');
 			 					break;
 			default : 			break;
 			}
@@ -77,7 +77,7 @@
 		 }
 		else 
 		 {
-			include('html/vezerlopult.html');
+			//include('html/vezerlopult.html');
 			if(isset($_GET['menupont']) && $_GET['menupont'] == 'jarmuvek')
 			{
 				include('php/jarmuvek.php');
