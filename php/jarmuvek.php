@@ -4,7 +4,7 @@ $autok = new autok($db_kapcsolat,$naplo);
 
 //-A RESTVAGYOK logikai változó aminek az értéke true és
  // restfekdokgoz.php állományban definiáljuk ennek segítségével az asztali programok
- // által meghívott által rest kérések során is alkalmazható a termekek.php, nem 
+ // által meghívott által rest kérések során is alkalmazható a jarmuvek.php, nem 
  //--> a változó miatt nem fog html kimenetet generálni
 
 if(!isset($RESTVAGYOK))
