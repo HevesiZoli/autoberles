@@ -4,6 +4,6 @@ $RESTVAGYOK = true;
 
 include('naplo.php');
 include('adatbaziskapcsolat.php'); 
-include('jarmuvek.php'); // $termek objektum létrehozása
+include('jarmuvek.php'); // $autok objektum létrehozása
 
 ?>
