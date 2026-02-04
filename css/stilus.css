@@ -183,3 +183,16 @@ tbody tr td[colspan] {
     color: #6b7280;
   }
 }
+a
+{
+  text-decoration: none;
+}
+.aktivalasravar
+{
+  color: black;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ff5454;
+  background-color: #ff8a8a;
+  padding: 3px;
+}
