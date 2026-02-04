@@ -7,8 +7,7 @@ $autok = new autok($db_kapcsolat,$naplo);
  // által meghívott által rest kérések során is alkalmazható a termekek.php, nem 
  //--> a változó miatt nem fog html kimenetet generálni
 
-if(!isset($RESTVAGYOK))
-{	
+	
 	if (isset($_GET['jarmu']))
 		{
 			switch ($_GET['jarmu']) 
@@ -60,7 +59,7 @@ if(!isset($RESTVAGYOK))
 				if (!isset($_POST['auto_id']))
  	    		{include('html/jarmuvek.html');}
  			}
-}
+
 
 class autok {
 
