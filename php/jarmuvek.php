@@ -117,6 +117,7 @@ class autok {
 
 		// Lefuttatjuk az SQL lekérdezést!
 		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
+		
 
 		// - A futtatást követően van egy központi változóz, ahonnan
 		//   kinyerhetem azt, hogy volt-e hibám?
