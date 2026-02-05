@@ -62,7 +62,7 @@
 		}
 		if(isset($_GET['menupont']) && $_GET['menupont'] == 'jarmuvek')
 		{
-			include('php/jarmuvek.php');
+			//include('php/jarmuvek.php');
 		}
 
 	if ($belepve == true )
