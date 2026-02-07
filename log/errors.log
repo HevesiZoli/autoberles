@@ -115,12 +115,6 @@ Stack trace:
 [23-Jan-2026 21:43:41 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
 [23-Jan-2026 21:43:41 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
 [23-Jan-2026 21:44:27 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
-[24-Jan-2026 19:52:40 Europe/Budapest] PHP Warning:  Undefined variable $autok in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html on line 3
-[24-Jan-2026 19:52:40 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function _autok_lista() on null in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html:3
-Stack trace:
-#0 C:\xampp\htdocs\GitHub\autoberles\index.php(49): include()
-#1 {main}
-  thrown in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html on line 3
 [24-Jan-2026 19:33:40 Europe/Budapest] PHP Warning:  Undefined array key "ev" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 77
 [24-Jan-2026 19:49:49 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
 [24-Jan-2026 19:50:54 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
@@ -129,7 +123,6 @@ Stack trace:
 [24-Jan-2026 20:02:36 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function ment() on null in D:\xampp\htdocs\backend\autoberles\index.php:53
 Stack trace:
 #0 {main}
-  thrown in D:\xampp\htdocs\backend\autoberles\index.php on line 53
   thrown in D:\xampp\htdocs\backend\autoberles\index.php on line 53
 [25-Jan-2026 18:15:38 Europe/Budapest] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function autok::torles(), 0 passed in D:\xampp\htdocs\backend\autoberles\html\torlesmegerosites.html on line 1 and exactly 1 expected in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php:272
 Stack trace:
@@ -156,210 +149,7 @@ Stack trace:
 [25-Jan-2026 19:13:01 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:02 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
 [25-Jan-2026 19:13:09 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
-[25-Jan-2026 19:13:10 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 4
 [25-Jan-2026 19:13:10 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:38 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 45
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:54 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 45
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 111
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 112
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "alvazszam" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 118
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 120
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Warning:  Undefined array key "napi_dij" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 121
-[27-Jan-2026 05:53:55 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 45
-[28-Jan-2026 21:30:45 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 51
-[28-Jan-2026 21:31:52 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 48
-[01-Feb-2026 13:20:23 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'autokolcsonzo.user' doesn't exist in C:\xampp\htdocs\GitHub\autoberles\php\belepes.php:84
-Stack trace:
-#0 C:\xampp\htdocs\GitHub\autoberles\php\belepes.php(84): mysqli_query(Object(mysqli), 'SELECT COUNT(id...')
-#1 C:\xampp\htdocs\GitHub\autoberles\php\belepes.php(135): belep->_belep('admin123', '0192023a7bbd732...')
-#2 C:\xampp\htdocs\GitHub\autoberles\php\belepes.php(10): belep->_belepes('admin123', '0192023a7bbd732...')
-#3 C:\xampp\htdocs\GitHub\autoberles\index.php(28): include('C:\\xampp\\htdocs...')
-#4 {main}
-  thrown in C:\xampp\htdocs\GitHub\autoberles\php\belepes.php on line 84
-[01-Feb-2026 13:23:37 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:24:51 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:24:57 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:24:58 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:25:05 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:25:30 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:25:31 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:25:37 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:28:55 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
 [28-Jan-2026 21:30:45 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 51
 [28-Jan-2026 21:31:52 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 48
 [01-Feb-2026 09:40:10 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 1
@@ -784,57 +574,72 @@ Stack trace:
 [01-Feb-2026 11:34:04 Europe/Budapest] PHP Warning:  Undefined variable $date in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 224
 [01-Feb-2026 12:07:21 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 38
 [01-Feb-2026 12:08:51 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 38
-[01-Feb-2026 12:08:51 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 38
-[01-Feb-2026 13:38:03 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<<" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 7
-[01-Feb-2026 13:38:05 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'email' in 'field list' in C:\xampp\htdocs\GitHub\autoberles\php\felhasznalok.php:111
+[07-Feb-2026 10:06:57 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\index.php on line 80
+[07-Feb-2026 10:06:57 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\index.php on line 80
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 1
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Attempt to read property "muvelet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 1
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 4
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Attempt to read property "id" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 4
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 10
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 10
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 15
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Attempt to read property "loginname" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 15
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 20
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Attempt to read property "email" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 20
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 44
+[07-Feb-2026 10:30:46 Europe/Budapest] PHP Warning:  Attempt to read property "uzenet" on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 44
+[07-Feb-2026 11:07:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalokezeles in D:\xampp\htdocs\backend\autoberles\index.php on line 84
+[07-Feb-2026 11:07:32 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function felhasznalo_ment() on null in D:\xampp\htdocs\backend\autoberles\index.php:84
 Stack trace:
-#0 C:\xampp\htdocs\GitHub\autoberles\php\felhasznalok.php(111): mysqli_query(Object(mysqli), 'SELECT   id,\r\n ...')
-#1 C:\xampp\htdocs\GitHub\autoberles\html\felhasznalok.html(4): felhasznalok->felhasznalo_lista()
-#2 C:\xampp\htdocs\GitHub\autoberles\php\felhasznalok.php(51): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\GitHub\autoberles\index.php(87): include('C:\\xampp\\htdocs...')
-#4 {main}
-  thrown in C:\xampp\htdocs\GitHub\autoberles\php\felhasznalok.php on line 111
-[01-Feb-2026 13:50:48 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<<" in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 7
-[01-Feb-2026 13:51:43 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 99
-[01-Feb-2026 13:54:13 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:55:25 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:55:26 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:55:32 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:55:38 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:55:56 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 55
-[01-Feb-2026 13:56:42 Europe/Budapest] PHP Parse error:  Unclosed '{' on line 53 in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 302
-[01-Feb-2026 13:56:44 Europe/Budapest] PHP Parse error:  Unclosed '{' on line 53 in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 302
-[01-Feb-2026 13:57:57 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 13:57:59 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 13:58:03 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 13:58:04 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 13:58:15 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 13:58:29 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 13:58:29 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 13:58:29 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 14:16:30 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 18:15:38 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+#0 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\index.php on line 84
+[07-Feb-2026 11:25:47 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\index.php on line 82
+[07-Feb-2026 11:25:47 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\index.php on line 82
+[07-Feb-2026 11:25:55 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\index.php on line 82
+[07-Feb-2026 11:25:55 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\index.php on line 82
+[07-Feb-2026 12:02:09 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\html\torlesmegerosites.html on line 2
+[07-Feb-2026 12:04:18 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\index.php on line 73
+[07-Feb-2026 12:04:18 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\index.php on line 73
+[07-Feb-2026 12:08:59 Europe/Budapest] PHP Warning:  Undefined property: felhasznalok::$hibauzenet in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 17
+[07-Feb-2026 12:20:12 Europe/Budapest] PHP Warning:  include(html/felhasznalo.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\index.php on line 114
+[07-Feb-2026 12:20:12 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/felhasznalo.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\index.php on line 114
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 127
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 127
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 132
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 132
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $row in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:36:52 Europe/Budapest] PHP Warning:  Undefined variable $HTMLlines in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:37:31 Europe/Budapest] PHP Warning:  Undefined array key "id" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 127
+[07-Feb-2026 12:37:31 Europe/Budapest] PHP Warning:  Undefined array key "id" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 132
+[07-Feb-2026 12:37:31 Europe/Budapest] PHP Warning:  Undefined variable $HTMLlines in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:37:47 Europe/Budapest] PHP Warning:  Undefined variable $HTMLlines in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:37:57 Europe/Budapest] PHP Warning:  Undefined variable $HTMLlines in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 136
+[07-Feb-2026 12:42:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html on line 4
+[07-Feb-2026 12:42:16 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function felhasznalo_lista() on null in D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html:4
 Stack trace:
-#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'autokolcsonzo_')
-#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
-#2 C:\xampp\htdocs\GitHub\autoberles\index.php(22): include('C:\\xampp\\htdocs...')
-#3 {main}
-  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
-[01-Feb-2026 19:04:26 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:08:22 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:08:23 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:12:13 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:12:21 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:13:35 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:17:21 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:18:16 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:22:41 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:26:04 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:32:56 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:32:57 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:33:08 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:33:39 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:33:41 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:33:45 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:33:52 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
-[01-Feb-2026 19:33:53 Europe/Budapest] PHP Fatal error:  Cannot declare class autok, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\jarmuvek.php on line 57
+#0 D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php(7): include()
+#1 D:\xampp\htdocs\backend\autoberles\index.php(96): include('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\html\felhasznalok.html on line 4
+[07-Feb-2026 13:03:41 Europe/Budapest] PHP Warning:  Undefined property: autok::$hibauzenet in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 17
+[07-Feb-2026 13:05:20 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\index.php on line 109
+[07-Feb-2026 13:05:44 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\index.php on line 109
+[07-Feb-2026 13:06:47 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\index.php on line 109
+[07-Feb-2026 13:10:07 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\index.php on line 109
+[07-Feb-2026 13:13:29 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\index.php on line 108
+[07-Feb-2026 13:14:36 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\index.php on line 108
+[07-Feb-2026 13:14:52 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\index.php on line 108
+[07-Feb-2026 13:15:50 Europe/Budapest] PHP Warning:  Undefined array key "auto_id" in D:\xampp\htdocs\backend\autoberles\html\torlesmegerosites.html on line 3

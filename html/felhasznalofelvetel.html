@@ -1,44 +1,36 @@
-<?php if ($felhasznalok->muvelet == 'insert')
-              {$felhasznalok_muvelet = 'index.php?menupont=felhasznalok&felhasznalo=ment';} 
-         else 
-              {$felhasznalok_muvelet = 'index.php?menupont=felhasznalok&felhasznalo=modosit&id='.$felhasznalok->id;} 
-  ?>
+<h1>Felhasználó</h1>
+<?php
+       //ha kapok id akkkor frissítem az adatokat így akkor szerkesztés van és nem kell a jelszó
+       if (isset($_POST['id']))
+       {
+              echo('<form action="index.php?menupont=felhasznalofrissit" method="POST">
+                       <input type="hidden" name="id" value="'.$_POST['id'].'">');
+       }
+       else
+       {
+              echo('<form action="index.php?menupont=felhasznaloment" method="POST">');
+       }
+?>
 
-<form action="<?php echo($felhasznalok_muvelet); ?>" method="POST">
-  <label>Név:</label><br>
-  <input class="" id="name" type="text" name="name"
-         value="<?php echo($felhasznalok->name) ?>"
-         oninput="input_kotelezo('name')"><br>
 
-  <label>Belépési azonosító:</label><br>
-  <input class="" id="loginname" type="text" name="loginname"
-         value="<?php echo($felhasznalok->loginname) ?>"
-         oninput="input_kotelezo('loginname')"><br>
 
-  <label>E-mail cím:</label><br>
-  <input class="" id="email" type="text" name="email"
-         value="<?php echo($felhasznalok->email) ?>"
-         oninput="input_kotelezo('email')"><br>
+       <label><?php echo($felhasznalok->hibauzenet); ?></label><br>
+       <label>Felhasználó neve:</label><br>
+       <input type="text" name="name" value="<?php echo($felhasznalok->name); ?>"><br>
+       <label>Felhasználó belépési azonosítója:</label><br>
+       <input type="text" name="loginname" value="<?php echo($felhasznalok->loginname); ?>"><br>
+       <label>Email</label><br>
+       <input type="text" name="email" value="<?php echo($felhasznalok->email); ?>"><br>
 
-  <label>Jelszó:</label><br>
-  <input class="" id="password1" type="password" name="password1"
-         value=""
-         oninput="input_kotelezo('password1')"><br>
-
-  <label>Jelszó megerősítés:</label><br>
-  <input class="" id="password2" type="password" name="password2"
-         value=""
-         oninput="input_kotelezo('password2')"><br>
-
-  <label>Jelszó emlékeztető:</label><br>
-  <input class="" id="reminder" type="text" name="reminder"
-         value=""
-         oninput="input_kotelezo('reminder')"><br>
-  <input type="submit" value="Ment">
+<?php
+if(!isset($_POST['id']))
+{
+       echo('<label>Jelszó:</label><br>                                                                                                                          <input type="password" name="password1" value="'.$felhasznalok->password1.'"><br>
+              <label>Jelszó ismét:</label><br>
+              <input type="password" name="password2" value="'.$felhasznalok->password2.'"><br>
+              <label>Jelszó emlékeztető</label><br>
+              <input type="text" name="reminder" value="'.$felhasznalok->reminder.'"><br>');
+}      
+?>
+<input type="submit" name="ok" value="Mentés">   
 </form>
-
-
-<form action="index.php?menupont=felhasznalok" method="POST">
-       <input type="submit" name="" value="Mégsem">
-</form>
-<div id="uzenet"><?php echo($felhasznalok->uzenet); ?></div>

@@ -2,65 +2,36 @@
 
 $autok = new autok($db_kapcsolat,$naplo);
 
-//-A RESTVAGYOK logikai változó aminek az értéke true és
- // restfekdokgoz.php állományban definiáljuk ennek segítségével az asztali programok
- // által meghívott által rest kérések során is alkalmazható a jarmuvek.php, nem 
- //--> a változó miatt nem fog html kimenetet generálni
-
-if(!isset($RESTVAGYOK))
-{	
-	if (isset($_GET['jarmu']))
-		{
-			switch ($_GET['jarmu']) 
-			{
-				case 'uj'		:   include('html/jarmufelvetel.html');
-									break;
-				case 'jarmuvek' :  	include('html/jarmuvek.html');
-				 					break;
-				case 'ment'  :   	if ($autok->ment() == true)
-									{
-										include('html/jarmuvek.html');
-									}
-									else
-									{
-										include('html/jarmufelvetel.html');
-									}
-									break;
-				case 'szerkeszt' :  if (isset($_GET['auto_id']))
-	    						 	{$autok->szerkeszt($_GET['auto_id']);
-	    						  	include('html/jarmufelvetel.html');}
-	    							else {include('html/jarmuvek.html');}
-									break;
-				case 'modosit'  :  if (isset($_GET['auto_id']))
-	    						 	{if ($autok->modosit($_GET['auto_id']) == true) 
-	    						   {include('html/jarmuvek.html');}
-	    						  	else {include('html/jarmufelvetel.html');} 
-	    						 	}
-	    							else {include('html/jarmuvek.html');} 
-	    						break;
-	    		case 'torol':		if (isset($_GET['auto_id'])) 
-	    							{
-								        if ($_SERVER['REQUEST_METHOD'] === 'POST') 
-								        {
-								            $autok->torles($_GET['auto_id']);
-								            header("Location: index.php?menupont=jarmuvek");
-								            exit;
-								        }
-								        include('html/torlesmegerosites.html');
-								    } 
-								    else 
-								    {
-								        include('html/jarmuvek.html');
-								    }
-								    break;
-				 default : 			
-				}
+		/*$menupont = $_GET['menupont'];
+		switch ($menupont) {
+				case 'jarmuvek' : include('html/jarmuvek.html');
+		 						  break;
+		 		case 'ujjarmu' : include('html/jarmufelvetel.html');
+		 							   break;
+		 		case 'autokment' : if ($autok->automentes() == true)
+		 							      {include('html/jarmuvek.html');}
+		 							     else {include('html/jarmufelvetel.html');}
+		 							     break;
+		 		case 'autoszerkeszt' : 		include('html/jarmufelvetel.html');
+		 									$autok->autoszerkeszt($_POST['auto_id']);
+		 									break;
+		 		case 'autokfrissit' : if ($autok->automodosit($_POST['auto_id']) == true)
+		 										{include('html/jarmuvek.html');}
+		 									else
+		 									{
+		 										include('html/jarmufelvetel.html');
+		 									}
+		 									break;
+		 		case 'autotorol' :   		include('html/torlesmegerosites.html');
+		 									break;
+		 		case 'autoktorles' :  		$autok->torles($_POST['auto_id']);
+		 									include('html/jarmuvek.html');
+		 									break;
+			default : 			include('html/jarmuvek.html');
+								break;
 			}
-		else {
-				if (!isset($_POST['auto_id']))
- 	    		{include('html/jarmuvek.html');}
- 			}
-}
+		else {if (!isset($_POST['auto_id']))
+ 	    {include('html/jarmuvek.html');}}*/
 
 class autok {
 
@@ -69,7 +40,6 @@ class autok {
 
  	// Adatbázis mezők adattagjai.
  	public $auto_id;
- 	public $kategoria_id;
  	public $marka;
  	public $modell;
  	public $evjarat;
@@ -84,7 +54,7 @@ class autok {
 
  	// - Üzenet, amit a felhasználónak szánok
  	//   lehet ez hibaüzenet is!
- 	public $uzenet;
+ 	public $hibauzenet;
  	
  	public function __construct($db_kapcsolat,$naplo = null) {
  		// - A paraméterben megadott "objektumokat" itt
@@ -105,19 +75,26 @@ class autok {
  	public function _autok_lista() {
 
  		// - Kell egy változó, amiben a lista HTML részét tárolom
-		$HTMLSorok = "";
+		$HTMLlines = "";
 
 		// - A termékeket akarom listázni, ezek adatbázisban vannak
 		//   ezért elkészítem az SQL lekérdezést!
 
-		$SQLlekerdezes = "SELECT * FROM autok";
+		$SQLlekerdezes = "SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok";
 
 		// Példa a naplózásra. Kiírom naplóba a lekérdezést
 		$this->naplo->_bejegyez($SQLlekerdezes);
 
 		// Lefuttatjuk az SQL lekérdezést!
 		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
-		
 
 		// - A futtatást követően van egy központi változóz, ahonnan
 		//   kinyerhetem azt, hogy volt-e hibám?
@@ -126,31 +103,31 @@ class autok {
 			// - Amennyiben az $sqlhiba üres, 
 			//   abban az esetben fel kell dolgoznom
 			//   az eredményhalmazt!
-			while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
+			while ($row = mysqli_fetch_assoc($SQLeredmeny)) 
 			{
-				$editcommand = "index.php?menupont=jarmuvek&jarmu=szerkeszt&auto_id=".$egysor['auto_id'];
-				$delcommand = "index.php?menupont=jarmuvek&jarmu=torol&auto_id=".$egysor['auto_id'];
-
-				$HTMLSorok .= "<tr>";
-				$HTMLSorok .= "<td>".$egysor['marka']."</td>";
-				$HTMLSorok .= "<td>".$egysor['modell']."</td>";
-				$HTMLSorok .= "<td>".$egysor['evjarat']."</td>";
-				$HTMLSorok .= "<td>".$egysor['alvazszam']."</td>";
-				$HTMLSorok .= "<td>".$egysor['rendszam']."</td>";
-				$HTMLSorok .= "<td>".$egysor['allapot']."</td>";
-				$HTMLSorok .= "<td>".$egysor['napi_dij']."</td>";
-				$HTMLSorok .= ' <td><a href="'.$editcommand.'">Szerkesztés </a><a href="'.$delcommand.'"> Törlés</a></td>';
-				$HTMLSorok .= "</tr>";
-			}
+                 // - Készítünk egy műveletek parancssort, 
+                 //   hogy ne a $HTMLlines legyen megbonolítva
+                 $editcommand =  '<form action="index.php?menupont=autoszerkeszt" method="post">';
+                 $editcommand .= '<input type="hidden" name="id" value="'.$row['auto_id'].'">';   
+                 $editcommand .= '<input type="submit" name="szerkeszt" value="Szerkesztés">';  
+                 $editcommand .= '</form>';
+                 
+                 $deletecommand =  '<form action="index.php?menupont=autotorol" method="post">';
+                 $deletecommand .= '<input type="hidden" name="id" value="'.$row['auto_id'].'">';   
+                 $deletecommand .= '<input type="submit" name="torol" value="Törlés">';  
+                 $deletecommand .= '</form>';  
+                 // Itt állítom össze a listám html szakaszát!
+                 $HTMLlines .= "<tr><td>".$row['marka']."</td><td>".$row['modell']."</td><td>".$row['evjarat']."</td><td>".$row['alvazszam']."</td><td>".$row['rendszam']."</td><td>".$row['allapot']."</td><td>".$row['napi_dij']."</td><td>".$editcommand.$deletecommand."</td></tr>";   
+               }
 		}
 		else {
 			// - Nem volt üres az sqlhiba, ezért elküldöm a naplóba ahibát!
 			$this->naplo->_bejegyez($sqlhiba);
 		}
 		// Itt adom vissza a HTML sorokat a lapnak.
-		return $HTMLSorok;
+		return $HTMLlines;
  	}
- 	public function ment() {
+ 	public function automentes() {
 
 		// - Beállítom a müveletet, azért, mert a termek.html FORM elemének
 		//   az action url-jét ez alapján fogom változtatani 
@@ -179,7 +156,7 @@ class autok {
 		// Kötelező érték vizsgálata
 		if (empty($this->marka) || empty($this->modell) || empty($this->evjarat) ||
 	 	    empty($this->alvazszam) || empty($this->rendszam) || empty($this->napi_dij)) 
-			{$this->uzenet = 'Kérem tötlse ki a pirossal jelölt mezőket!';
+			{$this->hibauzenet = 'Kérem tötlse ki a pirossal jelölt mezőket!';
 			 $sikeresmentes = false;}
 
 		// - Cask akkor kezdek a mentéhez, ha a kötelező érték
@@ -199,7 +176,7 @@ class autok {
 		 // Eláruljuk a hívónak, hogy sikeres volt-e a mentés!
 		 return $sikeresmentes;
 	}
-	public function szerkeszt($auto_id) {
+	public function autoszerkeszt($auto_id) {
 
 		// - Beállítom a müveletet, azért, mert a termek.html FORM elemének
 		//   az action url-jét ez alapján fogom változtatani 
@@ -221,14 +198,14 @@ class autok {
 			// - Amennyiben az $sqlhiba üres, 
 			//   abban az esetben fel kell dolgoznom
 			//   az eredményhalmazt!
-			while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
+			while ($row = mysqli_fetch_assoc($SQLeredmeny)) 
 			{
-				$this->marka = $egysor['marka'];
-				$this->modell = $egysor['modell'];
-				$this->evjarat = $egysor['evjarat'];
-				$this->alvazszam = $egysor['alvazszam'];
-				$this->rendszam = $egysor['rendszam'];
-				$this->napi_dij = $egysor['napi_dij'];
+				$this->marka = $row['marka'];
+				$this->modell = $row['modell'];
+				$this->evjarat = $row['evjarat'];
+				$this->alvazszam = $row['alvazszam'];
+				$this->rendszam = $row['rendszam'];
+				$this->napi_dij = $row['napi_dij'];
 			}
 		}
 		else {
@@ -236,7 +213,7 @@ class autok {
 			$this->naplo->_bejegyez($sqlhiba);
 		}
  	}
- 	public function modosit($auto_id) {
+ 	public function automodosit($auto_id) {
 
 		// - Beállítom a müveletet, azért, mert a termek.html FORM elemének
 		//   az action url-jét ez alapján fogom változtatani 
@@ -266,7 +243,7 @@ class autok {
 		// Kötelező érték vizsgálata
 		if (empty($this->marka) || empty($this->modell) || empty($this->evjarat) ||
 	 	    empty($this->alvazszam) || empty($this->rendszam) || empty($this->napi_dij)) 
-			{$this->uzenet = 'Kérem tötlse ki a pirossal jelölt mezőket!';
+			{$this->hibauzenet = 'Kérem tötlse ki a pirossal jelölt mezőket!';
 			 $sikeresmentes = false;}
 
 		// - Cask akkor kezdek a mentéhez, ha a kötelező érték

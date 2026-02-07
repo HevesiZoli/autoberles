@@ -2,14 +2,14 @@
 
  $belepve = false;
 
- $belepes = new belep();
+ $belepes = new belep($naplo,$db_kapcsolat,$munkamenettarolo);
 
  if (isset($_POST['usr']) && isset($_POST['psw']))
  	{
  		try {
    			 $belepve = $belepes->_belepes($_POST['usr'],MD5($_POST['psw']));
    			} catch (\Error $internalError) { /* Az $internalError objektumból kiolvasom a hibaüzenetet */
-            		                         $hibanaplo->_bejegyez($internalError->getMessage()); 
+            		                         $naplo->_bejegyez($internalError->getMessage()); 
                     		                }
     }
     else
@@ -17,9 +17,16 @@
     	$belepve = $belepes->_belepve();
     } 
 
-    if (isset($_POST['logout']))
+  if (isset($_GET['logout']))
     {
+      include('html/kilepes.html');
+    }    
+
+    if (isset($_POST['exit']))
+    {
+
     	$belepve = $belepes->_kilepes();
+
     }
 class belep {
 

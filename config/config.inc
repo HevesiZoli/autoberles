@@ -1,13 +1,13 @@
 <?php
 // Alap konfiguráció
 
-$baseURL = "http://127.0.0.1/Github/autoberles/";
+$baseURL = "http://127.0.0.1/backend/autoberles";
 
 // ADATBÁZIS ADATOK
 $database_host = 'localhost';
 $database_user = 'root';
 $database_password = '';
-$database_db = 'autokolcsonzo_';
+$database_db = 'autokolcsonzo';
 
 // LOG
 $log_enabled = true;

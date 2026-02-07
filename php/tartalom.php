@@ -37,10 +37,7 @@ class autok
 
  	public function _lista() 
  	{
- 		// - Kell egy változó, amiben a lista HTML részét tárolom
-		//$HTMLSorok = "";
 
-		
  	}
 
  	public function ment() 

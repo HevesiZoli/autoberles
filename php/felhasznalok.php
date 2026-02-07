@@ -1,55 +1,6 @@
 <?php
 $felhasznalok = new felhasznalok($db_kapcsolat,$naplo);
 
-		if (isset($_GET['felhasznalo']))
-		{
-		switch ($_GET['felhasznalo']) {
-			case 'uj'		:   include('html/felhasznalofelvetel.html');
-								break;
-			case 'felhasznalok' :  	include('html/felhasznalok.html');
-			 						break;
-			case 'ment':		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-						        if ($felhasznalok->felhasznalo_ment()) {
-						            header("Location: index.php?menupont=felhasznalok");
-						            exit;
-						        	} 
-						        	else {include('html/felhasznalok.html');}
-						    	}
-    							break;
-			case 'szerkeszt' :  $felhasznalok->felhasznalo_szerkeszt($_GET['id']);
-		 									include('html/felhasznalofelvetel.html');
-		 									break;
-			case 'modosit'  :  if ($felhasznalok->felhasznalo_frissit($_GET['id']) == true)
-		 									{include('html/felhasznalok.html');}
-		 									else
-		 									{
-		 										include('html/felhasznalofelvetel.html');
-		 									}
-		 									break;
-    		case 'torles':		if (isset($_GET['id'])) 
-    							{
-							        if ($_SERVER['REQUEST_METHOD'] === 'POST') 
-							        {
-							            $felhasznalok->torles($_GET['id']);
-							            header("Location: index.php?menupont=felhasznalok");
-							            exit;
-							        }
-							        include('html/torlesmegerosites.html');
-							    } 
-							    else 
-							    {
-							        include('html/felhasznalok.html');
-							    }
-							    break;
-			case 'aktivalas' :	$felhasznalok->felhasznalo_aktival($_GET['id']);
-		 								include('html/felhasznalok.html');
-		 								break;
-			default : 			break;
-			}
-		}
-		else {if (!isset($_POST['id']))
- 	    {include('html/felhasznalok.html');}}
-
 class felhasznalok {
 	private $naplo;
  	private $db_kapcsolat;
@@ -71,7 +22,7 @@ class felhasznalok {
  	public $muvelet;
  	// - Üzenet, amit a felhasználónak szánok
  	//   lehet ez hibaüzenet is!
- 	public $uzenet;
+ 	public $hibauzenet;
  	public $date;
  	
  	public function __construct($db_kapcsolat,$naplo = null) {
@@ -127,32 +78,26 @@ class felhasznalok {
                {
                  // - Készítünk egy műveletek parancssort, 
                  //   hogy ne a $HTMLlines legyen megbonolítva
-                 $editcommand = "index.php?menupont=felhasznalok&felhasznalo=szerkeszt&id=".$row['id'];
+                 $editcommand =  '<form action="index.php?menupont=szerkesztfelhasznalo" method="post">';
+                 $editcommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
+                 $editcommand .= '<input type="submit" name="szerkeszt" value="Szerkesztés">';  
+                 $editcommand .= '</form>';
 
                  if($row['state']==0)
                  {
-                 $activatecommand = "index.php?menupont=felhasznalok&felhasznalo=aktivalas&id=".$row['id'];
+                  $activatecommand =  '<form action="index.php?menupont=aktivalfelhasznalo" method="post">';
+                 $activatecommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
+                 $activatecommand .= '<input type="submit" name="aktival" value="Aktivál">';  
+                 $activatecommand .= '</form>';  
                   }
                   else{$activatecommand="";}
                  
-                 $deletecommand = "index.php?menupont=felhasznalok&felhasznalo=torol&id=".$row['id'];
+                 $deletecommand =  '<form action="index.php?menupont=torolfelhasznalo" method="post">';
+                 $deletecommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
+                 $deletecommand .= '<input type="submit" name="torol" value="Törlés">';  
+                 $deletecommand .= '</form>';  
                  // Itt állítom össze a listám html szakaszát!
-                 $HTMLlines .= "<tr>";
-				 $HTMLlines .= "<td>".$row['name']."</td>";
-				 $HTMLlines .= "<td>".$row['loginname']."</td>";
-				 $HTMLlines .= "<td>".$row['email']."</td>";
-				 $HTMLlines .= "<td>".$row['regisztracioideje']."</td>";
-                 $HTMLlines .= '<td>';
-				 $HTMLlines .= '<a href="'.$editcommand.'">Szerkesztés</a> ';
-				 $HTMLlines .= '<a href="'.$deletecommand.'">Törlés</a> ';
-				 if ($row['state'] == 0) {
-				    $HTMLlines .= '<a class="aktivalasravar" href="'.$activatecommand.'">Aktiválás</a>';
-				 }
-				 if ($row['state'] == 1) {
-    			 $HTMLlines .= '<span style="color:green;">Aktív</span>';
-				 }
-				 $HTMLlines .= '</td>';
-                 $HTMLlines .= "</tr>";
+                 $HTMLlines .= "<tr><td>".$row['name']."</td><td>".$row['loginname']."</td><td>".$row['email']."</td><td>".$row['regisztracioideje']."</td><td>".$editcommand.$deletecommand.$activatecommand."</td></tr>";   
                }
             }      
           }
@@ -199,27 +144,27 @@ class felhasznalok {
 
       if (empty($this->name)) 
        {$ujdatarendben = false;
-        $this->uzenet = "Nincs megadva a felhasználó neve!";}
+        $this->hibauzenet = "Nincs megadva a felhasználó neve!";}
 
       if (empty($this->loginname)) 
        {$ujdatarendben = false;
-        $this->uzenet = "Nincs megadva a belépési azonosítója!";}
+        $this->hibauzenet = "Nincs megadva a belépési azonosítója!";}
 
         if (empty($this->email)) 
        {$ujdatarendben = false;
-        $this->uzenet = "Nincs megadva a belépési azonosítója!";}
+        $this->hibauzenet = "Nincs megadva a belépési azonosítója!";}
 
 
       if (empty($this->password1) || empty($this->password2)) 
        {$ujdatarendben = false;
-        $this->uzenet = "Nincs megadva mindkét jelszó!";}
+        $this->hibauzenet = "Nincs megadva mindkét jelszó!";}
 
 
        if ($ujdatarendben == true) 
        {
          if ($this->password1 != $this->password2)
             {$ujdatarendben = false;
-             $this->uzenet = "Nem egyformák a jelszavak!";}
+             $this->hibauzenet = "Nem egyformák a jelszavak!";}
        }
 
        $this->fingerprint = veletlenkaraktersor();
@@ -259,7 +204,7 @@ class felhasznalok {
 
               $this->naplo->_bejegyez($sqlerror);
               $ujdatarendben=false;
-              $this->uzenet = "A felhasználónév foglalt";
+              $this->hibauzenet = "A felhasználónév foglalt";
              }
              else
              {
@@ -282,7 +227,7 @@ class felhasznalok {
                        {           
                         $this->naplo->_bejegyez($sqlerror);
                         $ujdatarendben = false;
-                        $this->uzenet = "Hiba az aktiváló link létrehozásakor";
+                        $this->hibauzenet = "Hiba az aktiváló link létrehozásakor";
                        }
 
 
@@ -361,15 +306,15 @@ class felhasznalok {
 
       if (empty($this->name)) 
        {$ujdatarendben = false;
-        $this->uzenet = "Nincs megadva a felhasználó neve!";}
+        $this->hibauzenet = "Nincs megadva a felhasználó neve!";}
 
       if (empty($this->loginname)) 
        {$ujdatarendben = false;
-        $this->uzenet = "Nincs megadva a belépési azonosítója!";}
+        $this->hibauzenet = "Nincs megadva a belépési azonosítója!";}
 
       /*if (empty($this->password1) || empty($this->password2)) 
        {$ujdatarendben = false;
-        $this->uzenet = "Nincs megadva mindkét jelszó!";}*/
+        $this->hibauzenet = "Nincs megadva mindkét jelszó!";}*/
        if ($modositottadatrendben == true) 
        {
          // - Mivel SELECT COUNT a parancs, ha nincs a feltételnek megfelelő
@@ -389,7 +334,7 @@ class felhasznalok {
              {
               $this->naplo->_bejegyez($sqlerror);
               $modositottadatrendben=false;
-              $this->uzenet = "A felhasználónév foglalt";
+              $this->hibauzenet = "A felhasználónév foglalt";
              }
       }
       // $naplo->_bejegyez($SQLResult);
@@ -419,6 +364,58 @@ class felhasznalok {
        $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$this->sqlCommand); 
         
    }
+ public function felhasznalo_aktivalas_linkbol()
+   {
+    $aktivalva = false;
+      if(isset($_GET['kod']))
+      {
+        $kod=$_GET['kod'];
+      }
+      else
+      {
+        $kod='EMPTY!';
+      }
 
+       $this->sqlCommand = "SELECT u.id as uid,     
+                                   a.id as aid 
+                            FROM user as u INNER JOIN activation as a ON u.fingerprint=a.fingerprint 
+                            WHERE a.code = '$kod' AND date_sub(a.datetime,interval -1 day)>= now()
+                            LIMIT 1";
+
+        $this->naplo->_bejegyez($this->sqlCommand);
+            //   az $SQLResult változóba tesszük! 
+      $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$this->sqlCommand);
+      $sqlerror = mysqli_error($this->db_kapcsolat->_kapcsolat());
+      if (empty($sqlerror))
+          {
+           // Nem volt hibám, így megviszgálom a visszakapott eredményhalmazt
+         // - Az $SQLResult változóban tesszük
+             if (mysqli_num_rows($SQLResult) > 0)
+             {
+               // Ez a ciklus járja be az eredmény halmazt!
+               // Ha van sor akkor van aktiváló link
+               while ($row = mysqli_fetch_assoc($SQLResult))
+                {
+                  $userID=$row['uid'];
+                  $activationID=$row['aid'];
+                  //helyi lokális sql parancs h ne bántsuk a fentieket
+
+                  //aktiváljuk a felhasználót
+                  $this->felhasznalo_aktival($userID);
+                  //töröljük az aktiváló sort
+                  $sqlCommand= "DELETE 
+                                FROM activation
+                                WHERE id ='$activationID'";
+                  $delResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$sqlCommand);
+                  $aktivalva=true;
+                } 
+             } 
+          }
+      else 
+          {
+            $this->naplo->_bejegyez($sqlerror);
+          } 
+      return $aktivalva;  
+   }
 }
 ?>
