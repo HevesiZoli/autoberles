@@ -1,0 +1,49 @@
+2026-02-12 - 07:35:34pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:46pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:46pm - Az oldal újratöltődött.
+2026-02-12 - 07:36:46pm - autok osztály létrejött.
+2026-02-12 - 07:36:46pm - autok osztály megsemmisült.
+2026-02-12 - 07:36:47pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:47pm - Az oldal újratöltődött.
+2026-02-12 - 07:36:47pm - autok osztály létrejött.
+2026-02-12 - 07:36:47pm - autok osztály megsemmisült.
+2026-02-12 - 07:36:49pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:49pm - Az oldal újratöltődött.
+2026-02-12 - 07:36:51pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:51pm - Az oldal újratöltődött.
+2026-02-12 - 07:36:52pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:52pm - Az oldal újratöltődött.
+2026-02-12 - 07:36:53pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:53pm - Az oldal újratöltődött.
+2026-02-12 - 07:36:53pm - autok osztály létrejött.
+2026-02-12 - 07:36:53pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 07:36:53pm - autok osztály megsemmisült.
+2026-02-12 - 07:36:59pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:36:59pm - Az oldal újratöltődött.
+2026-02-12 - 07:37:00pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:37:00pm - Az oldal újratöltődött.
+2026-02-12 - 07:37:05pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:37:05pm - Az oldal újratöltődött.
+2026-02-12 - 07:37:09pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:37:09pm - Az oldal újratöltődött.
+2026-02-12 - 07:37:09pm - autok osztály létrejött.
+2026-02-12 - 07:37:09pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 07:37:09pm - autok osztály megsemmisült.
+2026-02-12 - 07:37:12pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:37:12pm - Az oldal újratöltődött.

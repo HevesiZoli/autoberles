@@ -664,3 +664,10 @@ Stack trace:
 #2 C:\xampp\htdocs\GitHub\autoberles\index.php(22): include('C:\\xampp\\htdocs...')
 #3 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[12-Feb-2026 19:35:39 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'autokolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(22): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
