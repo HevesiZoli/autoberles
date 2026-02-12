@@ -671,3 +671,26 @@ Stack trace:
 #2 C:\xampp\htdocs\GitHub\autoberles\index.php(22): include('C:\\xampp\\htdocs...')
 #3 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[12-Feb-2026 20:01:50 Europe/Budapest] PHP Fatal error:  Uncaught Error: Class "foglalas" not found in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php:3
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\index.php(127): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 3
+[12-Feb-2026 20:03:13 Europe/Budapest] PHP Fatal error:  Uncaught Error: Class "fogalasok" not found in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php:3
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\index.php(127): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 3
+[12-Feb-2026 20:04:26 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'autokolcsonzo.foglalas' doesn't exist in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php:58
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php(58): mysqli_query(Object(mysqli), 'SELECT * FROM f...')
+#1 C:\xampp\htdocs\GitHub\autoberles\html\foglalasok.html(4): foglalasok->_foglalasok_lista()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(128): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 58
+[12-Feb-2026 20:13:53 Europe/Budapest] PHP Warning:  Undefined property: foglalasok::$hibauzenet in C:\xampp\htdocs\GitHub\autoberles\html\foglalasfelvetel.html on line 17
+[12-Feb-2026 20:15:32 Europe/Budapest] PHP Warning:  Undefined variable $autok in C:\xampp\htdocs\GitHub\autoberles\index.php on line 136
+[12-Feb-2026 20:15:32 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function ment() on null in C:\xampp\htdocs\GitHub\autoberles\index.php:136
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\index.php on line 136

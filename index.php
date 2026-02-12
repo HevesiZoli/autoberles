@@ -123,7 +123,39 @@
 		 									$autok->torles($_POST['id']);
 		 									include('html/jarmuvek.html');
 		 									break;
-		 		default : 				    break;
+		 									
+		 		case 'foglalasok':			include('php/foglalaskezeles.php');
+		 									include('html/foglalasok.html');
+		 									break;
+
+		 		case 'ujfoglalas':			include('php/foglalaskezeles.php');
+		 									include('html/foglalasfelvetel.html');
+		 									break;
+
+		 		case 'foglalasokment' :  include('php/foglalaskezeles.php');
+		 								 if ($foglalasok->ment() == true)
+		 							     {include('html/foglalasok.html');}
+		 							     else {include('html/foglalasfelvetel.html');}
+		 							     break;
+
+		 	 	case 'foglalasokszerkeszt' :include('php/foglalaskezeles.php');
+		 									$foglalasok->szerkeszt($_POST['id']);	
+		 									include('html/foglalasfelvetel.html');
+		 									break;
+
+		 		case 'foglalasokfrissit' :   include('php/foglalaskezeles.php');
+		 									 if ($foglalasok->modosit($_POST['id']) == true)
+		 									 {include('html/foglalasok.html');}
+		 									 else
+		 									 {
+		 										include('html/foglalasfelvetel.html');
+		 									 }
+		 									 break;
+
+		 		case 'foglalastorol' :   	include('php/foglalaskezeles.php');
+		 									include('html/torlesmegerosites.html');
+		 									break;
+		 		default : 				break;
 		 	}
 		 }
 	  }

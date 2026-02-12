@@ -47,3 +47,404 @@
 2026-02-12 - 07:37:09pm - autok osztály megsemmisült.
 2026-02-12 - 07:37:12pm - Böngészőben betöltődött az oldal.
 2026-02-12 - 07:37:12pm - Az oldal újratöltődött.
+2026-02-12 - 07:38:27pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:38:27pm - Az oldal újratöltődött.
+2026-02-12 - 07:38:27pm - autok osztály létrejött.
+2026-02-12 - 07:38:27pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 07:38:27pm - autok osztály megsemmisült.
+2026-02-12 - 07:38:28pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:38:28pm - Az oldal újratöltődött.
+2026-02-12 - 07:38:28pm - autok osztály létrejött.
+2026-02-12 - 07:38:28pm - autok osztály megsemmisült.
+2026-02-12 - 07:38:34pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 07:38:34pm - Az oldal újratöltődött.
+2026-02-12 - 07:38:34pm - autok osztály létrejött.
+2026-02-12 - 07:38:34pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 07:38:34pm - autok osztály megsemmisült.
+2026-02-12 - 08:01:49pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:01:49pm - Az oldal újratöltődött.
+2026-02-12 - 08:01:49pm - autok osztály létrejött.
+2026-02-12 - 08:01:49pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 08:01:49pm - autok osztály megsemmisült.
+2026-02-12 - 08:01:50pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:01:50pm - Az oldal újratöltődött.
+2026-02-12 - 08:03:13pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:03:13pm - Az oldal újratöltődött.
+2026-02-12 - 08:04:26pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:04:26pm - Az oldal újratöltődött.
+2026-02-12 - 08:04:26pm - foglalasok osztály létrejött.
+2026-02-12 - 08:04:26pm - SELECT * FROM foglalas
+2026-02-12 - 08:04:26pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:06:26pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:06:26pm - Az oldal újratöltődött.
+2026-02-12 - 08:06:26pm - foglalasok osztály létrejött.
+2026-02-12 - 08:06:26pm - SELECT * FROM foglalas
+2026-02-12 - 08:06:26pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:06:28pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:06:28pm - Az oldal újratöltődött.
+2026-02-12 - 08:06:28pm - autok osztály létrejött.
+2026-02-12 - 08:06:28pm - autok osztály megsemmisült.
+2026-02-12 - 08:06:59pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:06:59pm - Az oldal újratöltődött.
+2026-02-12 - 08:06:59pm - foglalasok osztály létrejött.
+2026-02-12 - 08:06:59pm - SELECT * FROM foglalas
+2026-02-12 - 08:06:59pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:07:00pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:07:00pm - Az oldal újratöltődött.
+2026-02-12 - 08:07:00pm - autok osztály létrejött.
+2026-02-12 - 08:07:00pm - autok osztály megsemmisült.
+2026-02-12 - 08:07:02pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:07:02pm - Az oldal újratöltődött.
+2026-02-12 - 08:07:02pm - foglalasok osztály létrejött.
+2026-02-12 - 08:07:02pm - SELECT * FROM foglalas
+2026-02-12 - 08:07:02pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:07:05pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:07:05pm - Az oldal újratöltődött.
+2026-02-12 - 08:07:05pm - autok osztály létrejött.
+2026-02-12 - 08:07:05pm - autok osztály megsemmisült.
+2026-02-12 - 08:07:14pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:07:14pm - Az oldal újratöltődött.
+2026-02-12 - 08:07:14pm - foglalasok osztály létrejött.
+2026-02-12 - 08:07:14pm - SELECT * FROM foglalas
+2026-02-12 - 08:07:14pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:07:15pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:07:15pm - Az oldal újratöltődött.
+2026-02-12 - 08:07:15pm - autok osztály létrejött.
+2026-02-12 - 08:07:15pm - autok osztály megsemmisült.
+2026-02-12 - 08:08:05pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:05pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:05pm - foglalasok osztály létrejött.
+2026-02-12 - 08:08:05pm - SELECT * FROM foglalas
+2026-02-12 - 08:08:05pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:08:08pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:08pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:08pm - autok osztály létrejött.
+2026-02-12 - 08:08:08pm - autok osztály megsemmisült.
+2026-02-12 - 08:08:28pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:28pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:28pm - autok osztály létrejött.
+2026-02-12 - 08:08:28pm - autok osztály megsemmisült.
+2026-02-12 - 08:08:29pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:29pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:29pm - autok osztály létrejött.
+2026-02-12 - 08:08:29pm - autok osztály megsemmisült.
+2026-02-12 - 08:08:30pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:30pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:31pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:31pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:32pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:32pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:32pm - foglalasok osztály létrejött.
+2026-02-12 - 08:08:32pm - SELECT * FROM foglalas
+2026-02-12 - 08:08:32pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:08:33pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:33pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:33pm - autok osztály létrejött.
+2026-02-12 - 08:08:33pm - autok osztály megsemmisült.
+2026-02-12 - 08:08:36pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:36pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:36pm - foglalasok osztály létrejött.
+2026-02-12 - 08:08:36pm - SELECT * FROM foglalas
+2026-02-12 - 08:08:36pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:08:37pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:08:37pm - Az oldal újratöltődött.
+2026-02-12 - 08:08:37pm - autok osztály létrejött.
+2026-02-12 - 08:08:37pm - autok osztály megsemmisült.
+2026-02-12 - 08:13:51pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:13:51pm - Az oldal újratöltődött.
+2026-02-12 - 08:13:51pm - autok osztály létrejött.
+2026-02-12 - 08:13:51pm - autok osztály megsemmisült.
+2026-02-12 - 08:13:53pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:13:53pm - Az oldal újratöltődött.
+2026-02-12 - 08:13:53pm - foglalasok osztály létrejött.
+2026-02-12 - 08:13:53pm - SELECT * FROM foglalas
+2026-02-12 - 08:13:53pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:13:53pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:13:53pm - Az oldal újratöltődött.
+2026-02-12 - 08:13:53pm - foglalasok osztály létrejött.
+2026-02-12 - 08:13:53pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:15:00pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:15:00pm - Az oldal újratöltődött.
+2026-02-12 - 08:15:00pm - foglalasok osztály létrejött.
+2026-02-12 - 08:15:00pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:15:32pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:15:32pm - Az oldal újratöltődött.
+2026-02-12 - 08:15:32pm - foglalasok osztály létrejött.
+2026-02-12 - 08:15:32pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:15:35pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:15:35pm - Az oldal újratöltődött.
+2026-02-12 - 08:15:35pm - autok osztály létrejött.
+2026-02-12 - 08:15:35pm - autok osztály megsemmisült.
+2026-02-12 - 08:16:12pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:16:12pm - Az oldal újratöltődött.
+2026-02-12 - 08:16:12pm - foglalasok osztály létrejött.
+2026-02-12 - 08:16:12pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:16:13pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:16:13pm - Az oldal újratöltődött.
+2026-02-12 - 08:16:13pm - foglalasok osztály létrejött.
+2026-02-12 - 08:16:13pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:16:21pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:16:21pm - Az oldal újratöltődött.
+2026-02-12 - 08:16:21pm - foglalasok osztály létrejött.
+2026-02-12 - 08:16:21pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:16:24pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:16:24pm - Az oldal újratöltődött.
+2026-02-12 - 08:16:24pm - foglalasok osztály létrejött.
+2026-02-12 - 08:16:24pm - SELECT * FROM foglalas
+2026-02-12 - 08:16:24pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:16:32pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:16:32pm - Az oldal újratöltődött.
+2026-02-12 - 08:16:32pm - foglalasok osztály létrejött.
+2026-02-12 - 08:16:32pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:16:41pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:16:41pm - Az oldal újratöltődött.
+2026-02-12 - 08:16:41pm - foglalasok osztály létrejött.
+2026-02-12 - 08:16:41pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:18:22pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:18:22pm - Az oldal újratöltődött.
+2026-02-12 - 08:18:22pm - foglalasok osztály létrejött.
+2026-02-12 - 08:18:22pm - SELECT * FROM foglalas
+2026-02-12 - 08:18:22pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:19:45pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:19:45pm - Az oldal újratöltődött.
+2026-02-12 - 08:19:45pm - foglalasok osztály létrejött.
+2026-02-12 - 08:19:45pm - SELECT * FROM foglalas
+2026-02-12 - 08:19:45pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:19:48pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:19:48pm - Az oldal újratöltődött.
+2026-02-12 - 08:19:48pm - foglalasok osztály létrejött.
+2026-02-12 - 08:19:48pm - SELECT * FROM foglalas
+2026-02-12 - 08:19:48pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:20:35pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:20:35pm - Az oldal újratöltődött.
+2026-02-12 - 08:20:35pm - autok osztály létrejött.
+2026-02-12 - 08:20:35pm - autok osztály megsemmisült.
+2026-02-12 - 08:21:19pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:21:19pm - Az oldal újratöltődött.
+2026-02-12 - 08:21:19pm - foglalasok osztály létrejött.
+2026-02-12 - 08:21:19pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:21:47pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:21:47pm - Az oldal újratöltődött.
+2026-02-12 - 08:21:47pm - autok osztály létrejött.
+2026-02-12 - 08:21:47pm - autok osztály megsemmisült.
+2026-02-12 - 08:21:48pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:21:48pm - Az oldal újratöltődött.
+2026-02-12 - 08:21:49pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:21:49pm - Az oldal újratöltődött.
+2026-02-12 - 08:21:50pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:21:50pm - Az oldal újratöltődött.
+2026-02-12 - 08:21:50pm - foglalasok osztály létrejött.
+2026-02-12 - 08:21:50pm - SELECT * FROM foglalas
+2026-02-12 - 08:21:50pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:21:52pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:21:52pm - Az oldal újratöltődött.
+2026-02-12 - 08:21:52pm - foglalasok osztály létrejött.
+2026-02-12 - 08:21:52pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:25:21pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:25:21pm - Az oldal újratöltődött.
+2026-02-12 - 08:25:21pm - foglalasok osztály létrejött.
+2026-02-12 - 08:25:21pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:25:24pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:25:24pm - Az oldal újratöltődött.
+2026-02-12 - 08:25:24pm - foglalasok osztály létrejött.
+2026-02-12 - 08:25:24pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:25:27pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:25:27pm - Az oldal újratöltődött.
+2026-02-12 - 08:25:27pm - foglalasok osztály létrejött.
+2026-02-12 - 08:25:27pm - SELECT * FROM foglalas
+2026-02-12 - 08:25:27pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:25:30pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:25:30pm - Az oldal újratöltődött.
+2026-02-12 - 08:25:30pm - foglalasok osztály létrejött.
+2026-02-12 - 08:25:30pm - SELECT * FROM foglalas
+2026-02-12 - 08:25:30pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:25:33pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:25:33pm - Az oldal újratöltődött.
+2026-02-12 - 08:25:33pm - foglalasok osztály létrejött.
+2026-02-12 - 08:25:33pm - SELECT * FROM foglalas
+2026-02-12 - 08:25:33pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:26:46pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:26:46pm - Az oldal újratöltődött.
+2026-02-12 - 08:26:46pm - foglalasok osztály létrejött.
+2026-02-12 - 08:26:46pm - SELECT * FROM foglalas
+2026-02-12 - 08:26:46pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:27:17pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:27:17pm - Az oldal újratöltődött.
+2026-02-12 - 08:27:17pm - foglalasok osztály létrejött.
+2026-02-12 - 08:27:17pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:27:28pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:27:28pm - Az oldal újratöltődött.
+2026-02-12 - 08:27:28pm - foglalasok osztály létrejött.
+2026-02-12 - 08:27:28pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:23pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:23pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:23pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:23pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:25pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:25pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:25pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:25pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:31pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:31pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:31pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:31pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:35pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:35pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:35pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:35pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:36pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:36pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:36pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:36pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:40pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:40pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:40pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:40pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:41pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:41pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:41pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:41pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:42pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:42pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:42pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:42pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:42pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:42pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:42pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:42pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:28:48pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:28:48pm - Az oldal újratöltődött.
+2026-02-12 - 08:28:48pm - foglalasok osztály létrejött.
+2026-02-12 - 08:28:48pm - SELECT * FROM foglalas
+2026-02-12 - 08:28:48pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:29:02pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:29:02pm - Az oldal újratöltődött.
+2026-02-12 - 08:29:02pm - foglalasok osztály létrejött.
+2026-02-12 - 08:29:02pm - SELECT * FROM foglalas
+2026-02-12 - 08:29:02pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:29:03pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:29:03pm - Az oldal újratöltődött.
+2026-02-12 - 08:29:03pm - foglalasok osztály létrejött.
+2026-02-12 - 08:29:03pm - SELECT * FROM foglalas
+2026-02-12 - 08:29:03pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:29:04pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:29:04pm - Az oldal újratöltődött.
+2026-02-12 - 08:29:04pm - foglalasok osztály létrejött.
+2026-02-12 - 08:29:04pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:29:15pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:29:15pm - Az oldal újratöltődött.
+2026-02-12 - 08:29:15pm - foglalasok osztály létrejött.
+2026-02-12 - 08:29:15pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:29:21pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:29:21pm - Az oldal újratöltődött.
+2026-02-12 - 08:29:21pm - foglalasok osztály létrejött.
+2026-02-12 - 08:29:21pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:30:14pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:14pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:14pm - autok osztály létrejött.
+2026-02-12 - 08:30:14pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 08:30:14pm - autok osztály megsemmisült.
+2026-02-12 - 08:30:14pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:14pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:14pm - foglalasok osztály létrejött.
+2026-02-12 - 08:30:14pm - SELECT * FROM foglalas
+2026-02-12 - 08:30:14pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:30:15pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:15pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:15pm - foglalasok osztály létrejött.
+2026-02-12 - 08:30:15pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:30:17pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:17pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:17pm - foglalasok osztály létrejött.
+2026-02-12 - 08:30:17pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:30:20pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:20pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:21pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:21pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:21pm - foglalasok osztály létrejött.
+2026-02-12 - 08:30:21pm - SELECT * FROM foglalas
+2026-02-12 - 08:30:21pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:30:22pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:22pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:22pm - autok osztály létrejött.
+2026-02-12 - 08:30:22pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 08:30:22pm - autok osztály megsemmisült.
+2026-02-12 - 08:30:22pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:22pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:23pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:23pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:23pm - autok osztály létrejött.
+2026-02-12 - 08:30:23pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 08:30:23pm - autok osztály megsemmisült.
+2026-02-12 - 08:30:24pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:24pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:26pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:26pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:26pm - autok osztály létrejött.
+2026-02-12 - 08:30:26pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 napi_dij 
+						  FROM   autok
+2026-02-12 - 08:30:26pm - autok osztály megsemmisült.
+2026-02-12 - 08:30:27pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:27pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:27pm - foglalasok osztály létrejött.
+2026-02-12 - 08:30:27pm - SELECT * FROM foglalas
+2026-02-12 - 08:30:27pm - foglalasok osztály megsemmisült.
+2026-02-12 - 08:30:35pm - Böngészőben betöltődött az oldal.
+2026-02-12 - 08:30:35pm - Az oldal újratöltődött.
+2026-02-12 - 08:30:35pm - autok osztály létrejött.
+2026-02-12 - 08:30:35pm - autok osztály megsemmisült.

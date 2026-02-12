@@ -1,6 +1,6 @@
 <?php
 
-$fogalasok = new foglalas($db_kapcsolat,$naplo);
+$foglalasok = new foglalasok($db_kapcsolat,$naplo);
 
 class foglalasok 
 {
