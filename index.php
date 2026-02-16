@@ -153,7 +153,12 @@
 		 									 break;
 
 		 		case 'foglalastorol' :   	include('php/foglalaskezeles.php');
-		 									include('html/torlesmegerosites.html');
+		 									include('html/foglalas_torlesmegerosito.html');
+		 									break;
+
+		 		case 'foglalastorles' :  		include('php/foglalaskezeles.php');
+		 									$foglalasok->torles($_POST['id']);
+		 									include('html/foglalasok.html');
 		 									break;
 		 		default : 				break;
 		 	}

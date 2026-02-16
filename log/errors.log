@@ -694,3 +694,38 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\index.php on line 136
+[16-Feb-2026 20:10:05 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'allapot' in 'field list' in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php:139
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php(139): mysqli_query(Object(mysqli), 'INSERT INTO fog...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(136): foglalasok->ment()
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 139
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "allapot" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 77
+[16-Feb-2026 20:10:38 Europe/Budapest] PHP Warning:  Undefined array key "megjegyzes" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 78
+[16-Feb-2026 20:11:06 Europe/Budapest] PHP Deprecated:  Creation of dynamic property foglalasok::$allapot is deprecated in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 108
+[16-Feb-2026 20:11:06 Europe/Budapest] PHP Deprecated:  Creation of dynamic property foglalasok::$megjegyzes is deprecated in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 110
+[16-Feb-2026 20:25:08 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "function" or "const" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 84
+[16-Feb-2026 20:28:41 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "function" or "const" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 84
+[16-Feb-2026 20:28:42 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "function" or "const" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 84
+[16-Feb-2026 20:31:05 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "function" or "const" in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 84
+[16-Feb-2026 20:37:40 Europe/Budapest] PHP Warning:  Undefined array key "foglalas_id" in C:\xampp\htdocs\GitHub\autoberles\index.php on line 160
+[16-Feb-2026 20:37:40 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php:231
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php(231): mysqli_query(Object(mysqli), 'DELETE FROM fog...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(160): foglalasok->torles(NULL)
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 231

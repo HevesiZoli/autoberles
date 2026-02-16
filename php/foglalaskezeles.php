@@ -13,8 +13,6 @@ class foglalasok
  	public $jarmu;
  	public $kezdet;
  	public $vege;
- 	public $allapot;
- 	public $megjegyzes;
  	public $letrehozva;
 
  	// Megmondja, hogy milyen műveletet hajtok éppen végre!
@@ -41,54 +39,46 @@ class foglalasok
  	}
 
  	public function _foglalasok_lista() 
- 	{
+{
+    $HTMLSorok = "";
 
- 		// - Kell egy változó, amiben a lista HTML részét tárolom
-		$HTMLSorok = "";
+    $SQLlekerdezes = "SELECT * FROM foglalas";
+    $this->naplo->_bejegyez($SQLlekerdezes);
 
-		// - A termékeket akarom listázni, ezek adatbázisban vannak
-		//   ezért elkészítem az SQL lekérdezést!
+    $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
 
-		$SQLlekerdezes = "SELECT * FROM foglalas";
+    if ($SQLeredmeny)
+    {
+        while ($row = mysqli_fetch_assoc($SQLeredmeny)) 
+        {
+            $editcommand  = '<form action="index.php?menupont=foglalasokszerkeszt" method="post">';
+            $editcommand .= '<input type="hidden" name="id" value="'.$row['foglalas_id'].'">';
+            $editcommand .= '<input type="submit" name="szerkeszt" value="Szerkesztés">';
+            $editcommand .= '</form>';
+                 
+            $deletecommand  = '<form action="index.php?menupont=foglalastorol" method="post">';
+            $deletecommand .= '<input type="hidden" name="id" value="'.$row['foglalas_id'].'">';
+            $deletecommand .= '<input type="submit" name="torol" value="Törlés">';
+            $deletecommand .= '</form>';
 
-		// Példa a naplózásra. Kiírom naplóba a lekérdezést
-		$this->naplo->_bejegyez($SQLlekerdezes);
+            $HTMLSorok .= "<tr>
+                <td>".$row['nev']."</td>
+                <td>".$row['jarmu']."</td>
+                <td>".$row['kezdet']."</td>
+                <td>".$row['vege']."</td>
+                <td>".$row['letrehozva']."</td>
+                <td>".$editcommand.$deletecommand."</td>
+            </tr>";
+        }
+    }
+    else 
+    {
+        $this->naplo->_bejegyez(mysqli_error($this->db_kapcsolat->_kapcsolat()));
+    }
 
-		// Lefuttatjuk az SQL lekérdezést!
-		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
+    return $HTMLSorok;
+}
 
-		// - A futtatást követően van egy központi változóz, ahonnan
-		//   kinyerhetem azt, hogy volt-e hibám?
-		if (empty($sqlhiba))
-		{
-			// - Amennyiben az $sqlhiba üres, 
-			//   abban az esetben fel kell dolgoznom
-			//   az eredményhalmazt!
-			while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
-			{
-				$editcommand = "index.php?menupont=foglalasok&foglalas=szerkeszt&foglalas_id=".$egysor['foglalas_id'];
-				$delcommand = "index.php?menupont=foglalasok&foglalas=torol&foglalas_id=".$egysor['foglalas_id'];
-
-				$HTMLSorok .= "<tr>";
-				$HTMLSorok .= "<td>".$egysor['nev']."</td>";
-				$HTMLSorok .= "<td>".$egysor['jarmu']."</td>";
-				$HTMLSorok .= "<td>".$egysor['kezdet']."</td>";
-				$HTMLSorok .= "<td>".$egysor['vege']."</td>";
-				$HTMLSorok .= "<td>".$egysor['allapot']."</td>";
-				$HTMLSorok .= "<td>".$egysor['megjegyzes']."</td>";
-				$HTMLSorok .= "<td>".$egysor['letrehozva']."</td>";
-				$HTMLSorok .= ' <td><a href="'.$editcommand.'">Szerkesztés </a><a href="'.$delcommand.'"> Törlés</a></td>';
-				$HTMLSorok .= "</tr>";
-			}
-		}
-
-		else {
-			// - Nem volt üres az sqlhiba, ezért elküldöm a naplóba ahibát!
-			$this->naplo->_bejegyez($sqlhiba);
-		}
-		// Itt adom vissza a HTML sorokat a lapnak.
-		return $HTMLSorok;
-	}
 
 	public function ment() 
 	{
@@ -108,10 +98,6 @@ class foglalasok
 			$this->kezdet = $_POST['kezdet'];} else {$this->kezdet = '';}
 		if (isset($_POST['vege'])) {
 			$this->vege = $_POST['vege'];} else {$this->vege = '';}
-		if (isset($_POST['allapot'])) {
-			$this->allapot = $_POST['allapot'];} else {$this->allapot = '';}
-		if (isset($_POST['megjegyzes'])) {
-			$this->megjegyzes = $_POST['megjegyzes'];} else {$this->megjegyzes = '';}
 		if (isset($_POST['letrehozva'])) {
 			$this->letrehozva = $_POST['letrehozva'];} else {$this->letrehozva = '';}
 
@@ -120,8 +106,8 @@ class foglalasok
 
 		// Kötelező érték vizsgálata
 		if (empty($this->nev) || empty($this->jarmu) || empty($this->kezdet) ||
-	 	    empty($this->vege) || empty($this->allapot) || empty($this->megjegyzes) || empty($this->letrehozva)) 
-			{$this->uzenet = 'Kérem tötlse ki a pirossal jelölt mezőket!';
+	 	    empty($this->vege)|| empty($this->letrehozva)) 
+			{$this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
 			 $sikeresmentes = false;}
 
 		// - Cask akkor kezdek a mentéhez, ha a kötelező érték
@@ -132,8 +118,8 @@ class foglalasok
 			// - A termékeket akarom listázni, ezek adatbázisban vannak
 			//   ezért elkészítem az SQL lekérdezést!
 
-			$SQLlekerdezes = "INSERT INTO foglalas (nev,jarmu,kezdet,vege,allapot,megjegyzes,letrehozva) 
-							  VALUES ('$this->nev','$this->jarmu','$this->kezdet','$this->vege','$this->allapot','$this->megjegyzes','$this->letrehozva') ";
+			$SQLlekerdezes = "INSERT INTO foglalas (nev,jarmu,kezdet,vege,letrehozva) 
+							  VALUES ('$this->nev','$this->jarmu','$this->kezdet','$this->vege','$this->letrehozva') ";
 
 			// Lefuttatjuk az SQL lekérdezést!
 			$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
@@ -170,8 +156,6 @@ class foglalasok
 				$this->jarmu = $egysor['jarmu'];
 				$this->kezdet = $egysor['kezdet'];
 				$this->vege = $egysor['vege'];
-				$this->allapot = $egysor['allapot'];
-				$this->megjegyzes = $egysor['megjegyzes'];
 				$this->letrehozva = $egysor['letrehozva'];
 			}
 		}
@@ -200,10 +184,6 @@ class foglalasok
 			$this->kezdet = $_POST['kezdet'];} else {$this->kezdet = '';}
 		if (isset($_POST['vege'])) {
 			$this->vege = $_POST['vege'];} else {$this->vege = '';}
-		if (isset($_POST['allapot'])) {
-			$this->allapot = $_POST['allapot'];} else {$this->allapot = '';}
-		if (isset($_POST['megjegyzes'])) {
-			$this->megjegyzes = $_POST['megjegyzes'];} else {$this->megjegyzes = '';}
 		if (isset($_POST['letrehozva'])) {
 			$this->letrehozva = $_POST['letrehozva'];} else {$this->letrehozva = '';}
 
@@ -212,8 +192,8 @@ class foglalasok
 
 		// Kötelező érték vizsgálata
 		if (empty($this->nev) || empty($this->jarmu) || empty($this->kezdet) ||
-	 	    empty($this->vege) || empty($this->allapot) || empty($this->megjegyzes) || empty($this->letrehozva)) 
-			{$this->uzenet = 'Kérem tötlse ki a pirossal jelölt mezőket!';
+	 	    empty($this->vege)|| empty($this->letrehozva)) 
+			{$this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
 			 $sikeresmentes = false;}
 
 		// - Cask akkor kezdek a mentéhez, ha a kötelező érték
@@ -229,8 +209,6 @@ class foglalasok
 							  		 jarmu = '$this->jarmu',
 							  		 kezdet = '$this->kezdet',
 							  		 vege = '$this->vege',
-							  		 allapot = '$this->allapot',
-							  		 megjegyzes = '$this->megjegyzes',
 							  		 letrehozva = '$this->letrehozva'
 							  WHERE  foglalas_id = '$this->foglalas_id' ";
 
