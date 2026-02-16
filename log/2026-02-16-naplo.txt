@@ -658,3 +658,17 @@
 2026-02-16 - 09:01:24pm - foglalasok osztály létrejött.
 2026-02-16 - 09:01:24pm - SELECT * FROM foglalas
 2026-02-16 - 09:01:24pm - foglalasok osztály megsemmisült.
+2026-02-16 - 09:10:09pm - Böngészőben betöltődött az oldal.
+2026-02-16 - 09:10:09pm - Az oldal újratöltődött.
+2026-02-16 - 09:10:09pm - foglalasok osztály létrejött.
+2026-02-16 - 09:10:09pm - SELECT * FROM foglalas
+2026-02-16 - 09:10:09pm - foglalasok osztály megsemmisült.
+2026-02-16 - 09:10:11pm - Böngészőben betöltődött az oldal.
+2026-02-16 - 09:10:11pm - Az oldal újratöltődött.
+2026-02-16 - 09:10:11pm - foglalasok osztály létrejött.
+2026-02-16 - 09:10:11pm - foglalasok osztály megsemmisült.
+2026-02-16 - 09:10:12pm - Böngészőben betöltődött az oldal.
+2026-02-16 - 09:10:12pm - Az oldal újratöltődött.
+2026-02-16 - 09:10:12pm - foglalasok osztály létrejött.
+2026-02-16 - 09:10:12pm - SELECT * FROM foglalas
+2026-02-16 - 09:10:12pm - foglalasok osztály megsemmisült.
