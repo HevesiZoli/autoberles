@@ -2,9 +2,9 @@
 
 $RESTVAGYOK = true;
 
-include('utvonal.php');     
-include('config/config.inc');
-include('naplo.php');
+include('utvonal.php');  
+include('naplo.php');   
+include('adatbaziskapcsolat.php');
 include('jarmuvek.php'); // $autok objektum létrehozása
 
 $uzenet= file_get_contents('php://input');
