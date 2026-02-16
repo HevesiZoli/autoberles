@@ -9,7 +9,8 @@ class foglalasok
 
  	// Adatbázis mezők adattagjai.
  	public $foglalas_id;
- 	public $nev ;
+ 	public $nev;
+ 	public $email;
  	public $jarmu;
  	public $kezdet;
  	public $vege;
@@ -63,6 +64,7 @@ class foglalasok
 
             $HTMLSorok .= "<tr>
                 <td>".$row['nev']."</td>
+                <td>".$row['email']."</td>
                 <td>".$row['jarmu']."</td>
                 <td>".$row['kezdet']."</td>
                 <td>".$row['vege']."</td>
@@ -92,6 +94,8 @@ class foglalasok
 		//   vizsgálatnál majd kibukik, ha nem kaptam adatot!
 		if (isset($_POST['nev'])) {
 			$this->nev = $_POST['nev'];} else {$this->nev = '';}
+		if (isset($_POST['email'])) {
+			$this->email = $_POST['email'];} else {$this->email = '';}
 		if (isset($_POST['jarmu'])) {
 			$this->jarmu = $_POST['jarmu'];} else {$this->jarmu = '';}
 		if (isset($_POST['kezdet'])) {
@@ -105,7 +109,7 @@ class foglalasok
 		$sikeresmentes = true;
 
 		// Kötelező érték vizsgálata
-		if (empty($this->nev) || empty($this->jarmu) || empty($this->kezdet) ||
+		if (empty($this->nev) || empty($this->email) || empty($this->jarmu) || empty($this->kezdet) ||
 	 	    empty($this->vege)|| empty($this->letrehozva)) 
 			{$this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
 			 $sikeresmentes = false;}
@@ -118,8 +122,8 @@ class foglalasok
 			// - A termékeket akarom listázni, ezek adatbázisban vannak
 			//   ezért elkészítem az SQL lekérdezést!
 
-			$SQLlekerdezes = "INSERT INTO foglalas (nev,jarmu,kezdet,vege,letrehozva) 
-							  VALUES ('$this->nev','$this->jarmu','$this->kezdet','$this->vege','$this->letrehozva') ";
+			$SQLlekerdezes = "INSERT INTO foglalas (nev,email,jarmu,kezdet,vege,letrehozva) 
+							  VALUES ('$this->nev','$this->email','$this->jarmu','$this->kezdet','$this->vege','$this->letrehozva') ";
 
 			// Lefuttatjuk az SQL lekérdezést!
 			$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
@@ -153,6 +157,7 @@ class foglalasok
 			while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
 			{
 				$this->nev = $egysor['nev'];
+				$this->nev = $egysor['email'];
 				$this->jarmu = $egysor['jarmu'];
 				$this->kezdet = $egysor['kezdet'];
 				$this->vege = $egysor['vege'];
@@ -178,6 +183,8 @@ class foglalasok
 		//   vizsgálatnál majd kibukik, ha nem kaptam adatot!
 		if (isset($_POST['nev'])) {
 			$this->nev = $_POST['nev'];} else {$this->nev = '';}
+		if (isset($_POST['email'])) {
+			$this->email = $_POST['email'];} else {$this->email = '';}
 		if (isset($_POST['jarmu'])) {
 			$this->jarmu = $_POST['jarmu'];} else {$this->jarmu = '';}
 		if (isset($_POST['kezdet'])) {
@@ -191,7 +198,7 @@ class foglalasok
 		$sikeresmentes = true;
 
 		// Kötelező érték vizsgálata
-		if (empty($this->nev) || empty($this->jarmu) || empty($this->kezdet) ||
+		if (empty($this->nev) || empty($this->email) || empty($this->jarmu) || empty($this->kezdet) ||
 	 	    empty($this->vege)|| empty($this->letrehozva)) 
 			{$this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
 			 $sikeresmentes = false;}
@@ -206,6 +213,7 @@ class foglalasok
 
 			$SQLlekerdezes = "UPDATE foglalas 
 							  SET	 nev = '$this->nev',
+							  		 email = '$this->email',
 							  		 jarmu = '$this->jarmu',
 							  		 kezdet = '$this->kezdet',
 							  		 vege = '$this->vege',
