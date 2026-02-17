@@ -288,58 +288,58 @@ class autok {
   }
 }
 
- public function _lista_xml_str() 
-	{
+ //public function _lista_xml_str() 
+	//{
 
  		// - Kell egy változó, amiben a lista xml részét tárolom
-		$XMLSorok = "";
+		//$XMLSorok = "";
 
 		// - A termékeket akarom listázni, ezek adatbázisban vannak
 		//   ezért elkészítem az SQL lekérdezést!
 
-		$SQLlekerdezes = "SELECT * FROM termekek";
+		//$SQLlekerdezes = "SELECT * FROM termekek";
 
 		// Példa a naplózásra. Kiírom naplóba a lekérdezést
-		$this->naplo->_bejegyez($SQLlekerdezes);
+		//$this->naplo->_bejegyez($SQLlekerdezes);
 
 		// Lefuttatjuk az SQL lekérdezést!
-		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
+		//$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
 
 		// - A futtatást követően van egy központi változóz, ahonnan
 		//   kinyerhetem azt, hogy volt-e hibám?
-		if (empty($sqlhiba))
-		{
+		//if (empty($sqlhiba))
+		//{
 
 			// - Amennyiben az $sqlhiba üres, 
 			//   abban az esetben fel kell dolgoznom
 			//   az eredményhalmazt!
-			if(mysqli_num_rows($SQLeredmeny) > 0)
-			{
+			//if(mysqli_num_rows($SQLeredmeny) > 0)
+			//{
 
-				$XMLSorok="<autok>";
+				//$XMLSorok="<autok>";
 
-					while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
-					{
+					//while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
+					//{
 						//Felépítem az xml szerkezetet string formátumban
 						//Nem elegáns megoldás
-						$XMLSorok.="<auto>";
-							$XMLSorok.='<marka>'.$egysor['marka'].'</marka>';
-							$XMLSorok.='<modell>'.$egysor['modell'].'</modell>';
-							$XMLSorok.='<evjarat>'.$egysor['evjarat'].'</evjarat>';
-							$XMLSorok.='<alvazszam>'.$egysor['alvazszam'].'</alvazszam>';
-							$XMLSorok.='<rendszam>'.$egysor['rendszam'].'</rendszam>';
-							$XMLSorok.='<allapot>'.$egysor['allapot'].'</allapot>';
-							$XMLSorok.='<napi_dij>'.$egysor['napi_dij'].'</napi_dij>';
-						$XMLSorok.="</auto>";
-					}
-				$XMLSorok.="</autok>";
-			}
-		}
-		else {
+						//$XMLSorok.="<auto>";
+							//$XMLSorok.='<marka>'.$egysor['marka'].'</marka>';
+							//$XMLSorok.='<modell>'.$egysor['modell'].'</modell>';
+							//$XMLSorok.='<evjarat>'.$egysor['evjarat'].'</evjarat>';
+							//$XMLSorok.='<alvazszam>'.$egysor['alvazszam'].'</alvazszam>';
+							//$XMLSorok.='<rendszam>'.$egysor['rendszam'].'</rendszam>';
+							//$XMLSorok.='<allapot>'.$egysor['allapot'].'</allapot>';
+							//$XMLSorok.='<napi_dij>'.$egysor['napi_dij'].'</napi_dij>';
+						//$XMLSorok.="</auto>";
+					//}
+				//$XMLSorok.="</autok>";
+			//}
+		//}
+		//else {
 			// - Nem volt üres az sqlhiba, ezért elküldöm a naplóba ahibát!
-			$this->naplo->_bejegyez($sqlhiba);
-		}
-		// Itt adom vissza a HTML sorokat a lapnak.
-		return $XMLSorok;
+			//$this->naplo->_bejegyez($sqlhiba);
+		//}
+		//// Itt adom vissza a HTML sorokat a lapnak.
+		//return $XMLSorok;
  	}
 ?>
