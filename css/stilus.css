@@ -109,8 +109,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 1rem;
-
-  background: linear-gradient(90deg, #2563eb, #1e40af);
   z-index: 1000;
 }
 
@@ -121,7 +119,7 @@ ul li {
 ul li a {
   display: block;
   padding: 0.5rem 1rem;
-  color: #e5e7eb;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
@@ -130,7 +128,7 @@ ul li a {
 ul li a:hover,
 ul li a.active {
   background: rgba(255,255,255,0.18);
-  color: #fff;
+  color: #c7c7c7;
 }
 .main {
   padding-top: 32px;
@@ -174,4 +172,10 @@ a
   border-color: #ff5454;
   background-color: #ff8a8a;
   padding: 3px;
+}
+ul {
+    display: flex;
+}
+ul a {
+    display: block;
 }

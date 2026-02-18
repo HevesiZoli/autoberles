@@ -46,6 +46,7 @@ class autok {
  	public $alvazszam;
  	public $rendszam;
  	public $allapot;
+ 	public $deleted;
  	public $napi_dij;
 
 
@@ -87,8 +88,10 @@ class autok {
 								 alvazszam,
 								 rendszam,
 								 allapot,
+								 deleted,
 								 napi_dij 
-						  FROM   autok";
+						  FROM   autok
+						  WHERE deleted = 0";
 
 		// Példa a naplózásra. Kiírom naplóba a lekérdezést
 		$this->naplo->_bejegyez($SQLlekerdezes);
@@ -276,7 +279,9 @@ class autok {
 		$this->muvelet = 'delete';
 		$this->auto_id = $auto_id;
 
-		$SQLlekerdezes = "DELETE FROM autok WHERE auto_id = $auto_id";
+		$SQLlekerdezes = "UPDATE autok
+						  SET deleted = 1
+						  WHERE auto_id = $auto_id";
 
 		// Lefuttatjuk az SQL lekérdezést!
 		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
@@ -285,10 +290,9 @@ class autok {
 		{
 			$this->naplo->_bejegyez($sqlhiba);
 		}
-  }
-}
+  	}
 
- public function _lista_xml_str() 
+public function _lista_xml_str() 
 	{
 
  		// - Kell egy változó, amiben a lista xml részét tárolom
@@ -342,4 +346,5 @@ class autok {
 		// Itt adom vissza a HTML sorokat a lapnak.
 		return $XMLSorok;
  	}
+ }
 ?>

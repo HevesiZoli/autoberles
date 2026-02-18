@@ -15,6 +15,7 @@ class foglalasok
  	public $kezdet;
  	public $vege;
  	public $letrehozva;
+ 	public $deleted;
 
  	// Megmondja, hogy milyen műveletet hajtok éppen végre!
  	public $muvelet;
@@ -43,7 +44,7 @@ class foglalasok
 {
     $HTMLSorok = "";
 
-    $SQLlekerdezes = "SELECT * FROM foglalas";
+    $SQLlekerdezes = "SELECT * FROM foglalas WHERE deleted = 0";
     $this->naplo->_bejegyez($SQLlekerdezes);
 
     $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
@@ -233,7 +234,9 @@ class foglalasok
 		$this->muvelet = 'delete';
 		$this->foglalas_id = $foglalas_id;
 
-		$SQLlekerdezes = "DELETE FROM foglalas WHERE foglalas_id = $foglalas_id";
+		$SQLlekerdezes = "UPDATE foglalas
+						  SET deleted = 1
+						  WHERE foglalas_id = $foglalas_id";
 
 		// Lefuttatjuk az SQL lekérdezést!
 		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
