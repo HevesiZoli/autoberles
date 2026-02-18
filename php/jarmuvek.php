@@ -2,6 +2,9 @@
 
 $autok = new autok($db_kapcsolat,$naplo);
 
+if(!isset($RESTVAGYOK))
+{}
+
 		/*$menupont = $_GET['menupont'];
 		switch ($menupont) {
 				case 'jarmuvek' : include('html/jarmuvek.html');
@@ -320,13 +323,13 @@ class autok
 			if(mysqli_num_rows($SQLeredmeny) > 0)
 			{
 
-				$XMLSorok="<autok>";
+				$XMLSorok="<jarmuvek>";
 
 					while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
 					{
 						//Felépítem az xml szerkezetet string formátumban
 						//Nem elegáns megoldás
-						$XMLSorok.="<auto>";
+						$XMLSorok.="<jarmu>";
 							$XMLSorok.='<marka>'.$egysor['marka'].'</marka>';
 							$XMLSorok.='<modell>'.$egysor['modell'].'</modell>';
 							$XMLSorok.='<evjarat>'.$egysor['evjarat'].'</evjarat>';
@@ -334,9 +337,9 @@ class autok
 							$XMLSorok.='<rendszam>'.$egysor['rendszam'].'</rendszam>';
 							$XMLSorok.='<allapot>'.$egysor['allapot'].'</allapot>';
 							$XMLSorok.='<napi_dij>'.$egysor['napi_dij'].'</napi_dij>';
-						$XMLSorok.="</auto>";
+						$XMLSorok.="</jarmu>";
 					}
-				$XMLSorok.="</autok>";
+				$XMLSorok.="</jarmuvek>";
 			}
 		}
 		else {
