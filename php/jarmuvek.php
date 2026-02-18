@@ -33,7 +33,8 @@ $autok = new autok($db_kapcsolat,$naplo);
 		else {if (!isset($_POST['auto_id']))
  	    {include('html/jarmuvek.html');}}*/
 
-class autok {
+class autok 
+{
 
  	private $naplo;
  	private $db_kapcsolat;
@@ -290,9 +291,8 @@ class autok {
 		{
 			$this->naplo->_bejegyez($sqlhiba);
 		}
-  	}
-
-public function _lista_xml_str() 
+  }
+  public function _lista_xml_str() 
 	{
 
  		// - Kell egy változó, amiben a lista xml részét tárolom
@@ -346,5 +346,5 @@ public function _lista_xml_str()
 		// Itt adom vissza a HTML sorokat a lapnak.
 		return $XMLSorok;
  	}
- }
+}
 ?>
