@@ -1,4 +1,4 @@
-<?php  
+<?php
 
 $ertekelesek = new ertekelesek($db_kapcsolat,$naplo);
 
