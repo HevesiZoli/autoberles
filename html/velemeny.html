@@ -1,0 +1,32 @@
+<h1>Vélemény felvétel</h1>
+<?php
+       //ha kapok id akkkor frissítem az adatokat így akkor szerkesztés van és nem kell a jelszó
+       if (isset($_POST['id']))
+       {
+              echo('<form action="index.php?menupont=velemenyekfrissit" method="POST">
+                       <input type="hidden" name="id" value="'.$_POST['id'].'">');
+       }
+       else
+       {
+              echo('<form action="index.php?menupont=velemenyekment" method="POST">');
+       }
+?>
+
+
+
+       <label><?php echo($ertekelesek->uzenet); ?></label><br>
+       <label>Csillag:</label><br>
+       <select name="csillag" value="<?php echo($ertekelesek->csillag); ?>">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+       </select><br>
+       <label>E-mail:</label><br>
+       <input type="text" name="email" value="<?php echo($ertekelesek->email); ?>"><br>
+       <label>Létrehozva:</label><br>
+       <input type="date" name="letrehozva" value="<?php echo($ertekelesek->letrehozva); ?>"><br>
+<input type="submit" name="ok" value="Mentés"><br>
+<a href="index.php?menupont=ertekelesek">Mégsem</a> 
+</form>

@@ -37,6 +37,34 @@ class ertekelesek
         $this->naplo->_bejegyez(__CLASS__.' osztály megsemmisült.');
     }
 
+    public function _velemenyek_lista() 
+    {
+        $HTMLSorok = "";
+
+        $SQLlekerdezes = "SELECT * FROM ertekelesek WHERE deleted = 0";
+        $this->naplo->_bejegyez($SQLlekerdezes);
+
+        $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
+
+        if ($SQLeredmeny)
+        {
+            while ($row = mysqli_fetch_assoc($SQLeredmeny)) 
+            {
+                    $HTMLSorok .= "<tr>
+                    <td>".$row['csillag']."</td>
+                    <td>".$row['velemeny']."</td>
+                    <td>".$row['letrehozva']."</td>
+                </tr>";
+            }
+        }
+        else 
+        {
+            $this->naplo->_bejegyez(mysqli_error($this->db_kapcsolat->_kapcsolat()));
+        }
+
+        return $HTMLSorok;
+    }
+
     public function uj_ertekeles()
     {
 
@@ -44,11 +72,43 @@ class ertekelesek
         //   az action url-jét ez alapján fogom változtatani 
         $this->muvelet = 'insert';
 
-        $SQLlekerdezes = "INSERT INTO ertekelesek (csillag, velemeny, letrehozva)
-                          VALUES ('$this->csillag', '$this->velemeny', $this->letrehozva)";
+        // - Be kell gyűjtenem a POST-olt adatokat, de figyelnem kell
+        //   arra, hogy létezik-e a POST! Abban az esetben, ha nem létezik
+        //   (else ág) a változó értékét feltöltöm semmivel! A kötelző érték
+        //   vizsgálatnál majd kibukik, ha nem kaptam adatot!
+        if (isset($_POST['csillag'])) {
+            $this->csillag = $_POST['csillag'];} else {$this->csillag = '';}
+        if (isset($_POST['velemeny'])) {
+            $this->velemeny = $_POST['velemeny'];} else {$this->velemeny = '';}
+        if (isset($_POST['letrehozva'])) {
+            $this->letrehozva = $_POST['letrehozva'];} else {$this->letrehozva = '';}
 
-        // Lefuttatjuk az SQL lekérdezést!
-        $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
+        // Feltételezem, hogy minden adat megvan ezért a mentés sikeres lesz!
+        $sikeresmentes = true;
+
+        // Kötelező érték vizsgálata
+        if (empty($this->nev) || empty($this->email) || empty($this->jarmu))
+            {
+                $this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
+                $sikeresmentes = false;}
+
+        // - Cask akkor kezdek a mentéhez, ha a kötelező érték
+        //   vizsgálat már lefutott, és a $sikeresmentes változó
+        //   megengedi a mentést!
+        if ($sikeresmentes == true)
+        {
+            // - A termékeket akarom listázni, ezek adatbázisban vannak
+            //   ezért elkészítem az SQL lekérdezést!
+
+            $SQLlekerdezes = "INSERT INTO ertekelesek (csillag, velemeny, letrehozva)
+                              VALUES ('$this->csillag', '$this->velemeny', $this->letrehozva)";
+
+            // Lefuttatjuk az SQL lekérdezést!
+            $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
+
+        }
+        // Eláruljuk a hívónak, hogy sikeres volt-e a mentés!
+        return $sikeresmentes; 
     }
 
 } 
