@@ -295,16 +295,16 @@ class autok
 			$this->naplo->_bejegyez($sqlhiba);
 		}
   }
-  public function _lista_xml_str() 
+  public function _autok_lista_xml_str() 
 	{
 
  		// - Kell egy változó, amiben a lista xml részét tárolom
 		$XMLSorok = "";
 
-		// - A termékeket akarom listázni, ezek adatbázisban vannak
+		// - Az autokat akarom listázni, ezek adatbázisban vannak
 		//   ezért elkészítem az SQL lekérdezést!
 
-		$SQLlekerdezes = "SELECT * FROM termekek";
+		$SQLlekerdezes = "SELECT * FROM autok";
 
 		// Példa a naplózásra. Kiírom naplóba a lekérdezést
 		$this->naplo->_bejegyez($SQLlekerdezes);
