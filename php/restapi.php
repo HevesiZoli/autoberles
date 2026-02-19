@@ -35,7 +35,7 @@ if(isset($uzenet) && !empty($uzenet))
      if($uzenet_xml->kerestipus=='autoklista')
     {
         $naplo->_bejegyez('Rest kérés érkezett, kérés tipusa: adatlekérdezés');
-        echo("<gyoker><valasz>OK</valasz>".$autok->_lista_xml_str()."</gyoker>");
+        echo("<gyoker><valasz>OK</valasz>".$autok->_autok_lista_xml_str()."</gyoker>");
     }
 
     if($uzenet_xml->kerestipus=='adatkuld')
@@ -57,7 +57,7 @@ if(isset($uzenet) && !empty($uzenet))
         $_POST['napi_dij']  = (string)$uzenet_xml->jarmu->napi_dij;
 
        
-        $sikeres = $autok->automodosit();
+        $sikeres = $autok->automentes();
 
         if ($sikeres) {
             echo "<gyoker><valasz>OK</valasz></gyoker>";
