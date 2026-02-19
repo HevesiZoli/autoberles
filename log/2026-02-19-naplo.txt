@@ -1,0 +1,46 @@
+2026-02-19 - 07:59:37pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:37pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:37pm - autok osztály létrejött.
+2026-02-19 - 07:59:37pm - autok osztály megsemmisült.
+2026-02-19 - 07:59:39pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:39pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:39pm - autok osztály létrejött.
+2026-02-19 - 07:59:39pm - autok osztály megsemmisült.
+2026-02-19 - 07:59:41pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:41pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:42pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:42pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:42pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:42pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:42pm - ertekelesek osztály létrejött.
+2026-02-19 - 07:59:42pm - ertekelesek osztály megsemmisült.
+2026-02-19 - 07:59:43pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:43pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:43pm - autok osztály létrejött.
+2026-02-19 - 07:59:43pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-19 - 07:59:43pm - autok osztály megsemmisült.
+2026-02-19 - 07:59:44pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:44pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:44pm - foglalasok osztály létrejött.
+2026-02-19 - 07:59:44pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-19 - 07:59:44pm - foglalasok osztály megsemmisült.
+2026-02-19 - 07:59:45pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:45pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:46pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:46pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:47pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:47pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:48pm - Böngészőben betöltődött az oldal.
+2026-02-19 - 07:59:48pm - Az oldal újratöltődött.
+2026-02-19 - 07:59:48pm - ertekelesek osztály létrejött.
+2026-02-19 - 07:59:48pm - ertekelesek osztály megsemmisült.
