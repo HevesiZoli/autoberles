@@ -2,8 +2,6 @@
 
 $autok = new autok($db_kapcsolat,$naplo);
 
-if(!isset($RESTVAGYOK))
-{}
 
 		/*$menupont = $_GET['menupont'];
 		switch ($menupont) {
