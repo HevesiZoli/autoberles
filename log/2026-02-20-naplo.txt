@@ -139,3 +139,47 @@
 						  FROM   autok
 						  WHERE deleted = 0
 2026-02-20 - 08:19:07am - autok osztály megsemmisült.
+2026-02-20 - 08:20:25am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:20:25am - Az oldal újratöltődött.
+2026-02-20 - 08:20:27am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:20:27am - Az oldal újratöltődött.
+2026-02-20 - 08:20:27am - ertekelesek osztály létrejött.
+2026-02-20 - 08:20:27am - ertekelesek osztály megsemmisült.
+2026-02-20 - 08:20:27am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:20:27am - Az oldal újratöltődött.
+2026-02-20 - 08:20:27am - autok osztály létrejött.
+2026-02-20 - 08:20:27am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-20 - 08:20:27am - autok osztály megsemmisült.
+2026-02-20 - 08:20:28am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:20:28am - Az oldal újratöltődött.
+2026-02-20 - 08:20:28am - foglalasok osztály létrejött.
+2026-02-20 - 08:20:28am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-20 - 08:20:28am - Unknown column 'deleted' in 'where clause'
+2026-02-20 - 08:20:28am - foglalasok osztály megsemmisült.
+2026-02-20 - 08:20:29am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:20:29am - Az oldal újratöltődött.
+2026-02-20 - 08:20:41am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:20:41am - Az oldal újratöltődött.
+2026-02-20 - 08:20:41am - autok osztály létrejött.
+2026-02-20 - 08:20:41am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-20 - 08:20:41am - autok osztály megsemmisült.
