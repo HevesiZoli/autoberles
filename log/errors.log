@@ -794,3 +794,7 @@ Stack trace:
 [20-Feb-2026 08:16:13 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
 [20-Feb-2026 08:16:24 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\felhasznalok.php on line 77
 [20-Feb-2026 08:16:38 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:18:33 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:18:56 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:18:58 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\felhasznalok.php on line 77
+[20-Feb-2026 08:19:07 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
