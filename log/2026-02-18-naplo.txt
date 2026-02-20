@@ -1,0 +1,29 @@
+2026-02-18 - 10:04:35am - Böngészőben betöltődött az oldal.
+2026-02-18 - 10:04:35am - Az oldal újratöltődött.
+2026-02-18 - 10:04:35am - foglalasok osztály létrejött.
+2026-02-18 - 10:04:35am - SELECT * FROM foglalas
+2026-02-18 - 10:04:35am - foglalasok osztály megsemmisült.
+2026-02-18 - 10:43:01am - Böngészőben betöltődött az oldal.
+2026-02-18 - 10:43:01am - Az oldal újratöltődött.
+2026-02-18 - 10:43:01am - autok osztály létrejött.
+2026-02-18 - 10:43:01am - autok osztály megsemmisült.
+2026-02-18 - 10:43:01am - Böngészőben betöltődött az oldal.
+2026-02-18 - 10:43:01am - Az oldal újratöltődött.
+2026-02-18 - 10:43:03am - Böngészőben betöltődött az oldal.
+2026-02-18 - 10:43:03am - Az oldal újratöltődött.
+2026-02-18 - 10:43:04am - Böngészőben betöltődött az oldal.
+2026-02-18 - 10:43:04am - Az oldal újratöltődött.
+2026-02-18 - 10:43:04am - foglalasok osztály létrejött.
+2026-02-18 - 10:43:04am - SELECT * FROM foglalas
+2026-02-18 - 10:43:04am - foglalasok osztály megsemmisült.
+2026-02-18 - 11:03:38am - Böngészőben betöltődött az oldal.
+2026-02-18 - 11:03:38am - Az oldal újratöltődött.
+2026-02-18 - 11:03:38am - foglalasok osztály létrejött.
+2026-02-18 - 11:03:38am - SELECT * FROM foglalas
+2026-02-18 - 11:03:38am - foglalasok osztály megsemmisült.
+2026-02-18 - 11:03:44am - Böngészőben betöltődött az oldal.
+2026-02-18 - 11:03:44am - Az oldal újratöltődött.
+2026-02-18 - 11:03:48am - Böngészőben betöltődött az oldal.
+2026-02-18 - 11:03:49am - Az oldal újratöltődött.
+2026-02-18 - 11:03:49am - ertekelesek osztály létrejött.
+2026-02-18 - 11:03:49am - ertekelesek osztály megsemmisült.
