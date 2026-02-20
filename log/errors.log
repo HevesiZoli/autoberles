@@ -791,3 +791,6 @@ Stack trace:
 [20-Feb-2026 08:08:56 Europe/Budapest] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in C:\xampp\htdocs\Github2\autoberles\php\belepes.php on line 91
 [20-Feb-2026 08:08:56 Europe/Budapest] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in C:\xampp\htdocs\Github2\autoberles\php\belepes.php on line 94
 [20-Feb-2026 08:08:56 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\Github2\autoberles\php\belepes.php on line 99
+[20-Feb-2026 08:16:13 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:16:24 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\felhasznalok.php on line 77
+[20-Feb-2026 08:16:38 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
