@@ -195,9 +195,9 @@
 		 							     break;
 		 	case 'belepes' :	include('html/belep.html');
 		 						break;
-		 	case 'kezdolap' :
+		 	case 'kezdolap' : 
 		 	default : 	include('php/tartalom.php');
-		 				include('html/oldal.html');			    
+		 				include('html/oldal.html');	    
 		 				break;
 		}
 	}

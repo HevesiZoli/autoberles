@@ -1,4 +1,204 @@
-<ul>
-	<li><a href="index.php?menupont=kezdolap">Kezdőlap</a></li>
-	<li><a href="index.php?menupont=belepes">Belépés</a></li>
-</ul>
+    <ul>
+        <li><a href="index.php?menupont=kezdolap">Kezdőlap</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+        <li><a href="index.php?menupont=belepes">Belépés</a></li>
+    </ul>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Autóbérlés</title>
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAV ===== */
+nav {
+    background-color: #222;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: calc(100vh - 70px); /* teljes képernyő - menü */
+    margin-top: 0px; /* menü magasság */
+    background-image: url("img/2.png"); /* NE png legyen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Szöveg stílus */
+.cim {
+    font-size: 60px;
+    margin: 0;
+}
+
+.alcim {
+    font-size: 28px;
+}
+
+/* Gomb */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.kapcsolat {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column; /* függőlegesen egymás alatt a két kontakt */
+    gap: 15px; /* távolság a telefon és az email között */
+}
+
+.kapcsolat p {
+    margin: 10px 0;
+}
+
+.terkep {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.terkep iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ===== KAPCSOLAT + TÉRKÉP EGYBEN ===== */
+
+.kapcsolat-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.kapcsolat_felirat
+{
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.kapcsolat,
+.terkep {
+    flex: 1;
+    min-width: 300px;
+}
+
+.kontakt-item {
+  display: flex;
+  align-items: center; /* ikon középre igazítva a szöveghez */
+  gap: 10px; /* távolság az ikon és a szöveg között */
+}
+
+.kontakt-item .text p {
+  margin: 0; /* eltünteti a p alapértelmezett margóját */
+  line-height: 1.2;
+}
+.kontakt-item i {
+  font-size: 30px; /* nagyobb ikon */
+  color: #333;     /* opcionális: szín */
+}
+
+</style>
+</head>
+
+<body>
+<div class="hero">
+    <h1 class="cim">BérAutó24</h1>
+    <p class="alcim">- Az út itt kezdődik! -</p>
+</div>
+<p class="kapcsolat_felirat">Kapcsolat</p>
+<div class="kapcsolat-wrapper">
+
+    <div class="kapcsolat" id="kapcsolat">
+      <div class="kontakt-item">
+        <i class="fa-solid fa-phone"></i>
+        <div class="text">
+          <p><strong>Telefon</strong></p>
+          <p>+36 70 555 9999</p>
+        </div>
+      </div>
+      <div class="kontakt-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="text">
+          <p><strong>Email</strong></p>
+          <p>berauto24@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="terkep">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2693.4168464738905!2d19.071458126789896!3d47.54021525008869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1771420415506!5m2!1shu!2shu"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+</div>
+<footer>
+    © 2026 BérAutó24 | Minden jog fenntartva<br><br>
+    Ez az oldal kizárólag demonstrációs célokat szolgál. Az itt megjelenített adatok nem valósak!
+</footer>
+
+</body>
+</html>
