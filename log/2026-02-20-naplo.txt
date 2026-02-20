@@ -183,3 +183,70 @@
 						  FROM   autok
 						  WHERE deleted = 0
 2026-02-20 - 08:20:41am - autok osztály megsemmisült.
+2026-02-20 - 08:21:48am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:48am - Az oldal újratöltődött.
+2026-02-20 - 08:21:48am - autok osztály létrejött.
+2026-02-20 - 08:21:48am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-20 - 08:21:48am - autok osztály megsemmisült.
+2026-02-20 - 08:21:53am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:53am - Az oldal újratöltődött.
+2026-02-20 - 08:21:53am - ertekelesek osztály létrejött.
+2026-02-20 - 08:21:53am - ertekelesek osztály megsemmisült.
+2026-02-20 - 08:21:54am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:54am - Az oldal újratöltődött.
+2026-02-20 - 08:21:54am - autok osztály létrejött.
+2026-02-20 - 08:21:54am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-20 - 08:21:54am - autok osztály megsemmisült.
+2026-02-20 - 08:21:55am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:55am - Az oldal újratöltődött.
+2026-02-20 - 08:21:55am - foglalasok osztály létrejött.
+2026-02-20 - 08:21:55am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-20 - 08:21:55am - foglalasok osztály megsemmisült.
+2026-02-20 - 08:21:55am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:55am - Az oldal újratöltődött.
+2026-02-20 - 08:21:55am - foglalasok osztály létrejött.
+2026-02-20 - 08:21:55am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-20 - 08:21:55am - foglalasok osztály megsemmisült.
+2026-02-20 - 08:21:56am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:56am - Az oldal újratöltődött.
+2026-02-20 - 08:21:57am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:57am - Az oldal újratöltődött.
+2026-02-20 - 08:21:57am - autok osztály létrejött.
+2026-02-20 - 08:21:57am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-20 - 08:21:57am - autok osztály megsemmisült.
+2026-02-20 - 08:21:58am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:58am - Az oldal újratöltődött.
+2026-02-20 - 08:21:59am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:21:59am - Az oldal újratöltődött.
+2026-02-20 - 08:21:59am - autok osztály létrejött.
+2026-02-20 - 08:21:59am - autok osztály megsemmisült.
