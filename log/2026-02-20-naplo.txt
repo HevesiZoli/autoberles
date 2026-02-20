@@ -1,0 +1,10 @@
+2026-02-20 - 08:08:26am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:08:30am - Az oldal újratöltődött.
+2026-02-20 - 08:08:30am - autok osztály létrejött.
+2026-02-20 - 08:08:30am - autok osztály megsemmisült.
+2026-02-20 - 08:08:44am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:08:48am - Az oldal újratöltődött.
+2026-02-20 - 08:08:52am - Böngészőben betöltődött az oldal.
+2026-02-20 - 08:08:56am - Az oldal újratöltődött.
+2026-02-20 - 08:08:56am - autok osztály létrejött.
+2026-02-20 - 08:08:56am - autok osztály megsemmisült.
