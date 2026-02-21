@@ -15,6 +15,7 @@ class felhasznalok {
  	public $password1;
  	public $password2;
  	public $state;
+  public $deleted;
  	public $reminder;
 
  	// Megmondja, hogy milyen műveletet hajtok éppen végre!
@@ -51,8 +52,10 @@ class felhasznalok {
                                        fingerprint
                                        password,
                                        state,
+                                       deleted,
                                        reminder
                               FROM     user
+                              WHERE deleted = 0
                               ORDER BY name";
 
          // Végrehajtom a lekérdezést úgy, hogy a connection segítségével elküldöm a szervernek!
@@ -346,7 +349,10 @@ class felhasznalok {
 		//   az action url-jét ez alapján fogom változtatani 
 		$this->id = $id;
 
-		$SQLlekerdezes = "DELETE FROM user WHERE id = $id";
+		$SQLlekerdezes = "UPDATE user
+                      SET deleted = 1,
+                          state = 0
+                      WHERE id = $id";
 
 		// Lefuttatjuk az SQL lekérdezést!
 		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);

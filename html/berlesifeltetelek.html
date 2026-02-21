@@ -1,0 +1,206 @@
+<nav id="navbar">
+        <ul>
+                <li><a href="index.php?menupont=kezdolap">Kezdőlap</a></li>
+                <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
+                <li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>
+        </ul>
+</nav>
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+                body
+                {
+                    font-family: Bahnschrift;
+                }
+                .feltetelek
+                {
+                  margin-top: 20px;
+                }
+                footer 
+                {
+                    background-color: #222;
+                    color: white;
+                    text-align: center;
+                    padding: 15px;
+                }
+
+                nav {
+                    background-color: #222;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    padding: 30px 40px;      /* vízszintes padding: 40px */
+                    box-sizing: border-box;  /* fontos, hogy a padding ne “tolja ki” a szélességet */
+                    transition: all 0.3s ease;
+                    background-color: transparent;
+                    z-index: 1000;
+                }
+                nav ul {
+                    background-color: #222;
+                    list-style: none;
+                    margin: 0 auto;          /* középre igazítás */
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-start; /* vagy center, ha teljesen középre akarod */
+                    align-items: center;
+                    border-style: solid;
+                    border-width: 0px 0px 2px 0px;
+                    border-color: #6b9c6f;
+                }
+
+                nav li:last-child {
+                    margin-left: auto;       /* ha van jobbra húzó elem, pl. Bejelentkezés */
+                }
+
+                nav li {
+                    margin-right: 20px;
+                }
+
+                nav a {
+                    position: relative;       /* fontos, hogy a ::after pozícionálható legyen */
+                    color: white;
+                    margin-left: 30px;
+                    text-decoration: none;    /* ne legyen alap aláhúzás */
+                    transition: color 0.3s;
+                }
+                nav a:hover {
+                    text-decoration: none;
+                }
+                nav a::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;                /* link alján */
+                    width: 0%;                /* kezdetben nulla széles */
+                    height: 2px;              /* vastagság */
+                    background-color: #6b9c6f;   /* vonal színe */
+                    transition: width 0.4s ease; /* animáció */
+                }
+                /* Hover effekt – szélesség 100%-ra nő */
+                nav a:hover::after {
+                    width: 100%;              /* teljes aláhúzás */
+                }
+                /* ===== SZABÁLYOK / FELTÉTELEK – EGÉSZ SOROS ===== */
+
+                .szabalyok-wrapper {
+                    display: flex;
+                    flex-direction: column; /* egymás alá */
+                    gap: 30px;              /* távolság a blokkok között */
+                    padding: 80px 20px;     /* belső margó */
+                    background-color: #f5f7fa;
+                    max-width: 1000px;      /* ne legyen túl széles a szöveg */
+                    margin: 0 auto;         /* középre igazítás */
+                }
+
+                /* Minden blokk */
+                .szabalyok-wrapper > div {
+                    background-color: #ffffff;
+                    padding: 30px 40px; 
+                    border-radius: 15px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+                    transition: all 0.3s ease;
+                }
+
+                /* Hover effekt */
+                .szabalyok-wrapper > div:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+                }
+
+                /* Cím */
+                .szabalyok-wrapper h1 {
+                    font-size: 28px;
+                    margin-bottom: 15px;
+                    color: #6b9c6f;
+                }
+
+                /* Szöveg */
+                .szabalyok-wrapper p {
+                    font-size: 18px;
+                    line-height: 1.6;
+                    margin: 8px 0;
+                    color: #444;
+                }
+
+                /* Mobilbarát */
+                @media (max-width: 600px) {
+                    .szabalyok-wrapper {
+                        padding: 40px 20px;
+                    }
+
+                    .szabalyok-wrapper > div {
+                        padding: 25px 20px;
+                    }
+
+                    .szabalyok-wrapper h1 {
+                        font-size: 24px;
+                    }
+
+                    .szabalyok-wrapper p {
+                        font-size: 16px;
+                    }
+                }
+        </style>
+</head>
+<body>
+    <div class="szabalyok-wrapper">
+        <div class="feltetelek">
+                <h1>Bérléshez szükséges</h1>
+                <p>Minimum betöltött 20 év.</p>
+                <p>Minimum 2 év érvényes jogosítvány.</p>
+                <p>Érvényes személyi igazolvány.</p>
+                <p>Lakcímkártya.</p>
+                <p>Érvényes bankkártya a kaucióhoz.</p>
+        </div>
+        <div class="biztositas">
+                <h1>Biztosítás</h1>
+                <p>Kötelező biztosítás minden járműre érvényes.</p>
+        </div>
+        <div class="futasteljesitmeny">
+                <h1>Futásteljesítmény</h1>
+                <p>Napi kilóméterlimit: 400 km/nap.</p>
+                <p>Túlfutás esetén 100 Ft/km.</p>
+                <p>Felár ellenében korlátlan km csomag.</p>
+        </div>
+        <div class="uzemanyag">
+                <h1>Üzemanyag szabály</h1>
+                <p>Tele tankkal adjuk át.</p>
+                <p>Tele tankkal kell visszahozni.</p>
+                <p>Szabályszegés esetén pótdíj kerül felszámolásra.</p>
+        </div>
+        <div class="visszaadas">
+                <h1>Késedelmes visszaadás</h1>
+                <p>Óradíjas pótdíj.</p>
+                <p>24 órát meghaladó késés esetén plusz napi díj.</p>
+        </div>
+        <div class="hasznalat">
+                <h1>Használati feltételek</h1>
+                <p>Tilos dohányozni az összes autóban!</p>
+                <p>Külföldi használathoz előzetes engedély szükséges.</p>
+                <p>Versenyzés, vontatás nem megengedett.</p>
+                <p>Más személy csak előzetes bejelentéssel vezetheti.</p>
+        </div>
+        <div class="problema">
+                <h1>Meghibásodás, baleset</h1>
+                <p>Azonnali értesítési kötelezettség.</p>
+                <p>Rendőrségi jegyzőkönyv szükséges baleset esetén.</p>
+        </div>
+        <div class="fizetes">
+                <h1>Fizetés</h1>
+                <p>Bankkártya / átutalás / készpénz.</p>
+                <p>A bérleti díj előre fizetendő.</p>
+        </div>
+   </div>
+<footer>
+    © 2026 BérAutó24 | Minden jog fenntartva<br><br>
+    Ez az oldal kizárólag demonstrációs célokat szolgál. Az itt megjelenített adatok nem valósak!
+</footer>
+</body>
+</html>

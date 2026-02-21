@@ -1,4 +1,326 @@
-<ul>
-	<li><a href="index.php?menupont=kezdolap">Kezdőlap</a></li>
-	<li><a href="index.php?menupont=belepes">Belépés</a></li>
-</ul>
+<nav id="navbar">
+    <ul>
+        <li><a href="#rolunk">Rólunk</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+        <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
+        <li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>
+    </ul>
+</nav>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Autóbérlés</title>
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Bahnschrift, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 40px;      /* vízszintes padding: 40px */
+    box-sizing: border-box;  /* fontos, hogy a padding ne “tolja ki” a szélességet */
+    transition: all 0.3s ease;
+    background-color: transparent;
+    z-index: 1000;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #6b9c6f;
+}
+nav.scrolled {
+    background-color: rgba(34,34,34,0.95);
+    padding: 30px 40px;      /* balra-jobbra fix padding */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+    margin: 0 auto;          /* középre igazítás */
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* vagy center, ha teljesen középre akarod */
+    align-items: center;
+}
+
+nav li:last-child {
+    margin-left: auto;       /* ha van jobbra húzó elem, pl. Bejelentkezés */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    position: relative;       /* fontos, hogy a ::after pozícionálható legyen */
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;    /* ne legyen alap aláhúzás */
+    transition: color 0.3s;
+}
+nav a:hover {
+    text-decoration: none;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;                /* link alján */
+    width: 0%;                /* kezdetben nulla széles */
+    height: 2px;              /* vastagság */
+    background-color: #6b9c6f;   /* vonal színe */
+    transition: width 0.4s ease; /* animáció */
+}
+/* Hover effekt – szélesség 100%-ra nő */
+nav a:hover::after {
+    width: 100%;              /* teljes aláhúzás */
+}
+/* ===== HERO ===== */
+.hero {
+    height: calc(100vh - 70px); /* teljes képernyő - menü */
+    margin-top: 0px; /* menü magasság */
+    background-image: url("img/2.png"); /* NE png legyen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Szöveg stílus */
+.cim {
+    font-size: 60px;
+    margin: 0;
+}
+
+.alcim {
+    font-size: 28px;
+}
+
+/* Gomb */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.kapcsolat {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column; /* függőlegesen egymás alatt a két kontakt */
+    gap: 15px; /* távolság a telefon és az email között */
+}
+
+.kapcsolat p {
+    margin: 10px 0;
+}
+
+.terkep {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.terkep iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ===== KAPCSOLAT + TÉRKÉP EGYBEN ===== */
+
+.kapcsolat-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.kapcsolat_felirat
+{
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Bahnschrift;
+    font-size: 50px;
+    padding: 40px;
+}
+
+.kapcsolat,
+.terkep {
+    flex: 1;
+    min-width: 300px;
+    border-color: ;
+}
+
+.kontakt-item {
+  display: flex;
+  align-items: center; /* ikon középre igazítva a szöveghez */
+  gap: 10px; /* távolság az ikon és a szöveg között */
+}
+
+.kontakt-item .text p {
+  margin: 0; /* eltünteti a p alapértelmezett margóját */
+  line-height: 1.2;
+}
+.kontakt-item i {
+  font-size: 30px; /* nagyobb ikon */
+  color: #333;     /* opcionális: szín */
+}
+
+/* ===== RÓLUNK ===== */
+.rolunk-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.rolunk {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.rolunk .kontakt-item {
+    display: flex;
+    align-items: flex-start; /* szöveg tetejéhez igazít */
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.rolunk_felirat {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.szoveg {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.container {
+    text-align: justify;
+}
+
+.container::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.minden_jo {
+    font-family: Bahnschrift;
+    padding: 4px;
+    border-radius: 7px;
+    width: 300px;
+    font-size: 33px;
+    display: inline-block;
+    text-align: center; /* szöveg középre */
+    box-sizing: border-box;
+}
+</style>
+</head>
+
+<body>
+<div class="hero">
+    <h1 class="cim">BérAutó24</h1>
+    <p class="alcim">- Az út itt kezdődik! -</p>
+</div>
+
+<div class="rolunk-wrapper">
+    <div class="rolunk" id="rolunk">
+      <div class="kontakt-item">
+        <div>
+          <p class="rolunk_felirat"><strong>Rólunk</strong></p>
+          <p class="szoveg">Cégünk célja, hogy az autóbérlés egyszerű, gyors és megbízható élmény legyen minden ügyfelünk számára. Hiszünk abban, hogy egy jól karbantartott, tiszta és biztonságos jármű nem luxus, hanem alapelvárás.</p>
+          <p class="szoveg">Flottánkat úgy állítottuk össze, hogy minden igényre megoldást kínáljunk – legyen szó városi közlekedésről, üzleti útról vagy hosszabb családi kirándulásról. Autóink rendszeresen szervizeltek, műszakilag ellenőrzöttek és azonnal menetkészek.</p>
+          <p class="szoveg">Számunkra az ügyfél az első. Rugalmas bérlési feltételekkel, átlátható árképzéssel és gyors ügyintézéssel dolgozunk, hogy Önnek csak az utazás élményére kelljen koncentrálnia.</p>
+          <p class="szoveg">Tapasztalt csapatunk minden lépésnél segít – a megfelelő autó kiválasztásától a szerződéskötésen át a jármű átadásáig. Célunk a hosszú távú bizalom és az elégedett visszatérő ügyfelek.</p>
+          <p class="szoveg">Válasszon minket, és induljon útnak gondtalanul!</p>
+          <div class="container">
+            <p class="minden_jo"><i class="fa-regular fa-circle-check"></i></i><strong> Egyszerű</strong></p>
+            <p class="minden_jo"><i class="fa-regular fa-circle-check"></i></i><strong> Gyors</strong></p>
+            <p class="minden_jo"><i class="fa-regular fa-circle-check"></i></i><strong> Megbízható</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<p class="kapcsolat_felirat">Kapcsolat</p>
+<div class="kapcsolat-wrapper">
+
+    <div class="kapcsolat" id="kapcsolat">
+      <div class="kontakt-item">
+        <i class="fa-solid fa-phone"></i>
+        <div class="text">
+          <p><strong>Telefon</strong></p>
+          <p>+36 70 555 9999</p>
+        </div>
+      </div>
+      <div class="kontakt-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="text">
+          <p><strong>Email</strong></p>
+          <p>berauto24@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="terkep">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2693.4168464738905!2d19.071458126789896!3d47.54021525008869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1771420415506!5m2!1shu!2shu"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+</div>
+<footer>
+    © 2026 BérAutó24 | Minden jog fenntartva<br><br>
+    Ez az oldal kizárólag demonstrációs célokat szolgál. Az itt megjelenített adatok nem valósak!
+</footer>
+<script>
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {  // 50px után jön a háttér
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+</script>
+</body>
+</html>

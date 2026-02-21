@@ -16,44 +16,6 @@ body {
   min-height: 100vh;
 }
 
-/* ===== SIDEBAR ===== */
-.sidebar {
-  width: 240px;
-  background: linear-gradient(180deg, #2563eb, #1e40af);
-  color: #fff;
-  padding: 1.5rem;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.sidebar h1 {
-  font-size: 1.4rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* MENU */
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li a {
-  display: block;
-  padding: 0.75rem 1rem;
-  color: #e5e7eb;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.2s;
-}
-
-.sidebar li a:hover,
-.sidebar li a.active {
-  background: rgba(255,255,255,0.18);
-  color: #fff;
-}
-
 /* ===== MAIN CONTENT ===== */
 .main {
   margin-left: 240px;
@@ -109,8 +71,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 1rem;
-
-  background: linear-gradient(90deg, #2563eb, #1e40af);
   z-index: 1000;
 }
 
@@ -121,7 +81,7 @@ ul li {
 ul li a {
   display: block;
   padding: 0.5rem 1rem;
-  color: #e5e7eb;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
@@ -130,7 +90,7 @@ ul li a {
 ul li a:hover,
 ul li a.active {
   background: rgba(255,255,255,0.18);
-  color: #fff;
+  color: #c7c7c7;
 }
 .main {
   padding-top: 32px;
@@ -140,10 +100,6 @@ ul li a.active {
   padding: 10px;
   text-decoration: none;
   font-size: 20px;
-}
-.kotelezo {
-  border-color: #f9c4c4;
-  background-color: #fff1f1;
 }
  .input {
     margin-top: 5px;
@@ -174,4 +130,116 @@ a
   border-color: #ff5454;
   background-color: #ff8a8a;
   padding: 3px;
+}
+ul {
+    display: flex;
+}
+ul a {
+    display: block;
+}
+/* ===== LOGIN PANEL ===== */
+.panel.login {
+    width: 100%;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 35px 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-family: Bahnschrift, sans-serif;
+}
+
+/* Input wrapper: ikon + input sorban */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #f9f9f9;
+}
+
+.input-wrapper:focus-within {
+    border-color: #6b9c6f;
+    box-shadow: 0 0 8px rgba(107, 156, 111, 0.3);
+}
+
+/* Ikon a bal oldalon */
+.input-wrapper i {
+    font-size: 18px;
+    color: #6b9c6f;
+    margin-right: 10px;
+}
+
+/* Input mező */
+.input-wrapper input {
+    border: none;
+    outline: none;
+    padding: 12px 5px;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+}
+
+/* Submit gomb */
+.panel.login .button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #6b9c6f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.panel.login .button[type="submit"]:hover {
+    background-color: #567a5c;
+    box-shadow: 0 5px 15px rgba(107, 156, 111, 0.3);
+}
+/* Konténer a linkeknek */
+.link-row {
+    display: flex;
+    gap: 10px;          /* távolság a gombok között */
+    justify-content: center; /* középre igazítás */
+    margin-top: 15px;
+}
+
+/* Mindkét gomb ugyanakkora legyen */
+.link-row a.input.login.button {
+    flex: 1;           /* mindkettő ugyanakkora szélesség */
+    text-align: center;
+    padding: 14px 0;
+    background-color: #6b9c6f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-row a.input.login.button:hover {
+    background-color: #567a5c;
+    box-shadow: 0 5px 15px rgba(107, 156, 111, 0.3);
+}
+
+/* Mobilra: egymás alá kerüljenek */
+@media (max-width: 500px) {
+    .link-row {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    .panel.login {
+        margin: 80px 20px;
+        padding: 25px 20px;
+    }
 }
