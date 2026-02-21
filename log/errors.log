@@ -743,3 +743,61 @@ Stack trace:
 #1 D:\xampp\htdocs\backend\autoberles\index.php(86): felhasznalok->torles('15')
 #2 {main}
   thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 358
+[17-Feb-2026 20:36:48 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'autokolcsonzo.ertekeles' doesn't exist in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:68
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(68): mysqli_query(Object(mysqli), 'SELECT * FROM e...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(164): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 68
+[17-Feb-2026 20:37:29 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'ertekeles_id' in 'order clause' in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:68
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(68): mysqli_query(Object(mysqli), 'SELECT * FROM e...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(164): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 68
+[17-Feb-2026 20:38:28 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'letrehozva' in 'field list' in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:14
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(14): mysqli_query(Object(mysqli), 'INSERT INTO ert...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(164): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 14
+[17-Feb-2026 20:39:39 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'letrehozva' in 'field list' in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:14
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(14): mysqli_query(Object(mysqli), 'INSERT INTO ert...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(164): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 14
+[17-Feb-2026 20:40:36 Europe/Budapest] PHP Warning:  Undefined variable $letrehozva in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 12
+[17-Feb-2026 20:40:36 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'letrehozva' in 'field list' in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:14
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(14): mysqli_query(Object(mysqli), 'INSERT INTO ert...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(164): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 14
+[17-Feb-2026 20:41:33 Europe/Budapest] PHP Warning:  Undefined variable $letrehozva in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 12
+[17-Feb-2026 20:41:33 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'letrehozva' in 'field list' in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:14
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(14): mysqli_query(Object(mysqli), 'INSERT INTO ert...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(164): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 14
+[17-Feb-2026 20:43:01 Europe/Budapest] PHP Warning:  Undefined variable $letrehozva in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 12
+[17-Feb-2026 20:43:43 Europe/Budapest] PHP Warning:  Undefined array key "letrehozva" in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 10[20-Feb-2026 08:08:30 Europe/Budapest] PHP Warning:  mysqli_connect(): (HY000/2002): Nem hozhat� l�tre kapcsolat, mert a c�lsz�m�t�g�p m�r visszautas�totta a kapcsolatot.
+ in C:\xampp\htdocs\Github2\autoberles\php\adatbaziskapcsolat.php on line 56
+[20-Feb-2026 08:08:48 Europe/Budapest] PHP Warning:  mysqli_connect(): (HY000/2002): Nem hozhat� l�tre kapcsolat, mert a c�lsz�m�t�g�p m�r visszautas�totta a kapcsolatot.
+ in C:\xampp\htdocs\Github2\autoberles\php\adatbaziskapcsolat.php on line 56
+[20-Feb-2026 08:08:56 Europe/Budapest] PHP Warning:  mysqli_connect(): (HY000/2002): Nem hozhat� l�tre kapcsolat, mert a c�lsz�m�t�g�p m�r visszautas�totta a kapcsolatot.
+ in C:\xampp\htdocs\Github2\autoberles\php\adatbaziskapcsolat.php on line 56
+[20-Feb-2026 08:08:56 Europe/Budapest] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in C:\xampp\htdocs\Github2\autoberles\php\belepes.php on line 91
+[20-Feb-2026 08:08:56 Europe/Budapest] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in C:\xampp\htdocs\Github2\autoberles\php\belepes.php on line 94
+[20-Feb-2026 08:08:56 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\Github2\autoberles\php\belepes.php on line 99
+[20-Feb-2026 08:16:13 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:16:24 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\felhasznalok.php on line 77
+[20-Feb-2026 08:16:38 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:18:33 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:18:56 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:18:58 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\felhasznalok.php on line 77
+[20-Feb-2026 08:19:07 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:20:27 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github3\autoberles\php\jarmuvek.php on line 111
+[20-Feb-2026 08:20:29 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github3\autoberles\php\felhasznalok.php on line 77
+[20-Feb-2026 08:20:41 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in 

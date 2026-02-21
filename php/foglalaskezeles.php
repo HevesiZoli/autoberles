@@ -42,28 +42,29 @@ class foglalasok
  	}
 
  	public function _foglalasok_lista() 
-{
-    $HTMLSorok = "";
+	{
+	    $HTMLSorok = "";
 
     $SQLlekerdezes = "SELECT * FROM foglalas WHERE deleted = 0";
     $this->naplo->_bejegyez($SQLlekerdezes);
 
-    $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
 
-    if ($SQLeredmeny)
-    {
-        while ($row = mysqli_fetch_assoc($SQLeredmeny)) 
-        {
-            $editcommand  = '<form action="index.php?menupont=foglalasokszerkeszt" method="post">';
-            $editcommand .= '<input type="hidden" name="id" value="'.$row['foglalas_id'].'">';
-            $editcommand .= '<input type="submit" name="szerkeszt" value="Szerkesztés">';
-            $editcommand .= '</form>';
-                 
-            $deletecommand  = '<form action="index.php?menupont=foglalastorol" method="post">';
-            $deletecommand .= '<input type="hidden" name="id" value="'.$row['foglalas_id'].'">';
-            $deletecommand .= '<input type="submit" name="torol" value="Törlés">';
-            $deletecommand .= '</form>';
+	    $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
 
+	    if ($SQLeredmeny)
+	    {
+	        while ($row = mysqli_fetch_assoc($SQLeredmeny)) 
+	        {
+	            $editcommand  = '<form action="index.php?menupont=foglalasokszerkeszt" method="post">';
+	            $editcommand .= '<input type="hidden" name="id" value="'.$row['foglalas_id'].'">';
+	            $editcommand .= '<input type="submit" name="szerkeszt" value="Szerkesztés">';
+	            $editcommand .= '</form>';
+	                 
+	            $deletecommand  = '<form action="index.php?menupont=foglalastorol" method="post">';
+	            $deletecommand .= '<input type="hidden" name="id" value="'.$row['foglalas_id'].'">';
+	            $deletecommand .= '<input type="submit" name="torol" value="Törlés">';
+	            $deletecommand .= '</form>';
+	            
             $HTMLSorok .= "<tr>
                 <td>".$row['nev']."</td>
                 <td>".$row['email']."</td>
@@ -80,9 +81,8 @@ class foglalasok
     {
         $this->naplo->_bejegyez(mysqli_error($this->db_kapcsolat->_kapcsolat()));
     }
-
-    return $HTMLSorok;
-}
+	    return $HTMLSorok;
+	}
 
 
 	public function ment() 

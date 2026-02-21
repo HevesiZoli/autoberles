@@ -2,6 +2,7 @@
 
 $autok = new autok($db_kapcsolat,$naplo);
 
+
 		/*$menupont = $_GET['menupont'];
 		switch ($menupont) {
 				case 'jarmuvek' : include('html/jarmuvek.html');
@@ -33,7 +34,8 @@ $autok = new autok($db_kapcsolat,$naplo);
 		else {if (!isset($_POST['auto_id']))
  	    {include('html/jarmuvek.html');}}*/
 
-class autok {
+class autok 
+{
 
  	private $naplo;
  	private $db_kapcsolat;
@@ -290,18 +292,17 @@ class autok {
 		{
 			$this->naplo->_bejegyez($sqlhiba);
 		}
-  	}
-
-public function _lista_xml_str() 
+  }
+  public function _autok_lista_xml_str() 
 	{
 
  		// - Kell egy változó, amiben a lista xml részét tárolom
 		$XMLSorok = "";
 
-		// - A termékeket akarom listázni, ezek adatbázisban vannak
+		// - Az autokat akarom listázni, ezek adatbázisban vannak
 		//   ezért elkészítem az SQL lekérdezést!
 
-		$SQLlekerdezes = "SELECT * FROM termekek";
+		$SQLlekerdezes = "SELECT * FROM autok";
 
 		// Példa a naplózásra. Kiírom naplóba a lekérdezést
 		$this->naplo->_bejegyez($SQLlekerdezes);
@@ -320,13 +321,13 @@ public function _lista_xml_str()
 			if(mysqli_num_rows($SQLeredmeny) > 0)
 			{
 
-				$XMLSorok="<autok>";
+				$XMLSorok="<jarmuvek>";
 
 					while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
 					{
 						//Felépítem az xml szerkezetet string formátumban
 						//Nem elegáns megoldás
-						$XMLSorok.="<auto>";
+						$XMLSorok.="<jarmu>";
 							$XMLSorok.='<marka>'.$egysor['marka'].'</marka>';
 							$XMLSorok.='<modell>'.$egysor['modell'].'</modell>';
 							$XMLSorok.='<evjarat>'.$egysor['evjarat'].'</evjarat>';
@@ -334,9 +335,9 @@ public function _lista_xml_str()
 							$XMLSorok.='<rendszam>'.$egysor['rendszam'].'</rendszam>';
 							$XMLSorok.='<allapot>'.$egysor['allapot'].'</allapot>';
 							$XMLSorok.='<napi_dij>'.$egysor['napi_dij'].'</napi_dij>';
-						$XMLSorok.="</auto>";
+						$XMLSorok.="</jarmu>";
 					}
-				$XMLSorok.="</autok>";
+				$XMLSorok.="</jarmuvek>";
 			}
 		}
 		else {

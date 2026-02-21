@@ -156,10 +156,13 @@
 		 									include('html/foglalas_torlesmegerosito.html');
 		 									break;
 
-		 		case 'foglalastorles' :  		include('php/foglalaskezeles.php');
+		 		case 'foglalastorles' :  	include('php/foglalaskezeles.php');
 		 									$foglalasok->torles($_POST['id']);
 		 									include('html/foglalasok.html');
 		 									break;
+
+		 		case 'dashboard'	  : include('php/dashboard.php');
+		 								break;
 		 		default : 				break;
 		 	}
 		 }

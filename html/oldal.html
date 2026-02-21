@@ -52,6 +52,27 @@ nav ul {
 
 nav li:last-child {
     margin-left: auto;       /* ha van jobbra húzó elem, pl. Bejelentkezés */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAV ===== */
+nav {
+    background-color: #222;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav li {
@@ -81,6 +102,13 @@ nav a::after {
 /* Hover effekt – szélesség 100%-ra nő */
 nav a:hover::after {
     width: 100%;              /* teljes aláhúzás */
+}
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 /* ===== HERO ===== */
 .hero {
@@ -159,7 +187,6 @@ footer {
 .kapcsolat-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .kapcsolat_felirat
 {
@@ -174,7 +201,6 @@ footer {
 .terkep {
     flex: 1;
     min-width: 300px;
-    border-color: ;
 }
 
 .kontakt-item {
@@ -277,7 +303,6 @@ footer {
       </div>
     </div>
 </div>
-
 <p class="kapcsolat_felirat">Kapcsolat</p>
 <div class="kapcsolat-wrapper">
 
