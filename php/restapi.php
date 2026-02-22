@@ -11,32 +11,42 @@ $database_db = 'autokolcsonzo';
 // LOG
 $log_enabled = true;
 
-
+// Szükséges fájlok betöltése
 include('utvonal.php');  
 include('naplo.php');   
 include('adatbaziskapcsolat.php');
-include('jarmuvek.php');
+include('jarmuvek.php'); // auto objektum behívása
 
-
+// A REST kérés törzsének beolvasása
 $uzenet= file_get_contents('php://input');
 
+// Ellenőrizzük, hogy érkezett-e adat
 if(isset($uzenet) && !empty($uzenet))
 {
+    // Naplózzuk a teljes beérkezett REST üzenetet
 	 $naplo->_bejegyez('Rest kérés érkezett:  '.$uzenet);
 
+     // XML feldolgozás
 	  $uzenet_xml = simplexml_load_string($uzenet);
 
+    // Kapcsolat teszt
     if($uzenet_xml->kerestipus=='kapcsolat')
     {
         $naplo->_bejegyez('Rest kérés érkezett, kérés tipusa: kapcsolatfelvétel');
+
+         // Egyszerű válasz küldése
         echo("<gyoker><valasz>OK</valasz></gyoker>");
     }
 
+     // Autók listájának lekérése
      if($uzenet_xml->kerestipus=='autoklista')
     {
         $naplo->_bejegyez('Rest kérés érkezett, kérés tipusa: adatlekérdezés');
+
+        // Az autók XML listáját visszaadjuk
         echo("<gyoker><valasz>OK</valasz>".$autok->_autok_lista_xml_str()."</gyoker>");
     }
+
 
     if($uzenet_xml->kerestipus=='adatkuld')
     {
@@ -56,9 +66,10 @@ if(isset($uzenet) && !empty($uzenet))
         $_POST['allapot']   = (string)$uzenet_xml->jarmu->allapot;
         $_POST['napi_dij']  = (string)$uzenet_xml->jarmu->napi_dij;
 
-       
+       // Autó mentése az adatbázisba
         $sikeres = $autok->automentes();
 
+          // Válasz küldése a dekstopnak
         if ($sikeres) {
             echo "<gyoker><valasz>OK</valasz></gyoker>";
         } else {
