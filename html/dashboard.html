@@ -2,30 +2,7 @@
     <i class="fa-solid fa-plus"></i> Vélemény írása
 </a>
 
-<div>
-<?php
-        include("php/dashboard.php");
-
-		$SQLlekerdezes = "SELECT * FROM ertekelesek WHERE deleted = 0";
-        $this->naplo->_bejegyez($SQLlekerdezes);
-
-        $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
-
-        if ($SQLeredmeny)
-        {
-            while ($row = mysqli_fetch_assoc($SQLeredmeny)) 
-            {
-                    $HTMLSorok .= "<tr>
-                    <td>".$row['csillag']."</td>
-                    <td>".$row['velemeny']."</td>
-                    <td>".$row['letrehozva']."</td>
-                </tr>";
-            }
-        }
-        else 
-        {
-            $this->naplo->_bejegyez(mysqli_error($this->db_kapcsolat->_kapcsolat()));
-        }
- 
-?>
-</div>
+<table>
+    <tr><td>Csillag:</td><td>E-mail:</td><td>Vélemény:</td><td>Létrehozva:</td></tr>
+    <?php echo($ertekelesek->_velemenyek_lista()); ?>
+</table>

@@ -162,16 +162,16 @@
 		 									break;
 
 		 		case 'dashboard'	  : include('php/dashboard.php');
-		 								include('php/Dash_board.php');
+		 								include('html/dashboard.html');
 		 								break;
 
 		 		case 'ujvelemeny':			include('php/dashboard.php');
 		 									include('html/velemeny.html');
 		 									break;
 
-		 		case 'foglalasokment' :  include('php/dashboard.php');
+		 		case 'velemenyekment' :  include('php/dashboard.php');
 		 								 if ($ertekelesek->uj_ertekeles() == true)
-		 							     {include('php/Dash_board.php');}
+		 							     {include('html/dashboard.html');}
 		 							     else {include('html/velemeny.html');}
 		 							     break;
 		 		default : 				break;

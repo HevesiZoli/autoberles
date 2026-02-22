@@ -84,14 +84,12 @@ class ertekelesek
             $this->email = $_POST['email'];} else {$this->email = '';}
         if (isset($_POST['velemeny'])) {
             $this->velemeny = $_POST['velemeny'];} else {$this->velemeny = '';}
-        if (isset($_POST['letrehozva'])) {
-            $this->letrehozva = $_POST['letrehozva'];} else {$this->letrehozva = '';}
 
         // Feltételezem, hogy minden adat megvan ezért a mentés sikeres lesz!
         $sikeresmentes = true;
 
         // Kötelező érték vizsgálata
-        if (empty($this->csillag) || empty($this->email) || empty($this->velemeny) || empty($this->letrehozva))
+        if (empty($this->csillag) || empty($this->email) || empty($this->velemeny))
             {
                 $this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
                 $sikeresmentes = false;}
@@ -104,8 +102,8 @@ class ertekelesek
             // - A termékeket akarom listázni, ezek adatbázisban vannak
             //   ezért elkészítem az SQL lekérdezést!
 
-            $SQLlekerdezes = "INSERT INTO ertekelesek (csillag, email, velemeny, letrehozva)
-                              VALUES ('$this->csillag', '$this->email', '$this->velemeny', $this->letrehozva)";
+            $SQLlekerdezes = "INSERT INTO ertekelesek (csillag, email, velemeny)
+                              VALUES ('$this->csillag', '$this->email', '$this->velemeny')";
 
             // Lefuttatjuk az SQL lekérdezést!
             $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);

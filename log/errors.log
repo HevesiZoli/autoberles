@@ -825,3 +825,19 @@ Stack trace:
 [22-Feb-2026 19:35:48 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
 [22-Feb-2026 19:36:06 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
 [22-Feb-2026 19:37:11 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:40:53 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:44:35 Europe/Budapest] PHP Warning:  include(php/Dash_board.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\GitHub\autoberles\index.php on line 165
+[22-Feb-2026 19:44:35 Europe/Budapest] PHP Warning:  include(): Failed opening 'php/Dash_board.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\GitHub\autoberles\index.php on line 165
+[22-Feb-2026 19:45:13 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'deleted' in 'where clause' in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:48
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(48): mysqli_query(Object(mysqli), 'SELECT * FROM e...')
+#1 C:\xampp\htdocs\GitHub\autoberles\html\dashboard.html(7): ertekelesek->_velemenyek_lista()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(165): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 48
+[22-Feb-2026 19:56:39 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 2 in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php:109
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php(109): mysqli_query(Object(mysqli), 'INSERT INTO ert...')
+#1 C:\xampp\htdocs\GitHub\autoberles\index.php(173): ertekelesek->uj_ertekeles()
+#2 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 109
