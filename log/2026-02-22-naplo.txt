@@ -397,3 +397,23 @@
 2026-02-22 - 07:59:51pm - ertekelesek osztály létrejött.
 2026-02-22 - 07:59:51pm - SELECT * FROM ertekelesek WHERE deleted = 0
 2026-02-22 - 07:59:51pm - ertekelesek osztály megsemmisült.
+2026-02-22 - 08:03:56pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 08:03:57pm - Az oldal újratöltődött.
+2026-02-22 - 08:03:57pm - ertekelesek osztály létrejött.
+2026-02-22 - 08:03:57pm - ertekelesek osztály megsemmisült.
+2026-02-22 - 08:03:58pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 08:03:58pm - Az oldal újratöltődött.
+2026-02-22 - 08:03:59pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 08:03:59pm - Az oldal újratöltődött.
+2026-02-22 - 08:03:59pm - ertekelesek osztály létrejött.
+2026-02-22 - 08:03:59pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-22 - 08:03:59pm - ertekelesek osztály megsemmisült.
+2026-02-22 - 08:04:27pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 08:04:27pm - Az oldal újratöltődött.
+2026-02-22 - 08:04:27pm - ertekelesek osztály létrejött.
+2026-02-22 - 08:04:27pm - ertekelesek osztály megsemmisült.
+2026-02-22 - 08:04:28pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 08:04:28pm - Az oldal újratöltődött.
+2026-02-22 - 08:04:28pm - ertekelesek osztály létrejött.
+2026-02-22 - 08:04:28pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-22 - 08:04:28pm - ertekelesek osztály megsemmisült.
