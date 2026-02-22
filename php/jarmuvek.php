@@ -326,7 +326,6 @@ class autok
 					while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
 					{
 						//Felépítem az xml szerkezetet string formátumban
-						//Nem elegáns megoldás
 						$XMLSorok.="<jarmu>";
 							$XMLSorok.='<marka>'.$egysor['marka'].'</marka>';
 							$XMLSorok.='<modell>'.$egysor['modell'].'</modell>';
