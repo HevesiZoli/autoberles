@@ -1,6 +1,6 @@
 <?php
 
-$ertekelesek = new ertekelesek($db_kapcsolat,$naplo);
+$ertekeles = new ertekelesek($db_kapcsolat,$naplo);
 
 
 class ertekelesek
