@@ -11,6 +11,7 @@ class ertekelesek
     // Adatbázis mezők adattagjai.
     public $ertekeles_id;
     public $csillag;
+    public $email;
     public $velemeny;
     public $letrehozva;
 
@@ -52,6 +53,7 @@ class ertekelesek
             {
                     $HTMLSorok .= "<tr>
                     <td>".$row['csillag']."</td>
+                    <td>".$row['email']."</td>
                     <td>".$row['velemeny']."</td>
                     <td>".$row['letrehozva']."</td>
                 </tr>";
@@ -78,6 +80,8 @@ class ertekelesek
         //   vizsgálatnál majd kibukik, ha nem kaptam adatot!
         if (isset($_POST['csillag'])) {
             $this->csillag = $_POST['csillag'];} else {$this->csillag = '';}
+        if (isset($_POST['email'])) {
+            $this->email = $_POST['email'];} else {$this->email = '';}
         if (isset($_POST['velemeny'])) {
             $this->velemeny = $_POST['velemeny'];} else {$this->velemeny = '';}
         if (isset($_POST['letrehozva'])) {
@@ -87,7 +91,7 @@ class ertekelesek
         $sikeresmentes = true;
 
         // Kötelező érték vizsgálata
-        if (empty($this->nev) || empty($this->email) || empty($this->jarmu))
+        if (empty($this->csillag) || empty($this->email) || empty($this->velemeny) || empty($this->letrehozva))
             {
                 $this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
                 $sikeresmentes = false;}
@@ -100,8 +104,8 @@ class ertekelesek
             // - A termékeket akarom listázni, ezek adatbázisban vannak
             //   ezért elkészítem az SQL lekérdezést!
 
-            $SQLlekerdezes = "INSERT INTO ertekelesek (csillag, velemeny, letrehozva)
-                              VALUES ('$this->csillag', '$this->velemeny', $this->letrehozva)";
+            $SQLlekerdezes = "INSERT INTO ertekelesek (csillag, email, velemeny, letrehozva)
+                              VALUES ('$this->csillag', '$this->email', '$this->velemeny', $this->letrehozva)";
 
             // Lefuttatjuk az SQL lekérdezést!
             $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);

@@ -162,7 +162,18 @@
 		 									break;
 
 		 		case 'dashboard'	  : include('php/dashboard.php');
+		 								include('php/Dash_board.php');
 		 								break;
+
+		 		case 'ujvelemeny':			include('php/dashboard.php');
+		 									include('html/velemeny.html');
+		 									break;
+
+		 		case 'foglalasokment' :  include('php/dashboard.php');
+		 								 if ($ertekelesek->uj_ertekeles() == true)
+		 							     {include('php/Dash_board.php');}
+		 							     else {include('html/velemeny.html');}
+		 							     break;
 		 		default : 				break;
 		 	}
 		 }

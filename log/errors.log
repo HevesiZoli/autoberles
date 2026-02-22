@@ -800,4 +800,28 @@ Stack trace:
 [20-Feb-2026 08:19:07 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github2\autoberles\php\jarmuvek.php on line 111
 [20-Feb-2026 08:20:27 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github3\autoberles\php\jarmuvek.php on line 111
 [20-Feb-2026 08:20:29 Europe/Budapest] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\Github3\autoberles\php\felhasznalok.php on line 77
-[20-Feb-2026 08:20:41 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in 
+[20-Feb-2026 08:20:41 Europe/Budapest] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in [22-Feb-2026 19:17:33 Europe/Budapest] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\GitHub\autoberles\html\dashboard.html:8
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\index.php(165): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\html\dashboard.html on line 8
+[22-Feb-2026 19:18:34 Europe/Budapest] PHP Fatal error:  Uncaught Error: Undefined constant "db_kapcsolat" in C:\xampp\htdocs\GitHub\autoberles\html\dashboard.html:10
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\index.php(165): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\html\dashboard.html on line 10
+[22-Feb-2026 19:19:39 Europe/Budapest] PHP Fatal error:  Uncaught Error: Undefined constant "php" in C:\xampp\htdocs\GitHub\autoberles\html\dashboard.html:7
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\index.php(165): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\html\dashboard.html on line 7
+[22-Feb-2026 19:24:45 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:25:32 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:27:25 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:27:26 Europe/Budapest] PHP Warning:  Undefined property: ertekelesek::$email in C:\xampp\htdocs\GitHub\autoberles\html\velemeny.html on line 27
+[22-Feb-2026 19:27:34 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:27:34 Europe/Budapest] PHP Warning:  Undefined property: ertekelesek::$email in C:\xampp\htdocs\GitHub\autoberles\html\velemeny.html on line 27
+[22-Feb-2026 19:32:18 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:35:48 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:36:06 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
+[22-Feb-2026 19:37:11 Europe/Budapest] PHP Fatal error:  Cannot declare class ertekelesek, because the name is already in use in C:\xampp\htdocs\GitHub\autoberles\php\dashboard.php on line 6
