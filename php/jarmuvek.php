@@ -2,8 +2,6 @@
 
 $autok = new autok($db_kapcsolat,$naplo);
 
-if(!isset($RESTVAGYOK))
-{}
 
 		/*$menupont = $_GET['menupont'];
 		switch ($menupont) {
@@ -349,5 +347,5 @@ class autok
 		// Itt adom vissza a HTML sorokat a lapnak.
 		return $XMLSorok;
  	}
-}
+ }
 ?>
