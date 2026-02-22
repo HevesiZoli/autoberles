@@ -53,3 +53,53 @@
 2026-02-22 - 07:10:29pm - Az oldal újratöltődött.
 2026-02-22 - 07:10:29pm - ertekelesek osztály létrejött.
 2026-02-22 - 07:10:29pm - ertekelesek osztály megsemmisült.
+2026-02-22 - 07:10:58pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:10:58pm - Az oldal újratöltődött.
+2026-02-22 - 07:10:58pm - ertekelesek osztály létrejött.
+2026-02-22 - 07:10:58pm - ertekelesek osztály megsemmisült.
+2026-02-22 - 07:10:59pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:10:59pm - Az oldal újratöltődött.
+2026-02-22 - 07:11:00pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:11:00pm - Az oldal újratöltődött.
+2026-02-22 - 07:11:00pm - autok osztály létrejött.
+2026-02-22 - 07:11:00pm - autok osztály megsemmisült.
+2026-02-22 - 07:12:01pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:01pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:33pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:33pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:38pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:38pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:39pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:39pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:39pm - ertekelesek osztály létrejött.
+2026-02-22 - 07:12:39pm - ertekelesek osztály megsemmisült.
+2026-02-22 - 07:12:40pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:40pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:40pm - autok osztály létrejött.
+2026-02-22 - 07:12:40pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-22 - 07:12:40pm - autok osztály megsemmisült.
+2026-02-22 - 07:12:40pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:40pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:40pm - foglalasok osztály létrejött.
+2026-02-22 - 07:12:40pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-22 - 07:12:40pm - foglalasok osztály megsemmisült.
+2026-02-22 - 07:12:41pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:41pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:41pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:41pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:43pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:43pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:43pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 07:12:43pm - Az oldal újratöltődött.
+2026-02-22 - 07:12:43pm - ertekelesek osztály létrejött.
+2026-02-22 - 07:12:43pm - ertekelesek osztály megsemmisült.
