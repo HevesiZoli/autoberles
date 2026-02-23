@@ -109,3 +109,22 @@
 2026-02-23 - 08:25:46am - foglalasok osztály létrejött.
 2026-02-23 - 08:25:46am - SELECT * FROM foglalas WHERE deleted = 0
 2026-02-23 - 08:25:46am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:48:37am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:37am - Az oldal újratöltődött.
+2026-02-23 - 08:48:37am - autok osztály létrejött.
+2026-02-23 - 08:48:37am - autok osztály megsemmisült.
+2026-02-23 - 08:48:39am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:39am - Az oldal újratöltődött.
+2026-02-23 - 08:48:41am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:41am - Az oldal újratöltődött.
+2026-02-23 - 08:48:43am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:43am - Az oldal újratöltődött.
+2026-02-23 - 08:48:43am - ertekelesek osztály létrejött.
+2026-02-23 - 08:48:43am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:48:43am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 08:48:43am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:48:44am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:44am - Az oldal újratöltődött.
+2026-02-23 - 08:48:44am - foglalasok osztály létrejött.
+2026-02-23 - 08:48:44am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:48:44am - foglalasok osztály megsemmisült.
