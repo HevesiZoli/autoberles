@@ -1,0 +1,18 @@
+2026-02-23 - 08:06:56am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:06:56am - Az oldal újratöltődött.
+2026-02-23 - 08:06:56am - autok osztály létrejött.
+2026-02-23 - 08:06:56am - autok osztály megsemmisült.
+2026-02-23 - 08:06:58am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:06:58am - Az oldal újratöltődött.
+2026-02-23 - 08:07:07am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:07:07am - Call to a member function _bejegyez() on null
+2026-02-23 - 08:07:07am - Az oldal újratöltődött.
+2026-02-23 - 08:07:07am - autok osztály létrejött.
+2026-02-23 - 08:07:07am - autok osztály megsemmisült.
+2026-02-23 - 08:09:51am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:09:51am - Az oldal újratöltődött.
+2026-02-23 - 08:09:52am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:09:52am - Az oldal újratöltődött.
+2026-02-23 - 08:09:52am - ertekelesek osztály létrejött.
+2026-02-23 - 08:09:52am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:09:52am - ertekelesek osztály megsemmisült.
