@@ -170,7 +170,7 @@
 		 									break;
 
 		 		case 'velemenyekment' :  include('php/dashboard.php');
-		 								 if ($ertekelesek->uj_ertekeles() == true)
+		 								 if ($ertekeles->uj_ertekeles() == true)
 		 							     {include('html/dashboard.html');}
 		 							     else {include('html/velemeny.html');}
 		 							     break;
