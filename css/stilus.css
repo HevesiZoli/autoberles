@@ -288,14 +288,14 @@ a.ujvelemeny:hover {
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-.butn {
+.Butn {
   padding: 0.5rem 1rem;
   border-radius: 6px;
   border: none;
   cursor: pointer;
 }
 
-.butn.Primary {
+.Butn.Primary {
   background: #2563eb;
   color: #fff;
 }
