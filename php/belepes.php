@@ -169,5 +169,4 @@ class belep {
       	return $this->sikeresbelepes;
       }
 }
-
 ?>
