@@ -246,3 +246,8 @@
 2026-02-23 - 09:07:31am - foglalasok osztály létrejött.
 2026-02-23 - 09:07:31am - SELECT * FROM foglalas WHERE deleted = 0
 2026-02-23 - 09:07:31am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:13:57am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:13:57am - Az oldal újratöltődött.
+2026-02-23 - 09:13:57am - foglalasok osztály létrejött.
+2026-02-23 - 09:13:57am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:13:57am - foglalasok osztály megsemmisült.
