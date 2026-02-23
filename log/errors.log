@@ -868,3 +868,4 @@ Stack trace:
 [23-Feb-2026 09:19:40 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github5\autoberles\php\foglalaskezeles.php on line 71
 [23-Feb-2026 09:19:44 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github5\autoberles\php\foglalaskezeles.php on line 71
 [23-Feb-2026 09:21:43 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github5\autoberles\php\foglalaskezeles.php on line 71
+[23-Feb-2026 11:37:24 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\auto\php\foglalaskezeles.php on line 71
