@@ -50,3 +50,13 @@
 						  FROM   autok
 						  WHERE deleted = 0
 2026-02-25 - 07:08:32pm - autok osztály megsemmisült.
+2026-02-25 - 07:12:52pm - Böngészőben betöltődött az oldal.
+2026-02-25 - 07:12:52pm - Az oldal újratöltődött.
+2026-02-25 - 07:12:54pm - Böngészőben betöltődött az oldal.
+2026-02-25 - 07:12:54pm - Az oldal újratöltődött.
+2026-02-25 - 07:12:54pm - autok osztály létrejött.
+2026-02-25 - 07:12:54pm - autok osztály megsemmisült.
+2026-02-25 - 07:13:39pm - Böngészőben betöltődött az oldal.
+2026-02-25 - 07:13:39pm - Az oldal újratöltődött.
+2026-02-25 - 07:13:39pm - autok osztály létrejött.
+2026-02-25 - 07:13:39pm - autok osztály megsemmisült.
