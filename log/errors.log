@@ -847,6 +847,7 @@ Stack trace:
 [23-Feb-2026 08:50:38 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github3\autoberles\php\foglalaskezeles.php on line 71
 [23-Feb-2026 08:50:38 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github3\autoberles\php\foglalaskezeles.php on line 71
 [23-Feb-2026 08:50:51 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github3\autoberles\php\foglalaskezeles.php on line 71
+<<<<<<< HEAD
 [23-Feb-2026 08:58:37 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github3\autoberles\php\foglalaskezeles.php on line 71
 [23-Feb-2026 08:58:37 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github3\autoberles\php\foglalaskezeles.php on line 71
 [23-Feb-2026 08:58:38 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\Github3\autoberles\php\foglalaskezeles.php on line 71
@@ -873,3 +874,5 @@ Stack trace:
 [23-Feb-2026 11:51:32 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\auto\php\foglalaskezeles.php on line 71
 [23-Feb-2026 11:51:50 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\auto\php\foglalaskezeles.php on line 71
 [23-Feb-2026 12:32:35 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\auto\php\foglalaskezeles.php on line 71
+=======
+>>>>>>> parent of 786c411 (a)

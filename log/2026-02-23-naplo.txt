@@ -162,6 +162,7 @@
 2026-02-23 - 08:50:51am - foglalasok osztály létrejött.
 2026-02-23 - 08:50:51am - SELECT * FROM foglalas WHERE deleted = 0
 2026-02-23 - 08:50:51am - foglalasok osztály megsemmisült.
+<<<<<<< HEAD
 2026-02-23 - 08:58:37am - Böngészőben betöltődött az oldal.
 2026-02-23 - 08:58:37am - Az oldal újratöltődött.
 2026-02-23 - 08:58:37am - foglalasok osztály létrejött.
@@ -589,3 +590,5 @@
 2026-02-23 - 07:57:12pm - foglalasok osztály létrejött.
 2026-02-23 - 07:57:12pm - SELECT * FROM foglalas WHERE deleted = 0
 2026-02-23 - 07:57:12pm - foglalasok osztály megsemmisült.
+=======
+>>>>>>> parent of 786c411 (a)
