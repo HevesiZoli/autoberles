@@ -105,13 +105,33 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     text-align: center;
+}
+
+.hero-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 60px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+
+    margin: 200px auto 40px;   /* eltartás felül és alul */
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.kocsi {
+    width: 100%;
+    height: 70vh;          /* Állítsd be a fekete vonalig */
+    object-fit: cover;     /* Kitölti és levágja ami kilóg */
+    display: block;
 }
 
 /* Szöveg stílus */
 .cim {
-    font-size: 60px;
+    font-size: 50px;
     margin: 0;
 }
 
