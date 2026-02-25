@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Bahnschrift, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 40px;      /* vízszintes padding: 40px */
+    box-sizing: border-box;  /* fontos, hogy a padding ne “tolja ki” a szélességet */
+    transition: all 0.3s ease;
+    background-color: transparent;
+    z-index: 1000;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #6b9c6f;
+}
+nav.scrolled {
+    background-color: rgba(34,34,34,0.95);
+    padding: 30px 40px;      /* balra-jobbra fix padding */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+    margin: 0 auto;          /* középre igazítás */
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* vagy center, ha teljesen középre akarod */
+    align-items: center;
+}
+
+nav li:last-child {
+    margin-left: auto;       /* ha van jobbra húzó elem, pl. Bejelentkezés */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAV ===== */
+nav {
+    background-color: #222;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    position: relative;       /* fontos, hogy a ::after pozícionálható legyen */
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;    /* ne legyen alap aláhúzás */
+    transition: color 0.3s;
+}
+nav a:hover {
+    text-decoration: none;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;                /* link alján */
+    width: 0%;                /* kezdetben nulla széles */
+    height: 2px;              /* vastagság */
+    background-color: #6b9c6f;   /* vonal színe */
+    transition: width 0.4s ease; /* animáció */
+}
+/* Hover effekt – szélesség 100%-ra nő */
+nav a:hover::after {
+    width: 100%;              /* teljes aláhúzás */
+}
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/* ===== HERO ===== */
+.hero {
+    height: calc(100vh - 70px); /* teljes képernyő - menü */
+    margin-top: 0px; /* menü magasság */
+    background-image: url("img/2.png"); /* NE png legyen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Szöveg stílus */
+.cim {
+    font-size: 60px;
+    margin: 0;
+}
+
+.alcim {
+    font-size: 28px;
+}
+
+/* Gomb */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.kapcsolat {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column; /* függőlegesen egymás alatt a két kontakt */
+    gap: 15px; /* távolság a telefon és az email között */
+}
+
+.kapcsolat p {
+    margin: 10px 0;
+}
+
+.terkep {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.terkep iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ===== KAPCSOLAT + TÉRKÉP EGYBEN ===== */
+
+.kapcsolat-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.kapcsolat_felirat
+{
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Bahnschrift;
+    font-size: 50px;
+    padding: 40px;
+}
+
+.kapcsolat,
+.terkep {
+    flex: 1;
+    min-width: 300px;
+}
+
+.kontakt-item {
+  display: flex;
+  align-items: center; /* ikon középre igazítva a szöveghez */
+  gap: 10px; /* távolság az ikon és a szöveg között */
+}
+
+.kontakt-item .text p {
+  margin: 0; /* eltünteti a p alapértelmezett margóját */
+  line-height: 1.2;
+}
+.kontakt-item i {
+  font-size: 30px; /* nagyobb ikon */
+  color: #333;     /* opcionális: szín */
+}
+
+/* ===== RÓLUNK ===== */
+.rolunk-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.rolunk {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.rolunk .kontakt-item {
+    display: flex;
+    align-items: flex-start; /* szöveg tetejéhez igazít */
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.rolunk_felirat {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.szoveg {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.container {
+    text-align: justify;
+}
+
+.container::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.minden_jo {
+    font-family: Bahnschrift;
+    padding: 4px;
+    border-radius: 7px;
+    width: 300px;
+    font-size: 33px;
+    display: inline-block;
+    text-align: center; /* szöveg középre */
+    box-sizing: border-box;
+}
