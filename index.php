@@ -129,18 +129,18 @@
 		 									break;
 
 		 		case 'ujfoglalas':			include('php/foglalaskezeles.php');
-		 									include('html/foglalasfelvetel.html');
+		 									include('php/foglalasfelvetel.php');
 		 									break;
 
 		 		case 'foglalasokment' :  include('php/foglalaskezeles.php');
 		 								 if ($foglalasok->ment() == true)
 		 							     {include('html/foglalasok.html');}
-		 							     else {include('html/foglalasfelvetel.html');}
+		 							     else {include('php/foglalasfelvetel.php');}
 		 							     break;
 
 		 	 	case 'foglalasokszerkeszt' :include('php/foglalaskezeles.php');
 		 									$foglalasok->szerkeszt($_POST['id']);	
-		 									include('html/foglalasfelvetel.html');
+		 									include('php/foglalasfelvetel.php');
 		 									break;
 
 		 		case 'foglalasokfrissit' :   include('php/foglalaskezeles.php');
@@ -148,7 +148,7 @@
 		 									 {include('html/foglalasok.html');}
 		 									 else
 		 									 {
-		 										include('html/foglalasfelvetel.html');
+		 										include('php/foglalasfelvetel.php');
 		 									 }
 		 									 break;
 

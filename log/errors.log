@@ -876,3 +876,62 @@ Stack trace:
 [23-Feb-2026 12:32:35 Europe/Budapest] PHP Notice:  Undefined index: telefonszam in C:\xampp\htdocs\auto\php\foglalaskezeles.php on line 71
 =======
 >>>>>>> parent of 786c411 (a)
+[01-Mar-2026 09:29:13 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function _autok_lista() in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html on line 24
+[01-Mar-2026 09:30:52 Europe/Budapest] PHP Warning:  Undefined variable $autok in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html on line 24
+[01-Mar-2026 09:30:52 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function _autok_lista() on null in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html on line 24
+[01-Mar-2026 09:35:50 Europe/Budapest] PHP Warning:  Undefined variable $autok in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html on line 24
+[01-Mar-2026 09:35:50 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function _autok_lista() on null in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html on line 24
+[01-Mar-2026 09:39:10 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function _autok_lista() in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\html\foglalasfelvetel.html on line 24
+[01-Mar-2026 09:40:18 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function _autok_lista() in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php on line 24
+[01-Mar-2026 09:40:21 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function _autok_lista() in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php on line 24
+[01-Mar-2026 09:41:02 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function _autok_lista() in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php on line 24
+[01-Mar-2026 09:42:24 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function _autok_lista() in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php:24
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php on line 24
+[01-Mar-2026 09:51:30 Europe/Budapest] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php:30
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php on line 30
+[01-Mar-2026 09:51:44 Europe/Budapest] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php:30
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php on line 30
+[01-Mar-2026 09:53:28 Europe/Budapest] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php:31
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\index.php(132): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\foglalasfelvetel.php on line 31
+[01-Mar-2026 09:56:45 Europe/Budapest] PHP Fatal error:  Cannot declare class adatbazis_kapcsolat, because the name is already in use in C:\xampp\htdocs\autoberles\php\adatbaziskapcsolat.php on line 9
+[01-Mar-2026 09:57:29 Europe/Budapest] PHP Fatal error:  Cannot declare class adatbazis_kapcsolat, because the name is already in use in C:\xampp\htdocs\autoberles\php\adatbaziskapcsolat.php on line 9
