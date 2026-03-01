@@ -1783,3 +1783,10 @@ Stack trace:
 #2 C:\xampp\htdocs\autoberles\index.php(221): include('C:\\xampp\\htdocs...')
 #3 {main}
   thrown in C:\xampp\htdocs\autoberles\php\jarmuvek.php on line 151
+[01-Mar-2026 18:46:22 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'szallithato_szemelyek' in 'field list' in C:\xampp\htdocs\autoberles\php\jarmuvek.php:151
+Stack trace:
+#0 C:\xampp\htdocs\autoberles\php\jarmuvek.php(151): mysqli_query(Object(mysqli), 'SELECT auto_id,...')
+#1 C:\xampp\htdocs\autoberles\html\autoklista.html(30): autok->autok_mejelenites()
+#2 C:\xampp\htdocs\autoberles\index.php(173): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\autoberles\php\jarmuvek.php on line 151

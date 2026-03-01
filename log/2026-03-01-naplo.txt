@@ -140,3 +140,193 @@
 2026-03-01 - 06:44:57pm - Az oldal újratöltődött.
 2026-03-01 - 06:45:04pm - Böngészőben betöltődött az oldal.
 2026-03-01 - 06:45:04pm - Az oldal újratöltődött.
+2026-03-01 - 06:46:15pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:46:15pm - Az oldal újratöltődött.
+2026-03-01 - 06:46:16pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:46:16pm - Az oldal újratöltődött.
+2026-03-01 - 06:46:17pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:46:17pm - Az oldal újratöltődött.
+2026-03-01 - 06:46:19pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:46:19pm - Az oldal újratöltődött.
+2026-03-01 - 06:46:22pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:46:22pm - Az oldal újratöltődött.
+2026-03-01 - 06:46:22pm - autok osztály létrejött.
+2026-03-01 - 06:46:22pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 szallithato_szemelyek,
+								 uzemanyag,
+								 teljesitmeny,
+								 sebessegvalto_tipusa,
+								 hengerurtartalom,
+								 vegyes_fogyasztastol,
+								 vegyes_fogyasztasig,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij,
+								 kep
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 06:46:22pm - autok osztály megsemmisült.
+2026-03-01 - 06:50:41pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:50:41pm - Az oldal újratöltődött.
+2026-03-01 - 06:50:42pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:50:42pm - Az oldal újratöltődött.
+2026-03-01 - 06:50:43pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:50:43pm - Az oldal újratöltődött.
+2026-03-01 - 06:50:46pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:50:46pm - Az oldal újratöltődött.
+2026-03-01 - 06:50:46pm - autok osztály létrejött.
+2026-03-01 - 06:50:46pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 szallithato_szemelyek,
+								 uzemanyag,
+								 teljesitmeny,
+								 sebessegvalto_tipusa,
+								 hengerurtartalom,
+								 vegyes_fogyasztastol,
+								 vegyes_fogyasztasig,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij,
+								 kep
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 06:50:46pm - autok osztály megsemmisült.
+2026-03-01 - 06:51:01pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:51:01pm - Az oldal újratöltődött.
+2026-03-01 - 06:51:01pm - autok osztály létrejött.
+2026-03-01 - 06:51:01pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 szallithato_szemelyek,
+								 uzemanyag,
+								 teljesitmeny,
+								 sebessegvalto_tipusa,
+								 hengerurtartalom,
+								 vegyes_fogyasztastol,
+								 vegyes_fogyasztasig,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij,
+								 kep
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 06:51:01pm - autok osztály megsemmisült.
+2026-03-01 - 06:51:07pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:51:07pm - Az oldal újratöltődött.
+2026-03-01 - 06:51:08pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:51:08pm - Az oldal újratöltődött.
+2026-03-01 - 06:51:08pm - autok osztály létrejött.
+2026-03-01 - 06:51:08pm - autok osztály megsemmisült.
+2026-03-01 - 06:51:10pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:51:10pm - Az oldal újratöltődött.
+2026-03-01 - 06:51:50pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:51:50pm - Az oldal újratöltődött.
+2026-03-01 - 06:51:50pm - autok osztály létrejött.
+2026-03-01 - 06:51:50pm - autok osztály megsemmisült.
+2026-03-01 - 06:51:55pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:51:55pm - Az oldal újratöltődött.
+2026-03-01 - 06:51:57pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:51:57pm - Az oldal újratöltődött.
+2026-03-01 - 06:52:29pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:52:29pm - Az oldal újratöltődött.
+2026-03-01 - 06:52:29pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                               VALUES ('daved',
+                                       'daved',
+                                       'nemesd90@gmail.com',
+                                       '2026-03-01 18:52:29',
+                                       'ebbc3c26a34b609dc46f5c3378f96e08',
+                                       'M3TE.oAMo;`7muTAC;€Ch%xo"!z°&¿tQM"j`vOo€6¿v=×0;D:DE>Vo°um"§.dC0€6©¿_j2A;V|jP°7fkd(A×7A.€q0<l×™l€.7Ld;HhU',
+                                       ''
+                                      )
+2026-03-01 - 06:52:29pm - felkészülés az aktiváló levél elküldésére.
+2026-03-01 - 06:52:31pm - Email elküldve: nemesd90@gmail.com
+2026-03-01 - 06:52:31pm - Levél elküldése befejezve.
+2026-03-01 - 06:53:09pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:53:09pm - Az oldal újratöltődött.
+2026-03-01 - 06:53:09pm - autok osztály létrejött.
+2026-03-01 - 06:53:09pm - autok osztály megsemmisült.
+2026-03-01 - 06:53:11pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:53:11pm - Az oldal újratöltődött.
+2026-03-01 - 06:53:17pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:53:17pm - Az oldal újratöltődött.
+2026-03-01 - 06:53:25pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:53:25pm - Az oldal újratöltődött.
+2026-03-01 - 06:53:25pm - autok osztály létrejött.
+2026-03-01 - 06:53:25pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 szallithato_szemelyek,
+								 uzemanyag,
+								 teljesitmeny,
+								 sebessegvalto_tipusa,
+								 hengerurtartalom,
+								 vegyes_fogyasztastol,
+								 vegyes_fogyasztasig,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij,
+								 kep
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 06:53:25pm - autok osztály megsemmisült.
+2026-03-01 - 06:53:27pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:53:27pm - Az oldal újratöltődött.
+2026-03-01 - 06:53:27pm - autok osztály létrejött.
+2026-03-01 - 06:53:27pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 szallithato_szemelyek,
+								 uzemanyag,
+								 teljesitmeny,
+								 sebessegvalto_tipusa,
+								 hengerurtartalom,
+								 vegyes_fogyasztastol,
+								 vegyes_fogyasztasig,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij,
+								 kep
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 06:53:27pm - autok osztály megsemmisült.
+2026-03-01 - 06:53:28pm - Böngészőben betöltődött az oldal.
+2026-03-01 - 06:53:28pm - Az oldal újratöltődött.
+2026-03-01 - 06:53:28pm - autok osztály létrejött.
+2026-03-01 - 06:53:28pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 szallithato_szemelyek,
+								 uzemanyag,
+								 teljesitmeny,
+								 sebessegvalto_tipusa,
+								 hengerurtartalom,
+								 vegyes_fogyasztastol,
+								 vegyes_fogyasztasig,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij,
+								 kep
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 06:53:28pm - autok osztály megsemmisült.
