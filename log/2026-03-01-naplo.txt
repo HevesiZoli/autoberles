@@ -222,3 +222,85 @@
 2026-03-01 - 10:03:33am - foglalasok osztály létrejött.
 2026-03-01 - 10:03:33am - SELECT * FROM foglalas WHERE deleted = 0
 2026-03-01 - 10:03:33am - foglalasok osztály megsemmisült.
+2026-03-01 - 10:05:35am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:05:35am - Az oldal újratöltődött.
+2026-03-01 - 10:05:35am - foglalasok osztály létrejött.
+2026-03-01 - 10:05:35am - SELECT * FROM foglalas WHERE deleted = 0
+2026-03-01 - 10:05:35am - foglalasok osztály megsemmisült.
+2026-03-01 - 10:05:46am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:05:46am - Az oldal újratöltődött.
+2026-03-01 - 10:05:46am - foglalasok osztály létrejött.
+2026-03-01 - 10:05:46am - foglalasok osztály megsemmisült.
+2026-03-01 - 10:06:30am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:06:30am - Az oldal újratöltődött.
+2026-03-01 - 10:06:30am - autok osztály létrejött.
+2026-03-01 - 10:06:30am - autok osztály megsemmisült.
+2026-03-01 - 10:07:37am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:37am - Az oldal újratöltődött.
+2026-03-01 - 10:07:37am - ertekelesek osztály létrejött.
+2026-03-01 - 10:07:37am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-03-01 - 10:07:37am - ertekelesek osztály megsemmisült.
+2026-03-01 - 10:07:37am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:37am - Az oldal újratöltődött.
+2026-03-01 - 10:07:37am - autok osztály létrejött.
+2026-03-01 - 10:07:37am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 10:07:37am - autok osztály megsemmisült.
+2026-03-01 - 10:07:39am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:39am - Az oldal újratöltődött.
+2026-03-01 - 10:07:39am - foglalasok osztály létrejött.
+2026-03-01 - 10:07:39am - SELECT * FROM foglalas WHERE deleted = 0
+2026-03-01 - 10:07:39am - foglalasok osztály megsemmisült.
+2026-03-01 - 10:07:40am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:40am - Az oldal újratöltődött.
+2026-03-01 - 10:07:43am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:43am - Az oldal újratöltődött.
+2026-03-01 - 10:07:44am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:44am - Az oldal újratöltődött.
+2026-03-01 - 10:07:44am - autok osztály létrejött.
+2026-03-01 - 10:07:44am - autok osztály megsemmisült.
+2026-03-01 - 10:07:51am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:51am - Az oldal újratöltődött.
+2026-03-01 - 10:07:52am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:52am - Az oldal újratöltődött.
+2026-03-01 - 10:07:56am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:07:56am - Az oldal újratöltődött.
+2026-03-01 - 10:07:56am - autok osztály létrejött.
+2026-03-01 - 10:07:56am - autok osztály megsemmisült.
+2026-03-01 - 10:08:04am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:08:04am - Az oldal újratöltődött.
+2026-03-01 - 10:08:05am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:08:05am - Az oldal újratöltődött.
+2026-03-01 - 10:08:06am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:08:06am - Az oldal újratöltődött.
+2026-03-01 - 10:08:06am - autok osztály létrejött.
+2026-03-01 - 10:08:06am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-03-01 - 10:08:06am - autok osztály megsemmisült.
+2026-03-01 - 10:08:06am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:08:06am - Az oldal újratöltődött.
+2026-03-01 - 10:08:06am - foglalasok osztály létrejött.
+2026-03-01 - 10:08:06am - SELECT * FROM foglalas WHERE deleted = 0
+2026-03-01 - 10:08:06am - foglalasok osztály megsemmisült.
+2026-03-01 - 10:08:07am - Böngészőben betöltődött az oldal.
+2026-03-01 - 10:08:07am - Az oldal újratöltődött.
+2026-03-01 - 10:08:07am - foglalasok osztály létrejött.
+2026-03-01 - 10:08:07am - foglalasok osztály megsemmisült.
