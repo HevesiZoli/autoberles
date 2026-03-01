@@ -1,9 +1,17 @@
 <form action="index.php" method="post">
-	<div class="panel login shadow">
-		<i class="fa-solid fa-user"></i> <input type="text" class="input login" name="usr" id="usr" placeholder="Kötelező megadni!"><br>
-		<i class="fa-solid fa-lock"></i> <input type="password" class="input login" name="psw" id="psw" placeholder="Kötelező megadni!"><br>
-		<input type="submit" class="input login button" name="btn" id="btn" value="Belépés">
+    <div class="panel login">
+        <div class="input-wrapper">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="usr" id="usr" placeholder="Kötelező megadni!" required>
+        </div>
+        <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="psw" id="psw" placeholder="Kötelező megadni!" required>
+        </div>
+        <input type="submit" class="input login button" value="Bejelentkezés">
+        <div class="link-row">
+    		<a class="input login button" href="index.php?menupont=regisztracio">Regisztráció</a>
+    		<a class="input login button" href="index.php?menupont=kezdolap">Vissza</a>
+		</div>
 	</div>
 </form>
-<a class="input login button" href="index.php?menupont=regisztracio">Regisztráció</a>
-<a class="input login button" href="index.php?menupont=kezdolap">Vissza</a>

@@ -11,17 +11,19 @@ class foglalasok
  	public $foglalas_id;
  	public $nev;
  	public $email;
+ 	public $telefonszam;
  	public $jarmu;
  	public $kezdet;
  	public $vege;
  	public $letrehozva;
+ 	public $deleted;
 
  	// Megmondja, hogy milyen műveletet hajtok éppen végre!
  	public $muvelet;
 
  	// - Üzenet, amit a felhasználónak szánok
  	//   lehet ez hibaüzenet is!
- 	public $uzenet;
+ 	public $hibauzenet;
 
  	public function __construct($db_kapcsolat,$naplo = null) {
  		// - A paraméterben megadott "objektumokat" itt
@@ -43,7 +45,7 @@ class foglalasok
 {
     $HTMLSorok = "";
 
-    $SQLlekerdezes = "SELECT * FROM foglalas";
+    $SQLlekerdezes = "SELECT * FROM foglalas WHERE deleted = 0";
     $this->naplo->_bejegyez($SQLlekerdezes);
 
     $SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
@@ -65,6 +67,7 @@ class foglalasok
             $HTMLSorok .= "<tr>
                 <td>".$row['nev']."</td>
                 <td>".$row['email']."</td>
+                <td>".$row['telefonszam']."</td>
                 <td>".$row['jarmu']."</td>
                 <td>".$row['kezdet']."</td>
                 <td>".$row['vege']."</td>
@@ -96,6 +99,8 @@ class foglalasok
 			$this->nev = $_POST['nev'];} else {$this->nev = '';}
 		if (isset($_POST['email'])) {
 			$this->email = $_POST['email'];} else {$this->email = '';}
+		if (isset($_POST['telefonszam'])) {
+			$this->telefonszam = $_POST['telefonszam'];} else {$this->telefonszam = '';}
 		if (isset($_POST['jarmu'])) {
 			$this->jarmu = $_POST['jarmu'];} else {$this->jarmu = '';}
 		if (isset($_POST['kezdet'])) {
@@ -109,11 +114,20 @@ class foglalasok
 		$sikeresmentes = true;
 
 		// Kötelező érték vizsgálata
-		if (empty($this->nev) || empty($this->email) || empty($this->jarmu) || empty($this->kezdet) ||
+		if (empty($this->nev) || empty($this->email) || empty($this->telefonszam) || empty($this->jarmu) || empty($this->kezdet) ||
 	 	    empty($this->vege)|| empty($this->letrehozva)) 
-			{$this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
+			{$this->hibauzenet = 'Kérem tötlse ki a kötelező mezőket!';
 			 $sikeresmentes = false;}
 
+		if (isset($_POST['telefonszam'])) {
+		    $telefonszam = $_POST['telefonszam'];
+		    if (preg_match('/^\+36(1|20|30|31|70)\d{6,7}$/', $telefonszam)) {
+		    	$sikeresmentes = true;
+		    } else {
+		    	$sikeresmentes = false;
+		        $this->hibauzenet = 'Érvénytelen telefonszám!';
+		    }
+		}
 		// - Cask akkor kezdek a mentéhez, ha a kötelező érték
 		//   vizsgálat már lefutott, és a $sikeresmentes változó
 		//   megengedi a mentést!
@@ -122,8 +136,8 @@ class foglalasok
 			// - A termékeket akarom listázni, ezek adatbázisban vannak
 			//   ezért elkészítem az SQL lekérdezést!
 
-			$SQLlekerdezes = "INSERT INTO foglalas (nev,email,jarmu,kezdet,vege,letrehozva) 
-							  VALUES ('$this->nev','$this->email','$this->jarmu','$this->kezdet','$this->vege','$this->letrehozva') ";
+			$SQLlekerdezes = "INSERT INTO foglalas (nev,email,telefonszam,jarmu,kezdet,vege,letrehozva) 
+							  VALUES ('$this->nev','$this->email','$this->telefonszam','$this->jarmu','$this->kezdet','$this->vege','$this->letrehozva') ";
 
 			// Lefuttatjuk az SQL lekérdezést!
 			$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
@@ -157,7 +171,8 @@ class foglalasok
 			while ($egysor = mysqli_fetch_assoc($SQLeredmeny)) 
 			{
 				$this->nev = $egysor['nev'];
-				$this->nev = $egysor['email'];
+				$this->email = $egysor['email'];
+				$this->telefonszam = $egysor['telefonszam'];
 				$this->jarmu = $egysor['jarmu'];
 				$this->kezdet = $egysor['kezdet'];
 				$this->vege = $egysor['vege'];
@@ -185,6 +200,8 @@ class foglalasok
 			$this->nev = $_POST['nev'];} else {$this->nev = '';}
 		if (isset($_POST['email'])) {
 			$this->email = $_POST['email'];} else {$this->email = '';}
+		if (isset($_POST['telefonszam'])) {
+			$this->telefonszam = $_POST['telefonszam'];} else {$this->telefonszam = '';}
 		if (isset($_POST['jarmu'])) {
 			$this->jarmu = $_POST['jarmu'];} else {$this->jarmu = '';}
 		if (isset($_POST['kezdet'])) {
@@ -198,9 +215,9 @@ class foglalasok
 		$sikeresmentes = true;
 
 		// Kötelező érték vizsgálata
-		if (empty($this->nev) || empty($this->email) || empty($this->jarmu) || empty($this->kezdet) ||
+		if (empty($this->nev) || empty($this->email) || empty($this->telefonszam) || empty($this->jarmu) || empty($this->kezdet) ||
 	 	    empty($this->vege)|| empty($this->letrehozva)) 
-			{$this->uzenet = 'Kérem tötlse ki a kötelező mezőket!';
+			{$this->hibauzenet = 'Kérem tötlse ki a kötelező mezőket!';
 			 $sikeresmentes = false;}
 
 		// - Cask akkor kezdek a mentéhez, ha a kötelező érték
@@ -214,6 +231,7 @@ class foglalasok
 			$SQLlekerdezes = "UPDATE foglalas 
 							  SET	 nev = '$this->nev',
 							  		 email = '$this->email',
+							  		 telefonszam = '$this->telefonszam',
 							  		 jarmu = '$this->jarmu',
 							  		 kezdet = '$this->kezdet',
 							  		 vege = '$this->vege',
@@ -233,7 +251,9 @@ class foglalasok
 		$this->muvelet = 'delete';
 		$this->foglalas_id = $foglalas_id;
 
-		$SQLlekerdezes = "DELETE FROM foglalas WHERE foglalas_id = $foglalas_id";
+		$SQLlekerdezes = "UPDATE foglalas
+						  SET deleted = 1
+						  WHERE foglalas_id = $foglalas_id";
 
 		// Lefuttatjuk az SQL lekérdezést!
 		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);

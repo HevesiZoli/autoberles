@@ -1,0 +1,594 @@
+2026-02-23 - 08:06:56am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:06:56am - Az oldal újratöltődött.
+2026-02-23 - 08:06:56am - autok osztály létrejött.
+2026-02-23 - 08:06:56am - autok osztály megsemmisült.
+2026-02-23 - 08:06:58am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:06:58am - Az oldal újratöltődött.
+2026-02-23 - 08:07:07am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:07:07am - Call to a member function _bejegyez() on null
+2026-02-23 - 08:07:07am - Az oldal újratöltődött.
+2026-02-23 - 08:07:07am - autok osztály létrejött.
+2026-02-23 - 08:07:07am - autok osztály megsemmisült.
+2026-02-23 - 08:09:51am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:09:51am - Az oldal újratöltődött.
+2026-02-23 - 08:09:52am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:09:52am - Az oldal újratöltődött.
+2026-02-23 - 08:09:52am - ertekelesek osztály létrejött.
+2026-02-23 - 08:09:52am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:09:52am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:15:58am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:15:58am - Az oldal újratöltődött.
+2026-02-23 - 08:15:59am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:15:59am - Az oldal újratöltődött.
+2026-02-23 - 08:15:59am - ertekelesek osztály létrejött.
+2026-02-23 - 08:15:59am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:15:59am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:16:14am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:14am - Az oldal újratöltődött.
+2026-02-23 - 08:16:14am - autok osztály létrejött.
+2026-02-23 - 08:16:14am - autok osztály megsemmisült.
+2026-02-23 - 08:16:15am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:15am - Az oldal újratöltődött.
+2026-02-23 - 08:16:24am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:24am - Az oldal újratöltődött.
+2026-02-23 - 08:16:26am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:26am - Az oldal újratöltődött.
+2026-02-23 - 08:16:26am - ertekelesek osztály létrejött.
+2026-02-23 - 08:16:26am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:16:26am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:16:28am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:28am - Az oldal újratöltődött.
+2026-02-23 - 08:16:28am - autok osztály létrejött.
+2026-02-23 - 08:16:28am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-23 - 08:16:28am - autok osztály megsemmisült.
+2026-02-23 - 08:16:28am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:28am - Az oldal újratöltődött.
+2026-02-23 - 08:16:28am - foglalasok osztály létrejött.
+2026-02-23 - 08:16:28am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:16:28am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:16:30am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:30am - Az oldal újratöltődött.
+2026-02-23 - 08:16:31am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:16:31am - Az oldal újratöltődött.
+2026-02-23 - 08:16:31am - foglalasok osztály létrejött.
+2026-02-23 - 08:16:31am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:16:31am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:19:14am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:19:14am - Az oldal újratöltődött.
+2026-02-23 - 08:19:14am - autok osztály létrejött.
+2026-02-23 - 08:19:14am - autok osztály megsemmisült.
+2026-02-23 - 08:19:15am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:19:15am - Az oldal újratöltődött.
+2026-02-23 - 08:19:20am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:19:20am - Az oldal újratöltődött.
+2026-02-23 - 08:19:22am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:19:22am - Az oldal újratöltődött.
+2026-02-23 - 08:19:22am - ertekelesek osztály létrejött.
+2026-02-23 - 08:19:22am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:19:22am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:19:23am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:19:23am - Az oldal újratöltődött.
+2026-02-23 - 08:19:23am - foglalasok osztály létrejött.
+2026-02-23 - 08:19:23am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:19:23am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:25:32am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:25:32am - Az oldal újratöltődött.
+2026-02-23 - 08:25:32am - autok osztály létrejött.
+2026-02-23 - 08:25:32am - autok osztály megsemmisült.
+2026-02-23 - 08:25:33am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:25:33am - Az oldal újratöltődött.
+2026-02-23 - 08:25:40am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:25:40am - Az oldal újratöltődött.
+2026-02-23 - 08:25:44am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:25:44am - Az oldal újratöltődött.
+2026-02-23 - 08:25:44am - ertekelesek osztály létrejött.
+2026-02-23 - 08:25:44am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:25:44am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:25:45am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:25:45am - Az oldal újratöltődött.
+2026-02-23 - 08:25:45am - foglalasok osztály létrejött.
+2026-02-23 - 08:25:45am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:25:45am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:25:46am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:25:46am - Az oldal újratöltődött.
+2026-02-23 - 08:25:46am - foglalasok osztály létrejött.
+2026-02-23 - 08:25:46am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:25:46am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:25:46am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:25:46am - Az oldal újratöltődött.
+2026-02-23 - 08:25:46am - foglalasok osztály létrejött.
+2026-02-23 - 08:25:46am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:25:46am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:48:37am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:37am - Az oldal újratöltődött.
+2026-02-23 - 08:48:37am - autok osztály létrejött.
+2026-02-23 - 08:48:37am - autok osztály megsemmisült.
+2026-02-23 - 08:48:39am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:39am - Az oldal újratöltődött.
+2026-02-23 - 08:48:41am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:41am - Az oldal újratöltődött.
+2026-02-23 - 08:48:43am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:43am - Az oldal újratöltődött.
+2026-02-23 - 08:48:43am - ertekelesek osztály létrejött.
+2026-02-23 - 08:48:43am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:48:43am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 08:48:43am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:48:44am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:48:44am - Az oldal újratöltődött.
+2026-02-23 - 08:48:44am - foglalasok osztály létrejött.
+2026-02-23 - 08:48:44am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:48:44am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:50:37am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:37am - Az oldal újratöltődött.
+2026-02-23 - 08:50:37am - foglalasok osztály létrejött.
+2026-02-23 - 08:50:37am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:50:37am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:50:38am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:38am - Az oldal újratöltődött.
+2026-02-23 - 08:50:38am - foglalasok osztály létrejött.
+2026-02-23 - 08:50:38am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:50:38am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:50:38am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:38am - Az oldal újratöltődött.
+2026-02-23 - 08:50:38am - foglalasok osztály létrejött.
+2026-02-23 - 08:50:38am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:50:38am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:50:45am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:45am - Az oldal újratöltődött.
+2026-02-23 - 08:50:45am - autok osztály létrejött.
+2026-02-23 - 08:50:45am - autok osztály megsemmisült.
+2026-02-23 - 08:50:47am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:47am - Az oldal újratöltődött.
+2026-02-23 - 08:50:49am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:49am - Az oldal újratöltődött.
+2026-02-23 - 08:50:50am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:50am - Az oldal újratöltődött.
+2026-02-23 - 08:50:50am - ertekelesek osztály létrejött.
+2026-02-23 - 08:50:50am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:50:50am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 08:50:50am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:50:51am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:50:51am - Az oldal újratöltődött.
+2026-02-23 - 08:50:51am - foglalasok osztály létrejött.
+2026-02-23 - 08:50:51am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:50:51am - foglalasok osztály megsemmisült.
+<<<<<<< HEAD
+2026-02-23 - 08:58:37am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:37am - Az oldal újratöltődött.
+2026-02-23 - 08:58:37am - foglalasok osztály létrejött.
+2026-02-23 - 08:58:37am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:58:37am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:58:37am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:37am - Az oldal újratöltődött.
+2026-02-23 - 08:58:37am - foglalasok osztály létrejött.
+2026-02-23 - 08:58:37am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:58:37am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:58:38am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:38am - Az oldal újratöltődött.
+2026-02-23 - 08:58:38am - foglalasok osztály létrejött.
+2026-02-23 - 08:58:38am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:58:38am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:58:38am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:38am - Az oldal újratöltődött.
+2026-02-23 - 08:58:38am - foglalasok osztály létrejött.
+2026-02-23 - 08:58:38am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:58:38am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:58:38am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:38am - Az oldal újratöltődött.
+2026-02-23 - 08:58:38am - foglalasok osztály létrejött.
+2026-02-23 - 08:58:38am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:58:38am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:58:38am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:38am - Az oldal újratöltődött.
+2026-02-23 - 08:58:38am - foglalasok osztály létrejött.
+2026-02-23 - 08:58:38am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:58:38am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:58:52am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:52am - Az oldal újratöltődött.
+2026-02-23 - 08:58:52am - autok osztály létrejött.
+2026-02-23 - 08:58:52am - autok osztály megsemmisült.
+2026-02-23 - 08:58:53am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:53am - Az oldal újratöltődött.
+2026-02-23 - 08:58:55am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:55am - Az oldal újratöltődött.
+2026-02-23 - 08:58:56am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:56am - Az oldal újratöltődött.
+2026-02-23 - 08:58:56am - ertekelesek osztály létrejött.
+2026-02-23 - 08:58:56am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 08:58:56am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 08:58:56am - ertekelesek osztály megsemmisült.
+2026-02-23 - 08:58:57am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:57am - Az oldal újratöltődött.
+2026-02-23 - 08:58:58am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:58am - Az oldal újratöltődött.
+2026-02-23 - 08:58:58am - foglalasok osztály létrejött.
+2026-02-23 - 08:58:58am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:58:58am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:58:59am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:58:59am - Az oldal újratöltődött.
+2026-02-23 - 08:59:00am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:59:00am - Az oldal újratöltődött.
+2026-02-23 - 08:59:00am - foglalasok osztály létrejött.
+2026-02-23 - 08:59:00am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:59:00am - foglalasok osztály megsemmisült.
+2026-02-23 - 08:59:09am - Böngészőben betöltődött az oldal.
+2026-02-23 - 08:59:09am - Az oldal újratöltődött.
+2026-02-23 - 08:59:09am - foglalasok osztály létrejött.
+2026-02-23 - 08:59:09am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 08:59:09am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:07:25am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:07:25am - Az oldal újratöltődött.
+2026-02-23 - 09:07:25am - autok osztály létrejött.
+2026-02-23 - 09:07:25am - autok osztály megsemmisült.
+2026-02-23 - 09:07:27am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:07:27am - Az oldal újratöltődött.
+2026-02-23 - 09:07:29am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:07:29am - Az oldal újratöltődött.
+2026-02-23 - 09:07:30am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:07:30am - Az oldal újratöltődött.
+2026-02-23 - 09:07:30am - ertekelesek osztály létrejött.
+2026-02-23 - 09:07:30am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 09:07:30am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 09:07:30am - ertekelesek osztály megsemmisült.
+2026-02-23 - 09:07:31am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:07:31am - Az oldal újratöltődött.
+2026-02-23 - 09:07:31am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:07:31am - Az oldal újratöltődött.
+2026-02-23 - 09:07:31am - foglalasok osztály létrejött.
+2026-02-23 - 09:07:31am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:07:31am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:13:57am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:13:57am - Az oldal újratöltődött.
+2026-02-23 - 09:13:57am - foglalasok osztály létrejött.
+2026-02-23 - 09:13:57am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:13:57am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:16:16am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:16:16am - Az oldal újratöltődött.
+2026-02-23 - 09:16:16am - foglalasok osztály létrejött.
+2026-02-23 - 09:16:16am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:16:16am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:18:23am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:18:23am - Az oldal újratöltődött.
+2026-02-23 - 09:18:23am - foglalasok osztály létrejött.
+2026-02-23 - 09:18:23am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:18:23am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:18:25am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:18:25am - Az oldal újratöltődött.
+2026-02-23 - 09:18:25am - foglalasok osztály létrejött.
+2026-02-23 - 09:18:25am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:18:25am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:18:27am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:18:27am - Az oldal újratöltődött.
+2026-02-23 - 09:18:27am - foglalasok osztály létrejött.
+2026-02-23 - 09:18:27am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:18:27am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:18:54am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:18:55am - Az oldal újratöltődött.
+2026-02-23 - 09:18:55am - foglalasok osztály létrejött.
+2026-02-23 - 09:18:55am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:18:55am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:19:29am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:29am - Az oldal újratöltődött.
+2026-02-23 - 09:19:29am - foglalasok osztály létrejött.
+2026-02-23 - 09:19:29am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:19:29am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:19:36am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:36am - Az oldal újratöltődött.
+2026-02-23 - 09:19:36am - foglalasok osztály létrejött.
+2026-02-23 - 09:19:36am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:19:36am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:19:40am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:40am - Az oldal újratöltődött.
+2026-02-23 - 09:19:40am - foglalasok osztály létrejött.
+2026-02-23 - 09:19:40am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:19:40am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:19:41am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:41am - Az oldal újratöltődött.
+2026-02-23 - 09:19:41am - autok osztály létrejött.
+2026-02-23 - 09:19:41am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-23 - 09:19:41am - autok osztály megsemmisült.
+2026-02-23 - 09:19:42am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:42am - Az oldal újratöltődött.
+2026-02-23 - 09:19:42am - autok osztály létrejött.
+2026-02-23 - 09:19:42am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-23 - 09:19:42am - autok osztály megsemmisült.
+2026-02-23 - 09:19:42am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:42am - Az oldal újratöltődött.
+2026-02-23 - 09:19:42am - ertekelesek osztály létrejött.
+2026-02-23 - 09:19:42am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 09:19:42am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 09:19:42am - ertekelesek osztály megsemmisült.
+2026-02-23 - 09:19:43am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:43am - Az oldal újratöltődött.
+2026-02-23 - 09:19:43am - autok osztály létrejött.
+2026-02-23 - 09:19:43am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-23 - 09:19:43am - autok osztály megsemmisült.
+2026-02-23 - 09:19:44am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:19:44am - Az oldal újratöltődött.
+2026-02-23 - 09:19:44am - foglalasok osztály létrejött.
+2026-02-23 - 09:19:44am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:19:44am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:21:40am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:21:40am - Az oldal újratöltődött.
+2026-02-23 - 09:21:40am - foglalasok osztály létrejött.
+2026-02-23 - 09:21:40am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:21:43am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:21:43am - Az oldal újratöltődött.
+2026-02-23 - 09:21:43am - foglalasok osztály létrejött.
+2026-02-23 - 09:21:43am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 09:21:43am - foglalasok osztály megsemmisült.
+2026-02-23 - 09:23:03am - Böngészőben betöltődött az oldal.
+2026-02-23 - 09:23:03am - Az oldal újratöltődött.
+2026-02-23 - 09:23:03am - autok osztály létrejött.
+2026-02-23 - 09:23:03am - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-23 - 09:23:03am - autok osztály megsemmisült.
+2026-02-23 - 11:37:18am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:37:18am - Az oldal újratöltődött.
+2026-02-23 - 11:37:18am - autok osztály létrejött.
+2026-02-23 - 11:37:18am - autok osztály megsemmisült.
+2026-02-23 - 11:37:19am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:37:19am - Az oldal újratöltődött.
+2026-02-23 - 11:37:21am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:37:21am - Az oldal újratöltődött.
+2026-02-23 - 11:37:22am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:37:22am - Az oldal újratöltődött.
+2026-02-23 - 11:37:22am - ertekelesek osztály létrejött.
+2026-02-23 - 11:37:22am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 11:37:22am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 11:37:22am - ertekelesek osztály megsemmisült.
+2026-02-23 - 11:37:23am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:37:23am - Az oldal újratöltődött.
+2026-02-23 - 11:37:24am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:37:24am - Az oldal újratöltődött.
+2026-02-23 - 11:37:24am - foglalasok osztály létrejött.
+2026-02-23 - 11:37:24am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 11:37:24am - foglalasok osztály megsemmisült.
+2026-02-23 - 11:48:24am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:48:24am - Az oldal újratöltődött.
+2026-02-23 - 11:48:24am - foglalasok osztály létrejött.
+2026-02-23 - 11:48:24am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 11:48:24am - foglalasok osztály megsemmisült.
+2026-02-23 - 11:51:32am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:51:32am - Az oldal újratöltődött.
+2026-02-23 - 11:51:32am - foglalasok osztály létrejött.
+2026-02-23 - 11:51:32am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 11:51:32am - foglalasok osztály megsemmisült.
+2026-02-23 - 11:51:50am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:51:50am - Az oldal újratöltődött.
+2026-02-23 - 11:51:50am - foglalasok osztály létrejött.
+2026-02-23 - 11:51:50am - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 11:51:50am - foglalasok osztály megsemmisült.
+2026-02-23 - 11:55:38am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:55:38am - Az oldal újratöltődött.
+2026-02-23 - 11:55:40am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:55:40am - Az oldal újratöltődött.
+2026-02-23 - 11:55:40am - ertekelesek osztály létrejött.
+2026-02-23 - 11:55:40am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 11:55:40am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 11:55:40am - ertekelesek osztály megsemmisült.
+2026-02-23 - 11:55:47am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:55:47am - Az oldal újratöltődött.
+2026-02-23 - 11:55:47am - ertekelesek osztály létrejött.
+2026-02-23 - 11:55:47am - ertekelesek osztály megsemmisült.
+2026-02-23 - 11:56:11am - Böngészőben betöltődött az oldal.
+2026-02-23 - 11:56:11am - Az oldal újratöltődött.
+2026-02-23 - 11:56:11am - ertekelesek osztály létrejött.
+2026-02-23 - 11:56:11am - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 11:56:11am - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 11:56:11am - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:03:06pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:03:06pm - Az oldal újratöltődött.
+2026-02-23 - 12:03:06pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:03:06pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:03:06pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:03:06pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:03:30pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:03:30pm - Az oldal újratöltődött.
+2026-02-23 - 12:03:30pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:03:30pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:03:30pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:03:30pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:08:29pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:08:29pm - Az oldal újratöltődött.
+2026-02-23 - 12:08:29pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:08:29pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:08:29pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:08:29pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:09:17pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:09:17pm - Az oldal újratöltődött.
+2026-02-23 - 12:09:17pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:09:17pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:09:17pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:09:17pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:32:28pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:32:28pm - Az oldal újratöltődött.
+2026-02-23 - 12:32:28pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:32:28pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:32:28pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:32:28pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:32:31pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:32:31pm - Az oldal újratöltődött.
+2026-02-23 - 12:32:31pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:32:31pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:32:31pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:32:31pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:32:31pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:32:31pm - Az oldal újratöltődött.
+2026-02-23 - 12:32:31pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:32:31pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:32:31pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:32:31pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:32:32pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:32:32pm - Az oldal újratöltődött.
+2026-02-23 - 12:32:32pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:32:32pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:32:32pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:32:32pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 12:32:35pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:32:35pm - Az oldal újratöltődött.
+2026-02-23 - 12:32:35pm - foglalasok osztály létrejött.
+2026-02-23 - 12:32:35pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 12:32:35pm - foglalasok osztály megsemmisült.
+2026-02-23 - 12:32:46pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 12:32:46pm - Az oldal újratöltődött.
+2026-02-23 - 12:32:46pm - ertekelesek osztály létrejött.
+2026-02-23 - 12:32:46pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 12:32:46pm - Unknown column 'deleted' in 'where clause'
+2026-02-23 - 12:32:46pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 07:45:58pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:45:58pm - Az oldal újratöltődött.
+2026-02-23 - 07:45:58pm - autok osztály létrejött.
+2026-02-23 - 07:45:58pm - autok osztály megsemmisült.
+2026-02-23 - 07:46:02pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:46:02pm - Az oldal újratöltődött.
+2026-02-23 - 07:46:03pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:46:03pm - Az oldal újratöltődött.
+2026-02-23 - 07:46:04pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:46:04pm - Az oldal újratöltődött.
+2026-02-23 - 07:46:04pm - ertekelesek osztály létrejött.
+2026-02-23 - 07:46:04pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 07:46:04pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 07:46:05pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:46:05pm - Az oldal újratöltődött.
+2026-02-23 - 07:46:05pm - foglalasok osztály létrejött.
+2026-02-23 - 07:46:05pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:46:05pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:49:36pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:36pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:36pm - autok osztály létrejött.
+2026-02-23 - 07:49:36pm - autok osztály megsemmisült.
+2026-02-23 - 07:49:38pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:38pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:39pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:39pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:40pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:40pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:40pm - autok osztály létrejött.
+2026-02-23 - 07:49:40pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-23 - 07:49:40pm - autok osztály megsemmisült.
+2026-02-23 - 07:49:40pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:40pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:40pm - ertekelesek osztály létrejött.
+2026-02-23 - 07:49:40pm - SELECT * FROM ertekelesek WHERE deleted = 0
+2026-02-23 - 07:49:40pm - ertekelesek osztály megsemmisült.
+2026-02-23 - 07:49:41pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:41pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:41pm - autok osztály létrejött.
+2026-02-23 - 07:49:41pm - SELECT auto_id,
+								 marka,
+								 modell,
+								 evjarat,
+								 alvazszam,
+								 rendszam,
+								 allapot,
+								 deleted,
+								 napi_dij 
+						  FROM   autok
+						  WHERE deleted = 0
+2026-02-23 - 07:49:41pm - autok osztály megsemmisült.
+2026-02-23 - 07:49:41pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:41pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:41pm - foglalasok osztály létrejött.
+2026-02-23 - 07:49:41pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:49:41pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:49:47pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:47pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:47pm - foglalasok osztály létrejött.
+2026-02-23 - 07:49:47pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:49:47pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:49:50pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:50pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:50pm - foglalasok osztály létrejött.
+2026-02-23 - 07:49:50pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:49:53pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:49:53pm - Az oldal újratöltődött.
+2026-02-23 - 07:49:53pm - foglalasok osztály létrejött.
+2026-02-23 - 07:49:53pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:49:53pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:54:12pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:54:12pm - Az oldal újratöltődött.
+2026-02-23 - 07:54:12pm - foglalasok osztály létrejött.
+2026-02-23 - 07:54:12pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:54:12pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:54:59pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:54:59pm - Az oldal újratöltődött.
+2026-02-23 - 07:54:59pm - foglalasok osztály létrejött.
+2026-02-23 - 07:54:59pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:54:59pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:56:33pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:56:33pm - Az oldal újratöltődött.
+2026-02-23 - 07:56:33pm - foglalasok osztály létrejött.
+2026-02-23 - 07:56:33pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:56:33pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:57:03pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:57:03pm - Az oldal újratöltődött.
+2026-02-23 - 07:57:03pm - foglalasok osztály létrejött.
+2026-02-23 - 07:57:03pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:57:03pm - foglalasok osztály megsemmisült.
+2026-02-23 - 07:57:12pm - Böngészőben betöltődött az oldal.
+2026-02-23 - 07:57:12pm - Az oldal újratöltődött.
+2026-02-23 - 07:57:12pm - foglalasok osztály létrejött.
+2026-02-23 - 07:57:12pm - SELECT * FROM foglalas WHERE deleted = 0
+2026-02-23 - 07:57:12pm - foglalasok osztály megsemmisült.
+=======
+>>>>>>> parent of 786c411 (a)

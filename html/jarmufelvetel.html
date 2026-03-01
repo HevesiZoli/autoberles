@@ -1,18 +1,16 @@
-<h1>Jármű felvétel</h1>
+<h1>Jármű hozzáadása</h1>
 <?php
        //ha kapok id akkkor frissítem az adatokat így akkor szerkesztés van és nem kell a jelszó
        if (isset($_POST['id']))
        {
-              echo('<form action="index.php?menupont=autokfrissit" method="POST">
+              echo('<form action="index.php?menupont=autokfrissit" method="POST" enctype="multipart/form-data">
                        <input type="hidden" name="id" value="'.$_POST['id'].'">');
        }
        else
        {
-              echo('<form action="index.php?menupont=autokment" method="POST">');
+              echo('<form action="index.php?menupont=autokment" method="POST" enctype="multipart/form-data">');
        }
 ?>
-
-
 
        <label><?php echo($autok->hibauzenet); ?></label><br>
        <label>Márka:</label><br>
@@ -21,11 +19,27 @@
        <input type="text" name="modell" value="<?php echo($autok->modell); ?>"><br>
        <label>Évjárat:</label><br>
        <input type="text" name="evjarat" value="<?php echo($autok->evjarat); ?>"><br>
+       <label>Szállíthaó személyek:</label><br>
+       <input type="text" name="szallithato_szemelyek" value="<?php echo($autok->szallithato_szemelyek); ?>"><br>
+       <label>Üzemanyag:</label><br>
+       <input type="text" name="uzemanyag" value="<?php echo($autok->uzemanyag); ?>"><br>
+       <label>Teljesítmény:</label><br>
+       <input type="text" name="teljesitmeny" value="<?php echo($autok->teljesitmeny); ?>"> LE<br>
+       <label>Sebességváltó típusa:</label><br>
+       <input type="text" name="sebessegvalto_tipusa" value="<?php echo($autok->sebessegvalto_tipusa); ?>"><br>
+       <label>Hengerűrtartalom:</label><br>
+       <input type="text" name="hengerurtartalom" value="<?php echo($autok->hengerurtartalom); ?>"> cm³<br>
+       <label>Vegyes fogyasztás (tól-ig):</label><br>
+       <input type="text" name="vegyes_fogyasztastol" value="<?php echo($autok->vegyes_fogyasztastol); ?>"> -
+       <input type="text" name="vegyes_fogyasztasig" value="<?php echo($autok->vegyes_fogyasztasig); ?>"> l/100 km<br>
        <label>Alvázszám:</label><br>
        <input type="text" name="alvazszam" value="<?php echo($autok->alvazszam); ?>"><br>
        <label>Rendszám:</label><br>
        <input type="text" name="rendszam" value="<?php echo($autok->rendszam); ?>"><br>
        <label>Napi díj (Ft):</label><br>
        <input type="text" name="napi_dij" value="<?php echo($autok->napi_dij); ?>"><br>
-<input type="submit" name="ok" value="Mentés">   
+       <label>Kép:</label><br>
+       <input type="file" name="kep"><br>
+<input type="submit" name="ok" value="Mentés"><br>
+<a href="index.php?menupont=jarmuvek">Mégsem</a>
 </form>

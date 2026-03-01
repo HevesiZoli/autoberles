@@ -78,11 +78,13 @@ class belep {
    		
    		// - Mivel SELECT COUNT a parancs, ha nincs a feltételnek megfelelő
    		//   sor az adatbázisban, akkor is lesz egy visszatérési sor -> tatlalat 0 lesz!   
-   		$this->sqlCommand = "SELECT COUNT(id) as talalat 
+   		$this->sqlCommand = "SELECT COUNT(id)as talalat, name, admin 
    							 FROM   user
    							 WHERE  loginname = '$loginname' 
    							 		AND
-   							 		password = '$password' ";
+   							 		password = '$password'
+   							 		AND 
+   							 		deleted = 0 ";
 
    		// Végrehajtom a lekérdezést úgy, hogy a connection segítségével elküldöm a szervernek!
    		global $db_kapcsolat;
@@ -105,7 +107,11 @@ class belep {
 						//   1-nél több eredményt kapunk! Mivel a felhasználónév 
 						//   egyedi, abban az esetben csak 1 lehet a helyes érték!
 						if ($row['talalat'] == 1)
-							{$this->sikeresbelepes = true;}
+							{	global $munkamenettarolo;
+        						$munkamenettarolo->parameter_ir('username', $row['name']);
+        						$munkamenettarolo->parameter_ir('admin', $row['admin']);
+								$this->sikeresbelepes = true;
+							}
 						else {$this->sikeresbelepes = false;} // <- Elvileg már a konstruktorban elintéztem!
 					}
 				} else {/* - Bármilyen SQL-s akció után, ha egyetlen elem sincs a 
@@ -166,6 +172,8 @@ class belep {
    		$this->sikeresbelepes = false;   
    		global $munkamenettarolo;
    		$munkamenettarolo->parameter_ir('belepve','false');
+   		$munkamenettarolo->parameter_ir('username','');
+   		$munkamenettarolo->parameter_ir('admin','0');
       	return $this->sikeresbelepes;
       }
 }

@@ -1,0 +1,307 @@
+2026-02-22 - 12:04:46pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 12:04:46pm - levelkuld osztály létrejött
+2026-02-22 - 12:04:46pm - Az oldal újratöltődött.
+2026-02-22 - 12:04:46pm - autok osztály létrejött.
+2026-02-22 - 12:04:46pm - levelkuld osztály megsemmisült
+2026-02-22 - 12:04:46pm - autok osztály megsemmisült.
+2026-02-22 - 12:05:12pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 12:05:12pm - levelkuld osztály létrejött
+2026-02-22 - 12:05:12pm - Az oldal újratöltődött.
+2026-02-22 - 12:05:12pm - autok osztály létrejött.
+2026-02-22 - 12:05:12pm - levelkuld osztály megsemmisült
+2026-02-22 - 12:05:12pm - autok osztály megsemmisült.
+2026-02-22 - 01:50:07pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:50:07pm - Az oldal újratöltődött.
+2026-02-22 - 01:50:07pm - autok osztály létrejött.
+2026-02-22 - 01:50:07pm - autok osztály megsemmisült.
+2026-02-22 - 01:50:12pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:50:12pm - Az oldal újratöltődött.
+2026-02-22 - 01:50:14pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:50:14pm - Az oldal újratöltődött.
+2026-02-22 - 01:50:16pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:50:16pm - Az oldal újratöltődött.
+2026-02-22 - 01:50:17pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:50:17pm - Az oldal újratöltődött.
+2026-02-22 - 01:50:46pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:50:46pm - Az oldal újratöltődött.
+2026-02-22 - 01:50:46pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('Hevesi Zoltán', 
+                                         'zoltan1',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 13:50:46',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '©f@z-n}TA@×r4Zh×y×TAX~€hb-A}r@Myhzy4z%T∞4Yv;Ib#×IfAI}dj-g@J+FSjd%B©vE}0i•j}£f+Z>hW?h@X[By>%miydEu-×X?%jh',
+                                         'asd'
+                                        )
+2026-02-22 - 01:51:21pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:51:21pm - Az oldal újratöltődött.
+2026-02-22 - 01:51:21pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('Hevesi Zoltán', 
+                                         'zoltan1',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 13:51:21',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         ',&b#®w=|Z6+EZ{T(|®s¿|1!o?6TfLl+T{>2®]÷,f&h]oF,>m%$1<Qm÷1∞qO:EE7OmF√0j®%aL¡]e2<®(H0=CFz)¥ZZ!¢|÷W!,∞h|CZ®Z',
+                                         'asd'
+                                        )
+2026-02-22 - 01:52:32pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:52:32pm - Az oldal újratöltődött.
+2026-02-22 - 01:54:17pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:54:17pm - Az oldal újratöltődött.
+2026-02-22 - 01:54:18pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:54:18pm - Az oldal újratöltődött.
+2026-02-22 - 01:54:18pm - autok osztály létrejött.
+2026-02-22 - 01:54:18pm - autok osztály megsemmisült.
+2026-02-22 - 01:54:20pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:54:20pm - Az oldal újratöltődött.
+2026-02-22 - 01:54:21pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:54:21pm - Az oldal újratöltődött.
+2026-02-22 - 01:54:43pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:54:43pm - Az oldal újratöltődött.
+2026-02-22 - 01:54:43pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('Zoli', 
+                                         'Zoli',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 13:54:43',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '2√fOU0`P∞^+¿#×©√P.HHJ√¿,±lRJ#°-w¿hP)¿anP®©W`×iR-f,i.w6I02¿z÷JI©¡©J.¡-n-Rw¡n×fO#√,H#PJ-tzJ^tR.,PBfH]j6y™2',
+                                         'asd'
+                                        )
+2026-02-22 - 01:54:58pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:54:58pm - Az oldal újratöltődött.
+2026-02-22 - 01:54:58pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('Zoli', 
+                                         'Zoli',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 13:54:58',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '-_¥-7Lg=;q88N∞=?v∞jd)c~±d@7YJ¶@<P~=C∞¿@P€<Jk[÷3<B™@EZl©rr¿h=jtO~gdL])-r3;EC¶™Ti<z•Nc¥,x"×O×-OO_h;{OOr@7U',
+                                         'asd'
+                                        )
+2026-02-22 - 01:56:04pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 01:56:04pm - Az oldal újratöltődött.
+2026-02-22 - 01:56:04pm - autok osztály létrejött.
+2026-02-22 - 01:56:04pm - autok osztály megsemmisült.
+2026-02-22 - 02:00:26pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:00:26pm - levelezes.php, sor: 5, hiba: Class "TesztNaplo" not found
+2026-02-22 - 02:00:47pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:00:47pm - levelezes.php, sor: 5, hiba: Class "TesztNaplo" not found
+2026-02-22 - 02:00:48pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:00:48pm - levelezes.php, sor: 5, hiba: Class "TesztNaplo" not found
+2026-02-22 - 02:00:55pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:00:55pm - levelezes.php, sor: 5, hiba: Class "TesztNaplo" not found
+2026-02-22 - 02:02:39pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:02:39pm - Az oldal újratöltődött.
+2026-02-22 - 02:02:40pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:02:40pm - Az oldal újratöltődött.
+2026-02-22 - 02:02:49pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:02:49pm - Az oldal újratöltődött.
+2026-02-22 - 02:02:49pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:02:49',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '¿•n™}]}_Xt;(s}f>(PnsX@g&Wja;]o@aKD;×Ij#ZXY¶fS™(®AgRD2@LXh;IY15°_&YD°Xo,a5&_%Y&Le1}s&;°AY2{(qYTT&AYa;_qYf',
+                                         'asd'
+                                        )
+2026-02-22 - 02:03:45pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:03:45pm - Az oldal újratöltődött.
+2026-02-22 - 02:03:45pm - autok osztály létrejött.
+2026-02-22 - 02:03:45pm - autok osztály megsemmisült.
+2026-02-22 - 02:03:51pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:03:51pm - Az oldal újratöltődött.
+2026-02-22 - 02:03:52pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:03:52pm - Az oldal újratöltődött.
+2026-02-22 - 02:04:01pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:04:01pm - Az oldal újratöltődött.
+2026-02-22 - 02:04:01pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:04:01',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '.§l<7rIQ;¥Hx*EWLls?™8b®£t7;0|™®£j%<>÷÷°=×*IH#WW#®$®EGWY®_^|_÷T0.÷€._d#TL>¥Qda£QT&&|%7$_iI7_9W|>R^OW>*_L_',
+                                         'asd'
+                                        )
+2026-02-22 - 02:07:02pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:07:02pm - Az oldal újratöltődött.
+2026-02-22 - 02:07:02pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:07:02',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '<Lz]qoTLV°ll¢°w™§o<w§!4{S™L47÷:dS°W7iW.∞∞SW7°4QP]3l,°4ipl7sYaecBD^lSVT!°;Ypdl]BYKq!f√<SiAf]V¢BY√Bo3sVl√|',
+                                         'asd'
+                                        )
+2026-02-22 - 02:12:53pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:12:53pm - Az oldal újratöltődött.
+2026-02-22 - 02:12:53pm - autok osztály létrejött.
+2026-02-22 - 02:12:53pm - autok osztály megsemmisült.
+2026-02-22 - 02:12:55pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:12:55pm - Az oldal újratöltődött.
+2026-02-22 - 02:12:56pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:12:56pm - Az oldal újratöltődött.
+2026-02-22 - 02:16:13pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:16:13pm - Az oldal újratöltődött.
+2026-02-22 - 02:16:13pm - autok osztály létrejött.
+2026-02-22 - 02:16:13pm - autok osztály megsemmisült.
+2026-02-22 - 02:16:14pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:16:14pm - Az oldal újratöltődött.
+2026-02-22 - 02:16:15pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:16:15pm - Az oldal újratöltődött.
+2026-02-22 - 02:16:22pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:16:22pm - Az oldal újratöltődött.
+2026-02-22 - 02:16:22pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:16:22',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         'bAi-m£°XX^%)ZR^®I{%BI-°°ALEpi¿U~CV]Y2h)piVuL7cZnH^)[xxR][a€^£E£%k3qC2∞8|a°^n£gR^M|]§wb{Riq"R-A^mPUAC•Ypw',
+                                         'asd'
+                                        )
+2026-02-22 - 02:17:04pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:17:04pm - Az oldal újratöltődött.
+2026-02-22 - 02:17:04pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:17:04',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         'a-a{h:Ga"B|=v¿j|3J|}RA=IO..GbG§zL8sCGCJfK6RC6}"p$fsaO¢¥y¢:)]x¢a¿HO}~v¢1a"v..!§√=)A=¢ci6a!¶:RgI~¿OJj6]z3X',
+                                         'asd'
+                                        )
+2026-02-22 - 02:18:06pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:18:06pm - Az oldal újratöltődött.
+2026-02-22 - 02:18:06pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:18:06',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         'a^yT5d¢;¢ye2§§bDJh>g+B|JtD.G§8QE√§Hyt°p|c8Q§p×yfRV*1I."Q8$s^+%BSfs°y`$±J}gEy!u=®8DAHEIJJ6S"ce√C|Ac8fe"e√',
+                                         'asd'
+                                        )
+2026-02-22 - 02:21:59pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:21:59pm - Az oldal újratöltődött.
+2026-02-22 - 02:21:59pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:21:59',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         'YALu£%¶Lu£]F-Bo?!o8B-]<y¡XHlO*_`O¶8|#u°1MQ!]A_F_A-|=b&y©∞c&#o>|yQOu¿QHz#!×Bhay&{x*{668q™¢.u&6O<qyQ-Rqxu#',
+                                         'asd'
+                                        )
+2026-02-22 - 02:23:26pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:23:26pm - Az oldal újratöltődött.
+2026-02-22 - 02:23:26pm - autok osztály létrejött.
+2026-02-22 - 02:23:26pm - autok osztály megsemmisült.
+2026-02-22 - 02:24:40pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:24:40pm - Az oldal újratöltődött.
+2026-02-22 - 02:24:40pm - autok osztály létrejött.
+2026-02-22 - 02:24:40pm - autok osztály megsemmisült.
+2026-02-22 - 02:24:41pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:24:41pm - Az oldal újratöltődött.
+2026-02-22 - 02:24:47pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:24:47pm - Az oldal újratöltődött.
+2026-02-22 - 02:24:58pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:24:58pm - Az oldal újratöltődött.
+2026-02-22 - 02:24:58pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:24:58',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         ':D¥-D2^"€?±×!±py±÷H¿^qqw"]}"§R18:}PjHrwDwTe:§i¥rS;w÷^Sw4mUOjp£DLm4::d"q8P4=]i§9:D¢™kP9°-SHPR×r÷]^D÷%[±U]',
+                                         'asd'
+                                        )
+2026-02-22 - 02:28:42pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:28:42pm - Az oldal újratöltődött.
+2026-02-22 - 02:28:42pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:28:42',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '7.÷K|@4°vS=6u@@v.GsAp4)7VW±±∞÷FK4pWp)°%©tVV<=R|&£6Xr√u|wV{yS√UJ{M6tsFJ5t4t<O%4V°%suep±w>!;wA7w4p)ue@&<K%',
+                                         'asd'
+                                        )
+2026-02-22 - 02:31:46pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 02:31:46pm - Az oldal újratöltődött.
+2026-02-22 - 02:31:46pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 14:31:46',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '§td##zkt4#Mk%d"![,Y§cZr^¶g6%dV:2;N~^!(DM©tV^MSVv4JSk[±t8z"¶vUdg;k"§tkR7f%[^))[}z©oeD%^):$^R^@(^S§L€§K"-o',
+                                         'asd'
+                                        )
+2026-02-22 - 03:00:30pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:00:30pm - Az oldal újratöltődött.
+2026-02-22 - 03:00:30pm - autok osztály létrejött.
+2026-02-22 - 03:00:30pm - autok osztály megsemmisült.
+2026-02-22 - 03:00:31pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:00:31pm - Az oldal újratöltődött.
+2026-02-22 - 03:00:32pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:00:32pm - Az oldal újratöltődött.
+2026-02-22 - 03:00:39pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:00:39pm - Az oldal újratöltődött.
+2026-02-22 - 03:00:39pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 15:00:39',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         '¢<z√¢~°¶∞•YBI=B@lzmTws?N7Sv×yw!Ka^÷r°3v?V^Q!™°S4N|79fI?€%©.=Zr÷©IT!b3fm<e.%Y[*=°r4r©+?|fM√°wfB=Kvb#¢eYy÷',
+                                         ''
+                                        )
+2026-02-22 - 03:02:12pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:02:12pm - Az oldal újratöltődött.
+2026-02-22 - 03:02:12pm - autok osztály létrejött.
+2026-02-22 - 03:02:12pm - autok osztály megsemmisült.
+2026-02-22 - 03:05:20pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:05:20pm - Az oldal újratöltődött.
+2026-02-22 - 03:05:21pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:05:21pm - Az oldal újratöltődött.
+2026-02-22 - 03:05:38pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:05:38pm - Az oldal újratöltődött.
+2026-02-22 - 03:05:38pm - autok osztály létrejött.
+2026-02-22 - 03:05:38pm - autok osztály megsemmisült.
+2026-02-22 - 03:05:39pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:05:39pm - Az oldal újratöltődött.
+2026-02-22 - 03:05:40pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:05:40pm - Az oldal újratöltődött.
+2026-02-22 - 03:05:47pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:05:47pm - Az oldal újratöltődött.
+2026-02-22 - 03:05:47pm - INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                                  VALUES ('asd', 
+                                         'asd',
+                                         'zoltangevesi81@gmail.com',
+                                         '2026-02-22 15:05:47',
+                                         '7815696ecbf1c96e6894b779456d330e', 
+                                         'SS¡U™9k[r∞#6kUm#UamVSQm×V1#V1,÷pSaikCiK|#%m[zq¥¶G.m;[vU8{mS"14r&;ZUm÷SV∞M™pVVA&%:m1Aati,aqUASa®11pp<m÷^O',
+                                         'asd'
+                                        )
+2026-02-22 - 03:05:53pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:05:53pm - Az oldal újratöltődött.
+2026-02-22 - 03:05:53pm - autok osztály létrejött.
+2026-02-22 - 03:05:53pm - autok osztály megsemmisült.
+2026-02-22 - 03:15:18pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:15:18pm - Az oldal újratöltődött.
+2026-02-22 - 03:15:18pm - autok osztály létrejött.
+2026-02-22 - 03:15:18pm - autok osztály megsemmisült.
+2026-02-22 - 03:46:19pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:46:19pm - Az oldal újratöltődött.
+2026-02-22 - 03:46:19pm - SELECT u.id as uid,     
+                                   a.id as aid 
+                            FROM user as u INNER JOIN activation as a ON u.fingerprint=a.fingerprint 
+                            WHERE a.code = 'YWN0aXZhdGUtfW09PV3Crk4jTlVgcGAycFfihKI5dFvihKJN4oSiMm8rScOXYFs2ZTBRZFrCrkk2WcK2dCzCpXJ0wqXCoW01T3zCvz1XeFZWZ8KuIUbCsW8qV3Nhw5drIcKhKsKlZ1VqKipVNFtVTVc8SSLCtsKxwrFYYFpZe3A8PTBVV0Re' AND date_sub(a.datetime,interval -1 day)>= now()
+                            LIMIT 1
+2026-02-22 - 03:46:25pm - Böngészőben betöltődött az oldal.
+2026-02-22 - 03:46:25pm - Az oldal újratöltődött.
+2026-02-22 - 03:46:25pm - autok osztály létrejött.
+2026-02-22 - 03:46:25pm - autok osztály megsemmisült.

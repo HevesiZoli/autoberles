@@ -1,0 +1,36 @@
+<nav id="navbar">
+        <ul>
+            <li><a href="index.php?menupont=kezdolap">Kezdőlap</a></li>
+            <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
+            <?php
+            if ($belepve == false) {
+                echo '<li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>';
+            } 
+            else 
+            {
+            echo '<li class="kilep">
+                <a href="index.php?logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Kijelentkezés
+                </a>
+              </li>';
+            $username = $munkamenettarolo->parameter_olvas('username','');
+            echo ('<li class="felhasznalo">Szia, '. htmlspecialchars($username).'</li>');
+        }
+        ?>
+        </ul>
+</nav>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<?php echo($autok->autok_mejelenites()); ?>
+<footer>
+    © 2026 BérAutó24 | Minden jog fenntartva<br><br>
+    Ez az oldal kizárólag demonstrációs célokat szolgál. Az itt megjelenített adatok nem valósak!
+</footer>
+</body>
+</html>

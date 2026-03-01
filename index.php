@@ -23,7 +23,7 @@
 		include('php/munkamenet.php');
 		
 //-------------------------------------------------------------------//
-		//include('php/levelezes.php');
+		include('php/levelezes.php');
 //-------------------------------------------------------------------//		
 
 		include('php/belepes.php');
@@ -37,10 +37,12 @@
 <head>
 	<title>BérAutó24</title>
 	<link rel="stylesheet" type="text/css" href="css/stilus.css">
+	<link rel="stylesheet" type="text/css" href="css/weblap.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<script type="text/javascript" src="js/import/ckeditor/ckeditor.js"></script>
 	<script type="text/javascript" src="js/import/jquery/jQuery_3_7_1.js"></script>
 	<script type="text/javascript" src="js/mezo_check.js"></script>
+	<script type="text/javascript" src="js/sajat.js"></script>
 </head>
 <body>
 	<?php
@@ -52,8 +54,7 @@
 		 	if (isset($_GET['menupont']))
 		 	 {$menupont = $_GET['menupont'];}
 		 	else 
-		 	 {$menupont = '';}	
-		 	
+		 	 {$menupont = '';}
 		 	include('html/vezerlopult.html');
 		 	switch ($menupont) {
 		 		case 'felhasznalok' : // Beillesztjük a felhasználók kezeléséért felelelős objektumot!
@@ -63,11 +64,13 @@
 		 		case 'ujfelhasznalo' : include('php/felhasznalok.php');
 		 							   include('html/felhasznalofelvetel.html');
 		 							   break;
-		 		case 'felhasznaloment' : include('php/felhasznalok.php');
-		 							     if ($felhasznalok->felhasznalo_ment() == true)
-		 							      {include('html/felhasznalok.html');}
-		 							     else {include('html/felhasznalofelvetel.html');}
-		 							     break;
+			 	case 'felhasznaloment': 	include('php/felhasznalok.php');
+										    if ($felhasznalok->felhasznalo_ment() == true) {
+										        include('html/regisztraciovege.html');
+										    } else {
+										        include('html/felhasznalofelvetel.html');
+										    }
+										    break;
 		 		case 'szerkesztfelhasznalo' : include('php/felhasznalok.php');
 		 									  $felhasznalok->felhasznalo_szerkeszt($_POST['id']);
 		 									  include('html/felhasznalofelvetel.html');
@@ -96,6 +99,8 @@
 		 		case 'jarmuvek' :   include('php/jarmuvek.php');
 		 							include('html/jarmuvek.html');
 		 						  	break;
+		 		case 'dashboard' :  include('php/dashboard.php');
+		 							break;
 		 		case 'ujjarmu' : 	include('php/jarmuvek.php');
 		 							include('html/jarmufelvetel.html');
 		 							   break;
@@ -160,7 +165,16 @@
 		 									$foglalasok->torles($_POST['id']);
 		 									include('html/foglalasok.html');
 		 									break;
-		 		default : 				break;
+		 		case 'adminpanel' :         include('html/vezerlopult.html');
+		 									break;
+		 		case 'berlesifeltetel': include('html/berlesifeltetelek.html');
+		 								break;
+		 		case 'autokmegtekintese' :  include('php/jarmuvek.php');
+		 									include('html/autoklista.html');
+		 								    break;
+		 		default : 					include('html/vezerlopult2.html');
+		 									include('html/oldal.html');
+		 									break;
 		 	}
 		 }
 	  }
@@ -190,11 +204,17 @@
 		 							      {include('html/regisztracioaktiv.html');}
 		 							     else {include('html/regisztracionemaktiv.html');}
 		 							     break;
+		 	case 'berlesifeltetel': include('html/berlesifeltetelek.html');
+		 							break;
+		 	case 'autokmegtekintese' :  include('php/jarmuvek.php');
+		 								include('html/autoklista.html');
+		 								break;
 		 	case 'belepes' :	include('html/belep.html');
 		 						break;
-		 	case 'kezdolap' :
+		 	case 'kezdolap' : 
 		 	default : 	include('php/tartalom.php');
-		 				include('html/oldal.html');			    
+		 				include('html/vezerlopult2.html');
+		 				include('html/oldal.html');	    
 		 				break;
 		}
 	}

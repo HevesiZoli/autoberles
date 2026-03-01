@@ -1,0 +1,36 @@
+/* Mindkét gomb ugyanakkora legyen */
+.link-row a.input.login.button {
+    flex: 1;           /* mindkettő ugyanakkora szélesség */
+    text-align: center;
+    padding: 14px 0;
+    background-color: #6b9c6f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-row a.input.login.button:hover {
+    background-color: #567a5c;
+    box-shadow: 0 5px 15px rgba(107, 156, 111, 0.3);
+}
+
+/* Mobilra: egymás alá kerüljenek */
+@media (max-width: 500px) {
+    .link-row {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    .panel.login {
+        margin: 80px 20px;
+        padding: 25px 20px;
+    }
+
+@media (max-width: 600px) {
+  .hero-box {
+    padding: 25px 20px;
+  }
+}

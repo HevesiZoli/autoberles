@@ -15,6 +15,8 @@ class felhasznalok {
  	public $password1;
  	public $password2;
  	public $state;
+    public $admin;
+    public $deleted;
  	public $reminder;
 
  	// Megmondja, hogy milyen műveletet hajtok éppen végre!
@@ -24,7 +26,6 @@ class felhasznalok {
  	//   lehet ez hibaüzenet is!
  	public $hibauzenet;
  	public $date;
- 	
  	public function __construct($db_kapcsolat,$naplo = null) {
  		$this->naplo = $naplo;
       	$this->db_kapcsolat = $db_kapcsolat;
@@ -51,8 +52,11 @@ class felhasznalok {
                                        fingerprint
                                        password,
                                        state,
+                                       admin,
+                                       deleted,
                                        reminder
                               FROM     user
+                              WHERE deleted = 0
                               ORDER BY name";
 
          // Végrehajtom a lekérdezést úgy, hogy a connection segítségével elküldöm a szervernek!
@@ -108,137 +112,156 @@ class felhasznalok {
     }
 
     public function felhasznalo_ment() {
+
       $this->muvelet = 'insert';
-      // - Megvizsgálom, hogy POST-ban kaptam-e a megfelelő mezőt!
-      //     Amennyiben nincs akkor a változó értékét üresre állítom,
-      //     így majd a kötelező mező vizsgálat megállítja az adatbázisba
-      //     írjon butaságokat!
+
       if (isset($_POST['name'])) {
-      // Kaptam POST-ot ezért az ideiglenes változóba mentem
-      $this->name = $_POST['name']; } 
-      else {// - Nem volt megfelelő mező a POST-ban ezért a 
-           //   változó tartalmát üresre állítom! Így fogja 
-           //   a kötelező mező vizsgálat megállítani a folyamatot.  
-           $this->name = '';}
-      
+          $this->name = $_POST['name'];
+      } else {
+          $this->name = '';
+      }
       if (isset($_POST['loginname'])) {
-      $this->loginname = $_POST['loginname']; } else {$this->loginname = '';}
+          $this->loginname = $_POST['loginname'];
+      } else {
+          $this->loginname = '';
+      }
       if (isset($_POST['email'])) {
-      $this->email = $_POST['email']; } else {$this->email = '';}
+          $this->email = $_POST['email'];
+      } else {
+          $this->email = '';
+      }
       if (isset($_POST['password1'])) {
-      $this->password1 = $_POST['password1']; } else {$this->password1 = '';}
+          $this->password1 = $_POST['password1'];
+      } else {
+          $this->password1 = '';
+      }
       if (isset($_POST['password2'])) {
-      $this->password2 = $_POST['password2']; } else {$this->password2 = '';}
+          $this->password2 = $_POST['password2'];
+      } else {
+          $this->password2 = '';
+      }
       if (isset($_POST['reminder'])) {
-      $this->reminder = $_POST['reminder']; } else {$this->reminder = '';}
-
-      // - Jöhet a kötelező mező vizsgálat! Ahhoz, hogy jól és kevés kóddal
-      //   is helyes adatrögzítést hajtsunk végre létrehozok egy változót, ami
-      //   az adatrögzítést vagy engedi vagy nem! 
-      // - Feltételezem, hogy minden rendben le fog zajlani!
-
+          $this->reminder = $_POST['reminder'];
+      } else {
+          $this->reminder = '';
+      }
       $ujdatarendben = true;
 
-      // Jöhet az ellenörzés
-      // if ($name == '') = if (empty($name))
+      if (empty($this->name)) {
+          $ujdatarendben = false;
+          $this->hibauzenet = "Nincs megadva a felhasználó neve!";
+      }
+      if (empty($this->loginname)) {
+          $ujdatarendben = false;
+          $this->hibauzenet = "Nincs megadva a belépési azonosítója!";
+      }
+      if (empty($this->email)) {
+          $ujdatarendben = false;
+          $this->hibauzenet = "Nincs megadva az email cím!";
+      }
+      if (empty($this->password1) || empty($this->password2)) {
+          $ujdatarendben = false;
+          $this->hibauzenet = "Nincs megadva mindkét jelszó!";
+      }
+      if ($ujdatarendben == true) {
+          if ($this->password1 != $this->password2) {
+              $ujdatarendben = false;
+              $this->hibauzenet = "Nem egyformák a jelszavak!";
+          }
+      }
+      $this->fingerprint = veletlenkaraktersor();
+      $_password = MD5($this->password2);
 
-      if (empty($this->name)) 
-       {$ujdatarendben = false;
-        $this->hibauzenet = "Nincs megadva a felhasználó neve!";}
+      if ($ujdatarendben == true) {
 
-      if (empty($this->loginname)) 
-       {$ujdatarendben = false;
-        $this->hibauzenet = "Nincs megadva a belépési azonosítója!";}
+          $this->sqlCommand = "INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
+                               VALUES ('$this->name',
+                                       '$this->loginname',
+                                       '$this->email',
+                                       '$this->date',
+                                       '$_password',
+                                       '$this->fingerprint',
+                                       '$this->reminder'
+                                      )";
 
-        if (empty($this->email)) 
-       {$ujdatarendben = false;
-        $this->hibauzenet = "Nincs megadva a belépési azonosítója!";}
+          $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(), $this->sqlCommand);
+          $this->naplo->_bejegyez($this->sqlCommand);
+          $sqlerror = mysqli_error($this->db_kapcsolat->_kapcsolat());
 
-
-      if (empty($this->password1) || empty($this->password2)) 
-       {$ujdatarendben = false;
-        $this->hibauzenet = "Nincs megadva mindkét jelszó!";}
-
-
-       if ($ujdatarendben == true) 
-       {
-         if ($this->password1 != $this->password2)
-            {$ujdatarendben = false;
-             $this->hibauzenet = "Nem egyformák a jelszavak!";}
-       }
-
-       $this->fingerprint = veletlenkaraktersor();
-       $_password=MD5($this->password2);
-
-       // - Ha minden rendben van, akkor jöhet 
-       //   az adatok beszúrása az adatbázisba!
-       if ($ujdatarendben == true) {
-
-             $this->sqlCommand = "INSERT INTO user (name, loginname, email, regisztracioideje, password, fingerprint, reminder)
-                                  VALUES ('$this->name', 
-                                         '$this->loginname',
-                                         '$this->email',
-                                         '$this->date',
-                                         '$_password', 
-                                         '$this->fingerprint',
-                                         '$this->reminder'
-                                        )";
-
-             // Végrehajtom a lekérdezést úgy, hogy a connection segítségével elküldöm a szervernek!
-            
-         
-             // - A mysqli_query függvény által összeszedett eredmény halmazt (adatbázis sorai)
-             //   az $SQLResult változóba tesszük! 
-             $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$this->sqlCommand);
-             $this->naplo->_bejegyez($this->sqlCommand);
-             $sqlerror = mysqli_error($this->db_kapcsolat->_kapcsolat());
-             if(!empty($sqlerror))
-             {
-              //2 azonos felhasználó nem lehet emiatt nézzük
-
-
-//----------------------------------------------------------------------------------//              
-              //de ha lesz valami sql hiba akkor ezt fogja szint úgy dobni
-//----------------------------------------------------------------------------------//     
-
+          if (!empty($sqlerror)) {
 
               $this->naplo->_bejegyez($sqlerror);
-              $ujdatarendben=false;
+              $ujdatarendben = false;
               $this->hibauzenet = "A felhasználónév foglalt";
-             }
-             else
-             {
-              //ebben az ágban valószinuleg sikerült az új fiók létrehozása 
-              $aktivalokod = str_replace(["+","/"],["",""], base64_encode(veletlenkaraktersor("activate-")));
-              $this->sqlCommand = "INSERT INTO activation (fingerprint, code)
-                                  VALUES ('$this->fingerprint','$aktivalokod')";
 
-              $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$this->sqlCommand);
+          } else {
+
+              $aktivalokod = str_replace(["+","/"], ["",""], base64_encode(veletlenkaraktersor("activate-")));
+
+              $this->sqlCommand = "INSERT INTO activation (fingerprint, code, datetime)
+                                   VALUES ('$this->fingerprint','$aktivalokod', NOW())";
+
+              $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(), $this->sqlCommand);
               $sqlerror = mysqli_error($this->db_kapcsolat->_kapcsolat());
 
-              if(isset($this->mail_postas))
-              {
-                $this->naplo->_bejegyez("felkészülés az aktiváló levél elküldésére.");
-                $this->mail_postas->levelkuldes($this->email,"Aktiváló LINK",$aktivalokod);
-                $this->naplo->_bejegyez("Levél elküldése befejezve.");
+              if (!empty($sqlerror)) {
+
+                  $this->naplo->_bejegyez($sqlerror);
+                  $ujdatarendben = false;
+                  $this->hibauzenet = "Hiba az aktiváló link létrehozásakor";
+
+              } else {
+
+                  require_once __DIR__ . '/levelezes.php';
+
+                  $this->naplo->_bejegyez("felkészülés az aktiváló levél elküldésére.");
+
+                  $mailer = new levelkuld(
+                      $this->naplo,
+                      $GLOBALS['mail_host'],
+                      $GLOBALS['mail_user'],
+                      $GLOBALS['mail_password']
+                  );
+                  $felhasznalonev = $this->name;
+                  $aktivaciosLink = "http://127.0.0.1/backend/autoberles/index.php?menupont=aktivalas&kod=$aktivalokod";
+
+                  $uzenet = '<html>
+                                    <head>
+                                      <style>
+                                        body { font-family: Arial, sans-serif; background-color: #f5f5f5; color: #333; }
+                                        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; }
+                                        h1 { color: #6b9c6f; }
+                                        a.button { background: #6b9c6f; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display:inline-block; }
+                                        a.button:hover { background: #0056b3; }
+                                      </style>
+                                    </head>
+                                    <body>
+                                      <div class="container">
+                                        <h1>Üdvözlünk a BérAutó24-nél, '.$felhasznalonev.'!</h1>
+                                        <p>Köszönjük, hogy regisztráltál a <b>BérAutó24</b> oldalra. Kattints az alábbi gombra a fiókod aktiválásához:</p>
+                                        <p><a href="'.$aktivaciosLink.'" class="button">Fiók aktiválása</a></p>
+                                        <p>Ha bármilyen kérdésed van, fordulj hozzánk bizalommal!</p>
+                                        <p>Üdvözlettel,<br>BérAutó24 csapata</p>
+                                      </div>
+                                    </body>
+                                    </html>
+                                    ';
+
+                  $mailer->levelkuldes(
+                      $this->email,
+                      "Sikeres regisztráció! – BérAutó24",
+                      $uzenet
+                  );
+
+                  $this->naplo->_bejegyez("Levél elküldése befejezve.");
+                  // =================================
+
               }
-
-                  if(!empty($sqlerror))
-                       {           
-                        $this->naplo->_bejegyez($sqlerror);
-                        $ujdatarendben = false;
-                        $this->hibauzenet = "Hiba az aktiváló link létrehozásakor";
-                       }
-
-
-             }
-
-             
-         }
+          }
+      }
 
       return $ujdatarendben;
-
-    }
+}
    
    public function felhasznalo_szerkeszt($id) {
    	  $this->muvelet = 'edit';
@@ -301,20 +324,33 @@ class felhasznalok {
       $this->loginname = $_POST['loginname']; } else {$this->loginname = '';}
       if (isset($_POST['email'])) {
       $this->email = $_POST['email']; } else {$this->email = '';}
-
-
-
+      if (isset($_POST['password1'])) {
+      $this->password1 = $_POST['password1']; } else {$this->password1 = '';}
+      if (isset($_POST['password2'])) {
+      $this->password2 = $_POST['password2']; } else {$this->password2 = '';}
+      
       if (empty($this->name)) 
-       {$ujdatarendben = false;
+       {$modositottadatrendben = false;
         $this->hibauzenet = "Nincs megadva a felhasználó neve!";}
 
       if (empty($this->loginname)) 
-       {$ujdatarendben = false;
+       {$modositottadatrendben = false;
         $this->hibauzenet = "Nincs megadva a belépési azonosítója!";}
 
+      if (empty($this->password1) || empty($this->password2)) 
+       {$modositottadatrendben = false;
+        $this->hibauzenet = "Nincs megadva mindkét jelszó!";}
+
+       if ($modositottadatrendben == true) 
+       {
+         if ($this->password1 != $this->password2)
+            {$modositottadatrendben = false;
+             $this->hibauzenet = "Nem egyformák a jelszavak!";}
+       }
       /*if (empty($this->password1) || empty($this->password2)) 
        {$ujdatarendben = false;
         $this->hibauzenet = "Nincs megadva mindkét jelszó!";}*/
+        $_password = MD5($this->password2);
        if ($modositottadatrendben == true) 
        {
          // - Mivel SELECT COUNT a parancs, ha nincs a feltételnek megfelelő
@@ -323,7 +359,8 @@ class felhasznalok {
          $this->sqlCommand = "UPDATE user
                               SET    name = '$this->name',
                                      loginname = '$this->loginname',
-                                     email=' $this->email'
+                                     email=' $this->email',
+                                     password='$_password'
                               WHERE  id = '$id'";
       // global $naplo;
       // $naplo->_bejegyez($this->sqlCommand);
@@ -346,7 +383,10 @@ class felhasznalok {
 		//   az action url-jét ez alapján fogom változtatani 
 		$this->id = $id;
 
-		$SQLlekerdezes = "DELETE FROM user WHERE id = $id";
+		$SQLlekerdezes = "UPDATE user
+                      SET deleted = 1,
+                          state = 0
+                      WHERE id = $id";
 
 		// Lefuttatjuk az SQL lekérdezést!
 		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
@@ -365,57 +405,59 @@ class felhasznalok {
         
    }
  public function felhasznalo_aktivalas_linkbol()
-   {
+{
     $aktivalva = false;
-      if(isset($_GET['kod']))
-      {
-        $kod=$_GET['kod'];
-      }
-      else
-      {
-        $kod='EMPTY!';
-      }
 
-       $this->sqlCommand = "SELECT u.id as uid,     
-                                   a.id as aid 
-                            FROM user as u INNER JOIN activation as a ON u.fingerprint=a.fingerprint 
-                            WHERE a.code = '$kod' AND date_sub(a.datetime,interval -1 day)>= now()
-                            LIMIT 1";
+    // Kód ellenőrzése
+    $kod = isset($_GET['kod']) ? $_GET['kod'] : 'EMPTY!';
+    $kod = mysqli_real_escape_string($this->db_kapcsolat->_kapcsolat(), $kod);
 
-        $this->naplo->_bejegyez($this->sqlCommand);
-            //   az $SQLResult változóba tesszük! 
-      $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$this->sqlCommand);
-      $sqlerror = mysqli_error($this->db_kapcsolat->_kapcsolat());
-      if (empty($sqlerror))
-          {
-           // Nem volt hibám, így megviszgálom a visszakapott eredményhalmazt
-         // - Az $SQLResult változóban tesszük
-             if (mysqli_num_rows($SQLResult) > 0)
-             {
-               // Ez a ciklus járja be az eredmény halmazt!
-               // Ha van sor akkor van aktiváló link
-               while ($row = mysqli_fetch_assoc($SQLResult))
-                {
-                  $userID=$row['uid'];
-                  $activationID=$row['aid'];
-                  //helyi lokális sql parancs h ne bántsuk a fentieket
+    // Lekérdezés: a kód létezik és max 24 órás
+    $this->sqlCommand = "SELECT u.id as uid, a.id as aid
+                         FROM user as u
+                         INNER JOIN activation as a ON u.fingerprint = a.fingerprint
+                         WHERE a.code = '$kod'
+                           AND a.datetime >= DATE_SUB(NOW(), INTERVAL 1 DAY)
+                         LIMIT 1";
 
-                  //aktiváljuk a felhasználót
-                  $this->felhasznalo_aktival($userID);
-                  //töröljük az aktiváló sort
-                  $sqlCommand= "DELETE 
-                                FROM activation
-                                WHERE id ='$activationID'";
-                  $delResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$sqlCommand);
-                  $aktivalva=true;
-                } 
-             } 
-          }
-      else 
-          {
-            $this->naplo->_bejegyez($sqlerror);
-          } 
-      return $aktivalva;  
-   }
+    $this->naplo->_bejegyez("Aktivációs lekérdezés: " . $this->sqlCommand);
+
+    $SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(), $this->sqlCommand);
+    $sqlerror = mysqli_error($this->db_kapcsolat->_kapcsolat());
+
+    if (!empty($sqlerror)) {
+        $this->naplo->_bejegyez("SQL hiba: " . $sqlerror);
+        return false;
+    }
+
+    // Ha talált sor
+    if ($row = mysqli_fetch_assoc($SQLResult)) {
+        $userID = $row['uid'];
+        $activationID = $row['aid'];
+
+        // Állapot frissítése 1-re
+        $updateSQL = "UPDATE user SET state = 1 WHERE id = '$userID'";
+        mysqli_query($this->db_kapcsolat->_kapcsolat(), $updateSQL);
+        $updateError = mysqli_error($this->db_kapcsolat->_kapcsolat());
+        if (!empty($updateError)) {
+            $this->naplo->_bejegyez("Hiba a state frissítésénél: " . $updateError);
+            return false;
+        }
+
+        // Aktivációs sor törlése
+        $deleteSQL = "DELETE FROM activation WHERE id = '$activationID'";
+        mysqli_query($this->db_kapcsolat->_kapcsolat(), $deleteSQL);
+        $deleteError = mysqli_error($this->db_kapcsolat->_kapcsolat());
+        if (!empty($deleteError)) {
+            $this->naplo->_bejegyez("Hiba az activation törlésénél: " . $deleteError);
+            return false;
+        }
+
+        $aktivalva = true;
+        $this->naplo->_bejegyez("Felhasználó $userID aktiválva. State = 1.");
+    }
+
+    return $aktivalva;
+}
 }
 ?>

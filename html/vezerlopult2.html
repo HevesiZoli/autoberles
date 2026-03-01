@@ -1,0 +1,26 @@
+<nav id="navbar">
+    <ul>
+        <li><a href="#rolunk">Rólunk</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+        <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
+        <?php
+        if ($belepve == false) {
+            echo '<li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>';
+        } 
+        else 
+        {
+            echo '<li class="kilep">
+                    <a href="index.php?logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Kijelentkezés
+                    </a>
+                  </li>';
+            $isAdmin = $munkamenettarolo->parameter_olvas('admin', '0');
+            if ($isAdmin == '1') {
+            echo '<li><a href="index.php?menupont=adminpanel">Admin Panel</a></li>';
+            }
+            $username = $munkamenettarolo->parameter_olvas('username','');
+            echo ('<li class="felhasznalo">Szia, '. htmlspecialchars($username).'</li>');
+        }
+        ?>
+    </ul>
+</nav>

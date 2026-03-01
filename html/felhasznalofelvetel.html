@@ -1,4 +1,4 @@
-<h1>Felhasználó</h1>
+<h1>Felhasználó felvétel</h1>
 <?php
        //ha kapok id akkkor frissítem az adatokat így akkor szerkesztés van és nem kell a jelszó
        if (isset($_POST['id']))
@@ -20,17 +20,19 @@
        <label>Felhasználó belépési azonosítója:</label><br>
        <input type="text" name="loginname" value="<?php echo($felhasznalok->loginname); ?>"><br>
        <label>Email</label><br>
-       <input type="text" name="email" value="<?php echo($felhasznalok->email); ?>"><br>
-
-<?php
-if(!isset($_POST['id']))
-{
-       echo('<label>Jelszó:</label><br>                                                                                                                          <input type="password" name="password1" value="'.$felhasznalok->password1.'"><br>
-              <label>Jelszó ismét:</label><br>
-              <input type="password" name="password2" value="'.$felhasznalok->password2.'"><br>
-              <label>Jelszó emlékeztető</label><br>
+       <input type="email" name="email" value="<?php echo($felhasznalok->email); ?>"><br>
+       <label>Jelszó:</label><br>
+       <input type="password" name="password1" value=""><br>
+       <label>Jelszó ismét:</label><br>
+       <input type="password" name="password2" value=""><br>
+       
+              <?php
+              if(!isset($_POST['id']))
+              {
+               echo('<label>Jelszó emlékeztető</label><br>
               <input type="text" name="reminder" value="'.$felhasznalok->reminder.'"><br>');
 }      
 ?>
-<input type="submit" name="ok" value="Mentés">   
+<input type="submit" name="ok" value="Mentés"><br>
+<a href="index.php?menupont=felhasznalok">Mégsem</a>
 </form>

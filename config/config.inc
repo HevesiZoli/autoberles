@@ -15,7 +15,7 @@ $log_enabled = true;
 // MAIL (FIGYELEM: éles projektben .env vagy gitignore!)
 $mail_host = "smtp.gmail.com";
 $mail_user = "zoltangevesi81@gmail.com";
-$mail_password = "IDE_MAJD_APP_JELSZO"; // <-- ne tedd fel GitHubra!
+$mail_password = "ptlhyreabcofnzoc";
 
 // PDO-hoz előkészítve
 $connectionString = "mysql:host=$database_host;dbname=$database_db;charset=utf8mb4";

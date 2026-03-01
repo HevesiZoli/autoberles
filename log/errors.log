@@ -729,3 +729,204 @@ Stack trace:
 #1 C:\xampp\htdocs\GitHub\autoberles\index.php(160): foglalasok->torles(NULL)
 #2 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\php\foglalaskezeles.php on line 231
+[16-Feb-2026 21:15:23 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 291
+[16-Feb-2026 21:15:26 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 291
+[16-Feb-2026 21:15:46 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 291
+[16-Feb-2026 21:16:01 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 291
+[16-Feb-2026 21:16:02 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "public", expecting end of file in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 291
+[16-Feb-2026 21:17:53 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 344
+[16-Feb-2026 21:17:53 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 344
+[18-Feb-2026 14:49:47 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'state = 0
+                      WHERE id = 15' at line 3 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:358
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(358): mysqli_query(Object(mysqli), 'UPDATE user\r\n  ...')
+#1 D:\xampp\htdocs\backend\autoberles\index.php(86): felhasznalok->torles('15')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 358
+[22-Feb-2026 12:04:46 Europe/Budapest] PHP Warning:  Undefined variable $mail_psw in D:\xampp\htdocs\backend\autoberles\php\levelezes.php on line 12
+[22-Feb-2026 14:00:26 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[22-Feb-2026 14:00:47 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[22-Feb-2026 14:00:48 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[22-Feb-2026 14:00:55 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[26-Feb-2026 15:48:17 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 9
+[26-Feb-2026 15:50:19 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 9
+[26-Feb-2026 15:52:54 Europe/Budapest] PHP Warning:  Undefined variable $name in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 15:57:37 Europe/Budapest] PHP Warning:  Undefined array key "username" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 14
+[26-Feb-2026 15:57:37 Europe/Budapest] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 14
+[26-Feb-2026 15:57:51 Europe/Budapest] PHP Warning:  Undefined array key "name" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 14
+[26-Feb-2026 15:57:51 Europe/Budapest] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 14
+[26-Feb-2026 15:58:49 Europe/Budapest] PHP Warning:  Undefined array key "username" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 15:59:03 Europe/Budapest] PHP Warning:  Undefined array key "username" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 15:59:18 Europe/Budapest] PHP Warning:  Undefined array key "username" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 15:59:29 Europe/Budapest] PHP Warning:  Undefined array key "username" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 16:00:18 Europe/Budapest] PHP Warning:  Undefined variable $name in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 16:00:30 Europe/Budapest] PHP Warning:  Undefined variable $name in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 16:01:27 Europe/Budapest] PHP Warning:  Undefined variable $name in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 13
+[26-Feb-2026 16:02:24 Europe/Budapest] PHP Warning:  Undefined variable $name in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 14
+[26-Feb-2026 16:02:32 Europe/Budapest] PHP Warning:  Undefined variable $name in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 14
+[26-Feb-2026 16:08:48 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[26-Feb-2026 16:08:48 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 7
+[26-Feb-2026 16:08:50 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[26-Feb-2026 16:08:52 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[26-Feb-2026 16:08:52 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 7
+[26-Feb-2026 16:08:54 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[26-Feb-2026 16:09:24 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[26-Feb-2026 16:14:41 Europe/Budapest] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 2
+[26-Feb-2026 16:15:11 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "/" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 17
+[26-Feb-2026 16:15:26 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "/" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 17
+[26-Feb-2026 19:41:35 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to undefined function isAdmin() in D:\xampp\htdocs\backend\autoberles\html\oldal.html:18
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\index.php(165): include()
+#1 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:23:17 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:23:17 Europe/Budapest] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:26:05 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:26:05 Europe/Budapest] PHP Warning:  Attempt to read property "admin" on null in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:38:47 Europe/Budapest] PHP Warning:  Undefined property: belep::$db_kapcsolat in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 74
+[26-Feb-2026 20:38:51 Europe/Budapest] PHP Warning:  Undefined property: belep::$db_kapcsolat in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 74
+[26-Feb-2026 20:39:09 Europe/Budapest] PHP Warning:  Undefined property: belep::$db_kapcsolat in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 74
+[26-Feb-2026 20:39:09 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:40:01 Europe/Budapest] PHP Warning:  Undefined array key "admin" in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 95
+[26-Feb-2026 20:40:01 Europe/Budapest] PHP Deprecated:  Creation of dynamic property belep::$adminvagysem is deprecated in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 98
+[26-Feb-2026 20:40:01 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "}" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 22
+[26-Feb-2026 20:40:56 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "}" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 22
+[26-Feb-2026 20:41:14 Europe/Budapest] PHP Warning:  Undefined array key "admin" in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 96
+[26-Feb-2026 20:41:14 Europe/Budapest] PHP Deprecated:  Creation of dynamic property belep::$adminvagysem is deprecated in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 99
+[26-Feb-2026 20:41:39 Europe/Budapest] PHP Warning:  Undefined array key "admin" in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 96
+[26-Feb-2026 20:41:39 Europe/Budapest] PHP Deprecated:  Creation of dynamic property belep::$adminvagysem is deprecated in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 99
+[26-Feb-2026 20:41:51 Europe/Budapest] PHP Warning:  Undefined array key "admin" in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 96
+[26-Feb-2026 20:41:51 Europe/Budapest] PHP Deprecated:  Creation of dynamic property belep::$adminvagysem is deprecated in D:\xampp\htdocs\backend\autoberles\php\belepes.php on line 99
+[26-Feb-2026 20:42:34 Europe/Budapest] PHP Warning:  Undefined variable $admin in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:42:44 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ")" in D:\xampp\htdocs\backend\autoberles\html\oldal.html on line 18
+[26-Feb-2026 20:51:14 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\felhasznalofelvetel.html on line 31
+[26-Feb-2026 21:00:37 Europe/Budapest] PHP Deprecated:  md5(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 331
+[26-Feb-2026 21:00:37 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password='d41d8cd98f00b204e9800998ecf8427e',
+                              W...' at line 5 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:345
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(345): mysqli_query(Object(mysqli), 'UPDATE user\r\n  ...')
+#1 D:\xampp\htdocs\backend\autoberles\index.php(79): felhasznalok->felhasznalo_frissit('20')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 345
+[26-Feb-2026 21:01:42 Europe/Budapest] PHP Warning:  Undefined variable $_password in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 341
+[26-Feb-2026 21:01:42 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password='',
+                              WHERE  id = '20'' at line 5 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:345
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(345): mysqli_query(Object(mysqli), 'UPDATE user\r\n  ...')
+#1 D:\xampp\htdocs\backend\autoberles\index.php(79): felhasznalok->felhasznalo_frissit('20')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 345
+[26-Feb-2026 21:01:54 Europe/Budapest] PHP Deprecated:  md5(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 331
+[26-Feb-2026 21:01:54 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password='d41d8cd98f00b204e9800998ecf8427e',
+                              W...' at line 5 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:345
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(345): mysqli_query(Object(mysqli), 'UPDATE user\r\n  ...')
+#1 D:\xampp\htdocs\backend\autoberles\index.php(79): felhasznalok->felhasznalo_frissit('20')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 345
+[26-Feb-2026 21:02:08 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password='',
+                              WHERE  id = '20'' at line 5 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:345
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(345): mysqli_query(Object(mysqli), 'UPDATE user\r\n  ...')
+#1 D:\xampp\htdocs\backend\autoberles\index.php(79): felhasznalok->felhasznalo_frissit('20')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 345
+[26-Feb-2026 21:02:36 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password='',
+                              WHERE  id = '20'' at line 5 in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php:345
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php(345): mysqli_query(Object(mysqli), 'UPDATE user\r\n  ...')
+#1 D:\xampp\htdocs\backend\autoberles\index.php(79): felhasznalok->felhasznalo_frissit('20')
+#2 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 345
+[26-Feb-2026 21:04:38 Europe/Budapest] PHP Deprecated:  md5(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 331
+[26-Feb-2026 21:05:30 Europe/Budapest] PHP Deprecated:  md5(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 331
+[26-Feb-2026 21:08:38 Europe/Budapest] PHP Deprecated:  md5(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 331
+[26-Feb-2026 21:09:26 Europe/Budapest] PHP Warning:  Undefined variable $ujdatarendben in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 326
+[28-Feb-2026 10:20:26 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:20:29 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:20:51 Europe/Budapest] PHP Parse error:  Unclosed '(' on line 18 does not match '}' in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 19
+[28-Feb-2026 10:24:36 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:24:36 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:25:19 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:25:19 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:25:30 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:25:30 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:26:06 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:26:08 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:26:09 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "<" in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Undefined variable $felhasznalok in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[28-Feb-2026 10:26:16 Europe/Budapest] PHP Warning:  Attempt to read property "name" on null in D:\xampp\htdocs\backend\autoberles\html\vezerlopult2.html on line 18
+[01-Mar-2026 10:32:32 Europe/Budapest] PHP Warning:  Undefined variable $felhasznaloNev in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 241
+[01-Mar-2026 10:33:01 Europe/Budapest] PHP Warning:  Undefined variable $felhasznaloNev in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 241
+[01-Mar-2026 10:34:00 Europe/Budapest] PHP Parse error:  syntax error, unexpected single-quoted string "!</h1>" in D:\xampp\htdocs\backend\autoberles\php\felhasznalok.php on line 243
+[01-Mar-2026 13:06:00 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\autoklista.html on line 30
+[01-Mar-2026 13:06:00 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function autok_mejelenites() on null in D:\xampp\htdocs\backend\autoberles\html\autoklista.html:30
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\index.php(171): include()
+#1 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\html\autoklista.html on line 30
+[01-Mar-2026 13:10:17 Europe/Budapest] PHP Parse error:  syntax error, unexpected single-quoted string "</p>" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 199
+[01-Mar-2026 13:30:43 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:30:43 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:30:43 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:30:43 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:30:43 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:30:43 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 35
+[01-Mar-2026 13:30:43 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 36
+[01-Mar-2026 13:31:06 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:31:06 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:31:06 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:31:06 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:31:06 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:31:06 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 35
+[01-Mar-2026 13:31:06 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztasig in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 36
+[01-Mar-2026 13:31:15 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:31:15 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:31:15 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:31:15 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:31:15 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:31:15 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 35
+[01-Mar-2026 13:31:15 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztasig in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 36
+[01-Mar-2026 13:31:31 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:31:31 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:31:31 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:31:31 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:31:31 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:31:31 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 35
+[01-Mar-2026 13:31:31 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztasig in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 36
+[01-Mar-2026 13:31:39 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 23
+[01-Mar-2026 13:31:39 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:31:39 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:31:39 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:31:39 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:31:39 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:31:39 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztasig in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 34
+[01-Mar-2026 13:35:17 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 23
+[01-Mar-2026 13:35:17 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:35:17 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:35:17 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:35:17 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:35:17 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:35:17 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztasig in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 34
+[01-Mar-2026 13:35:18 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 23
+[01-Mar-2026 13:35:18 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:35:18 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:35:18 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:35:18 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:35:18 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:35:18 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztasig in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 34
+[01-Mar-2026 13:35:22 Europe/Budapest] PHP Warning:  Undefined property: autok::$szallithato_szemelyek in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 23
+[01-Mar-2026 13:35:22 Europe/Budapest] PHP Warning:  Undefined property: autok::$uzemanyag in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 25
+[01-Mar-2026 13:35:22 Europe/Budapest] PHP Warning:  Undefined property: autok::$teljesitmeny in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 27
+[01-Mar-2026 13:35:22 Europe/Budapest] PHP Warning:  Undefined property: autok::$sebessegvalto_tipusa in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 29
+[01-Mar-2026 13:35:22 Europe/Budapest] PHP Warning:  Undefined property: autok::$hengerurtartalom in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 31
+[01-Mar-2026 13:35:22 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztastol in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 33
+[01-Mar-2026 13:35:22 Europe/Budapest] PHP Warning:  Undefined property: autok::$vegyes_fogyasztasig in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 34
+[01-Mar-2026 14:40:24 Europe/Budapest] PHP Warning:  move_uploaded_file(D:\xampp\htdocs\backend\autoberlesimg/69a441c8eea78.png): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 254
+[01-Mar-2026 14:40:24 Europe/Budapest] PHP Warning:  move_uploaded_file(): Unable to move &quot;D:\xampp\tmp\php8276.tmp&quot; to &quot;D:\xampp\htdocs\backend\autoberlesimg/69a441c8eea78.png&quot; in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 254
+[01-Mar-2026 14:48:15 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\autoklista.html on line 30
+[01-Mar-2026 14:48:15 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function autok_mejelenites() on null in D:\xampp\htdocs\backend\autoberles\html\autoklista.html:30
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\index.php(209): include()
+#1 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\html\autoklista.html on line 30
