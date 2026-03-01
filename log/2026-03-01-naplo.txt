@@ -1,0 +1,4 @@
+2026-03-01 - 09:26:31am - Böngészőben betöltődött az oldal.
+2026-03-01 - 09:26:31am - Az oldal újratöltődött.
+2026-03-01 - 09:26:31am - autok osztály létrejött.
+2026-03-01 - 09:26:31am - autok osztály megsemmisült.
