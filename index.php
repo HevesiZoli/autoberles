@@ -134,18 +134,18 @@
 		 									break;
 
 		 		case 'ujfoglalas':			include('php/foglalaskezeles.php');
-		 									include('html/foglalasfelvetel.html');
+		 									include('php/foglalasfelvetel.php');
 		 									break;
 
 		 		case 'foglalasokment' :  include('php/foglalaskezeles.php');
 		 								 if ($foglalasok->ment() == true)
 		 							     {include('html/foglalasok.html');}
-		 							     else {include('html/foglalasfelvetel.html');}
+		 							     else {include('php/foglalasfelvetel.php');}
 		 							     break;
 
 		 	 	case 'foglalasokszerkeszt' :include('php/foglalaskezeles.php');
 		 									$foglalasok->szerkeszt($_POST['id']);	
-		 									include('html/foglalasfelvetel.html');
+		 									include('php/foglalasfelvetel.php');
 		 									break;
 
 		 		case 'foglalasokfrissit' :   include('php/foglalaskezeles.php');
@@ -153,7 +153,7 @@
 		 									 {include('html/foglalasok.html');}
 		 									 else
 		 									 {
-		 										include('html/foglalasfelvetel.html');
+		 										include('php/foglalasfelvetel.php');
 		 									 }
 		 									 break;
 
@@ -161,7 +161,7 @@
 		 									include('html/foglalas_torlesmegerosito.html');
 		 									break;
 
-		 		case 'foglalastorles' :  		include('php/foglalaskezeles.php');
+		 		case 'foglalastorles' :  	include('php/foglalaskezeles.php');
 		 									$foglalasok->torles($_POST['id']);
 		 									include('html/foglalasok.html');
 		 									break;
@@ -172,9 +172,20 @@
 		 		case 'autokmegtekintese' :  include('php/jarmuvek.php');
 		 									include('html/autoklista.html');
 		 								    break;
-		 		default : 					include('html/vezerlopult2.html');
-		 									include('html/oldal.html');
+		 		case 'dashboard'	  : include('php/dashboard.php');
+		 								include('html/dashboard.html');
+		 								break;
+		 		case 'ujvelemeny':			include('php/dashboard.php');
+		 									include('html/velemeny.html');
 		 									break;
+		 		case 'velemenyekment' :  include('php/dashboard.php');
+		 								 if ($ertekeles->uj_ertekeles() == true)
+		 							     {include('html/dashboard.html');}
+		 							     else {include('html/velemeny.html');}
+		 							     break;
+		 		default : 				include('html/vezerlopult2.html');
+		 								include('html/oldal.html');
+		 								break;
 		 	}
 		 }
 	  }
@@ -210,7 +221,9 @@
 		 								include('html/autoklista.html');
 		 								break;
 		 	case 'belepes' :	include('html/belep.html');
-		 						break;
+		 						break; 
+		 	case 'berlesifeltetel': include('html/berlesifeltetelek.html');
+		 							break;
 		 	case 'kezdolap' : 
 		 	default : 	include('php/tartalom.php');
 		 				include('html/vezerlopult2.html');

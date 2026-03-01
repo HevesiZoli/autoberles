@@ -15,8 +15,8 @@ class felhasznalok {
  	public $password1;
  	public $password2;
  	public $state;
-    public $admin;
-    public $deleted;
+  public $admin;
+  public $deleted;
  	public $reminder;
 
  	// Megmondja, hogy milyen műveletet hajtok éppen végre!

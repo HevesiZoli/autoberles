@@ -243,3 +243,9 @@ ul a {
         padding: 25px 20px;
     }
 }
+@import "import/foglalas.css";
+@import "import/mobil.css";
+@import "import/objektumok.css";
+@import "import/oldal.css";
+@import "import/submit.css";
+@import "import/velemeny.css";

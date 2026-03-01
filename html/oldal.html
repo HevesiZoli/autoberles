@@ -1,4 +1,11 @@
-
+<nav id="navbar">
+    <ul>
+        <li><a href="#rolunk">Rólunk</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+        <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
+        <li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>
+    </ul>
+</nav>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -284,9 +291,11 @@ footer {
 </head>
 
 <body>
-<div class="hero">
-    <h1 class="cim">BérAutó24</h1>
-    <p class="alcim">- Az út itt kezdődik! -</p>
+    <div class="hero-box">
+        <h1 class="cim">BérAutó24</h1>
+        <p class="alcim">- Az út itt kezdődik! -</p>
+    </div>
+    <img class="kocsi" src="img/2.png">
 </div>
 
 <div class="rolunk-wrapper">
@@ -349,5 +358,16 @@ footer {
     © 2026 BérAutó24 | Minden jog fenntartva<br><br>
     Ez az oldal kizárólag demonstrációs célokat szolgál. Az itt megjelenített adatok nem valósak!
 </footer>
+<script>
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {  // 50px után jön a háttér
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+</script>
 </body>
 </html>

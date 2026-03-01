@@ -877,5 +877,3 @@
 								 rendszam,
 								 allapot,
 								 napi_dij 
-						  FROM   autok
-2026-02-16 - 09:24:30pm - autok osztály megsemmisült.
