@@ -81,25 +81,35 @@ class felhasznalok {
             while ($row = mysqli_fetch_assoc($SQLResult))
                {
                  // - Készítünk egy műveletek parancssort, 
-                 //   hogy ne a $HTMLlines legyen megbonolítva
-                 $editcommand =  '<form action="index.php?menupont=szerkesztfelhasznalo" method="post">';
-                 $editcommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
-                 $editcommand .= '<input type="submit" name="szerkeszt" value="Szerkesztés">';  
-                 $editcommand .= '</form>';
+                //    hogy ne a $HTMLlines legyen megbonolítva
 
-                 if($row['state']==0)
-                 {
-                  $activatecommand =  '<form action="index.php?menupont=aktivalfelhasznalo" method="post">';
-                 $activatecommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
-                 $activatecommand .= '<input type="submit" name="aktival" value="Aktivál">';  
-                 $activatecommand .= '</form>';  
+                  $editcommand =  '<div class="muveletek1">';
+                  $editcommand .= '<form action="index.php?menupont=szerkesztfelhasznalo" method="post">';
+                  $editcommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
+                  $editcommand .= '<input type="submit" name="szerkeszt" value="🔧">';  
+                  $editcommand .= '</form>';
+                  $editcommand .= '</div>';
+
+                  if($row['state']==0)
+                  {
+                      $activatecommand =  '<div class="muveletek3">';
+                      $activatecommand .= '<form action="index.php?menupont=aktivalfelhasznalo" method="post">';
+                      $activatecommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
+                      $activatecommand .= '<input type="submit" name="aktival" value="✅">';  
+                      $activatecommand .= '</form>';  
+                      $activatecommand .= '</div>';
                   }
-                  else{$activatecommand="";}
-                 
-                 $deletecommand =  '<form action="index.php?menupont=torolfelhasznalo" method="post">';
-                 $deletecommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
-                 $deletecommand .= '<input type="submit" name="torol" value="Törlés">';  
-                 $deletecommand .= '</form>';  
+                  else
+                  {
+                      $activatecommand="";
+                  }
+
+                  $deletecommand =  '<div class="muveletek2">';
+                  $deletecommand .= '<form action="index.php?menupont=torolfelhasznalo" method="post">';
+                  $deletecommand .= '<input type="hidden" name="id" value="'.$row['id'].'">';   
+                  $deletecommand .= '<input type="submit" name="torol" value="🗑️">';  
+                  $deletecommand .= '</form>';
+                  $deletecommand .= '</div>';  
                  // Itt állítom össze a listám html szakaszát!
                  $HTMLlines .= "<tr><td>".$row['name']."</td><td>".$row['loginname']."</td><td>".$row['email']."</td><td>".$row['regisztracioideje']."</td><td>".$editcommand.$deletecommand.$activatecommand."</td></tr>";   
                }
@@ -112,6 +122,26 @@ class felhasznalok {
     }
 
     public function felhasznalo_ment() {
+
+      $secret = "6LfOHaEsAAAAAKcTcgUpWWlVhvikkEiw-vBS-09v";
+      
+      if (!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
+          $this->hibauzenet = "Kérlek igazold, hogy nem vagy robot!";
+          return false;
+      }
+
+      $response = $_POST['g-recaptcha-response'];
+
+      $verify = file_get_contents(
+          "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response"
+      );
+
+      $captcha = json_decode($verify);
+      
+      if (!$captcha->success) {
+          $this->hibauzenet = "Captcha hiba! Próbáld újra.";
+          return false;
+      }
 
       $this->muvelet = 'insert';
 
@@ -141,9 +171,10 @@ class felhasznalok {
           $this->password2 = '';
       }
       if (isset($_POST['reminder'])) {
-          $this->reminder = $_POST['reminder'];
+          if (empty($_POST['reminder']))
+           {$this->reminder = 0;}
       } else {
-          $this->reminder = '';
+          $this->reminder = 0;
       }
       $ujdatarendben = true;
 
@@ -154,6 +185,16 @@ class felhasznalok {
       if (empty($this->loginname)) {
           $ujdatarendben = false;
           $this->hibauzenet = "Nincs megadva a belépési azonosítója!";
+      }
+      if ($ujdatarendben == true) {
+          // E-mail cím ellenőrzése
+          $checkEmail = "SELECT email FROM user WHERE email = '$this->email' LIMIT 1";
+          $resEmail = mysqli_query($this->db_kapcsolat->_kapcsolat(), $checkEmail);
+
+          if (mysqli_num_rows($resEmail) > 0) {
+              $ujdatarendben = false;
+              $this->hibauzenet = "Ez az e-mail cím már regisztrálva van!";
+          }
       }
       if (empty($this->email)) {
           $ujdatarendben = false;
@@ -232,7 +273,7 @@ class felhasznalok {
                                         .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; }
                                         h1 { color: #6b9c6f; }
                                         a.button { background: #6b9c6f; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display:inline-block; }
-                                        a.button:hover { background: #0056b3; }
+                                        a.button:hover { background: #5a885c; }
                                       </style>
                                     </head>
                                     <body>
@@ -307,6 +348,27 @@ class felhasznalok {
    }
    public function felhasznalo_frissit($id)
    {
+    $secret = "6LfOHaEsAAAAAKcTcgUpWWlVhvikkEiw-vBS-09v";
+
+    // ellenőrzés: létezik-e
+    if (!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
+        $this->hibauzenet = "Kérlek igazold, hogy nem vagy robot!";
+        return false;
+    }
+
+    $response = $_POST['g-recaptcha-response'];
+
+    $verify = file_get_contents(
+        "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response"
+    );
+
+    $captcha = json_decode($verify);
+
+    // HA NEM OK → STOP!
+    if (!$captcha->success) {
+        $this->hibauzenet = "Captcha hiba! Próbáld újra.";
+        return false;
+    }
     $modositottadatrendben = true;
       $this->muvelet = 'update';
       // Jöhet az ellenörzés

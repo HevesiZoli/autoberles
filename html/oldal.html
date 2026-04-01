@@ -1,11 +1,3 @@
-<nav id="navbar">
-    <ul>
-        <li><a href="#rolunk">Rólunk</a></li>
-        <li><a href="#kapcsolat">Kapcsolat</a></li>
-        <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
-        <li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>
-    </ul>
-</nav>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -17,95 +9,77 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: Bahnschrift, sans-serif;
     margin: 0;
     padding: 0;
-}
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 30px 40px;      /* vízszintes padding: 40px */
-    box-sizing: border-box;  /* fontos, hogy a padding ne “tolja ki” a szélességet */
-    transition: all 0.3s ease;
-    background-color: rgba(34,34,34);
-    z-index: 1000;
-    border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: #6b9c6f;
-}
-nav ul {
-    list-style: none;
-    margin: 0 auto;          /* középre igazítás */
-    padding: 0;
-    display: flex;
-    justify-content: flex-start; /* vagy center, ha teljesen középre akarod */
-    align-items: center;
-}
-
-nav li:last-child {
-    margin-left: auto;       /* ha van jobbra húzó elem, pl. Bejelentkezés */
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    position: relative;       /* fontos, hogy a ::after pozícionálható legyen */
-    color: white;
-    margin-left: 30px;
-    text-decoration: none;    /* ne legyen alap aláhúzás */
-    transition: color 0.3s;
-}
-nav a:hover {
-    text-decoration: none;
-}
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;                /* link alján */
-    width: 0%;                /* kezdetben nulla széles */
-    height: 2px;              /* vastagság */
-    background-color: #6b9c6f;   /* vonal színe */
-    transition: width 0.4s ease; /* animáció */
-}
-/* Hover effekt – szélesség 100%-ra nő */
-nav a:hover::after {
-    width: 100%;              /* teljes aláhúzás */
+    text-decoration: none !important;
 }
 .felhasznalo
 {
     color: white;
+    text-align: right;
 }
-/* ===== HERO ===== */
 .hero {
-    height: calc(100vh - 70px); /* teljes képernyő - menü */
-    margin-top: 0px; /* menü magasság */
-    background-image: url("img/2.png"); /* NE png legyen */
+    margin-top: 0px;
+    height: 600px;
+    min-height: 600px;
+    padding-top: 100px;
+
+    background-image: url("img/11.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    max-width: 100%;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+}
+
+.asd {
+    margin-top: -180px !important;
+    margin-bottom: -180px !important;
+    margin-top: 0; 
+    background-color: rgba(34, 34, 34, 0.7); 
+    padding: 40px;
+    border-radius: 20px;
     color: white;
     text-align: center;
 }
 
-/* Szöveg stílus */
+
+.asd p:first-child {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+.gombika {
+    display: inline-block;
+    background-color: #6b9c6f; 
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.8s ease;
+}
+
+.gombika:hover {
+    background-color: #5a885c; 
+    transform: scale(1);
+}
 .cim {
     font-size: 60px;
     margin: 0;
 }
 
-.alcim {
-    font-size: 28px;
-}
-
-/* Gomb */
 .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -284,18 +258,92 @@ footer {
     width: 300px;
     font-size: 33px;
     display: inline-block;
-    text-align: center; /* szöveg középre */
+    text-align: center;
     box-sizing: border-box;
 }
 </style>
 </head>
 
 <body>
-    <div class="hero-box">
-        <h1 class="cim">BérAutó24</h1>
-        <p class="alcim">- Az út itt kezdődik! -</p>
+    <div class="hero">
+        <div class="asd">
+            <p>BérAutó24</p>
+                <?php
+                    if ($belepve == false) 
+                    {
+                        echo '<a href="index.php?menupont=belepes" class="gombika">Bejelentkezés</a><br>vagy<br>';
+                    }
+                ?>
+            <a href="index.php?menupont=autokmegtekintese" class="gombika">Válogass az elérhető autóink közül!</a></p>
+        </div>
     </div>
-    <img class="kocsi" src="img/2.png">
+<div class="csuszo-kontener">
+    <?php echo $ertekeles->_velemenyek_csuszka(); ?>
+            
+</div>
+
+<button id="velemenyBetolt" class="kozep-gomb" onclick="velemenyMegjelenit()">
+    <i class="fa-solid fa-plus"></i> Vélemény írása
+</button>
+<div class="doboz velemeny-box" id="velemenyDoboz" style="display:none;">
+<?php
+$username = $munkamenettarolo->parameter_olvas('username','');
+
+if ($belepve == true) {
+?>
+<div class="form-container">
+    <h1>Vélemény felvétel</h1>
+           
+    <form action="index.php?menupont=velemenyekment" method="POST">
+        <input type="hidden" name="nev" value="<?= htmlspecialchars($username) ?>">
+
+        <div class="form-item">
+            <label>Csillag:</label>
+
+            <fieldset class="range__field">
+                <input class="range" type="range" name="csillag" min="1" max="5" value="3">
+
+                <svg role="presentation" width="100%" height="10" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="range__tick" x="0%" y="3" width="1" height="10"></rect>
+                    <rect class="range__tick" x="25%" y="3" width="1" height="10"></rect>
+                    <rect class="range__tick" x="50%" y="3" width="1" height="10"></rect>
+                    <rect class="range__tick" x="75%" y="3" width="1" height="10"></rect>
+                    <rect class="range__tick" x="100%" y="3" width="1" height="10"></rect>
+                </svg>
+
+                <svg role="presentation" width="100%" height="14" xmlns="http://www.w3.org/2000/svg">
+                    <text class="range__point" x="0%" y="14" text-anchor="start">★</text>
+                    <text class="range__point" x="25%" y="14" text-anchor="middle">★</text>
+                    <text class="range__point" x="50%" y="14" text-anchor="middle">★</text>
+                    <text class="range__point" x="75%" y="14" text-anchor="middle">★</text>
+                    <text class="range__point" x="100%" y="14" text-anchor="end">★</text>
+                </svg>
+            </fieldset>
+
+        </div>
+
+        <div class="form-item">
+            <label>E-mail:</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="form-item full">
+            <label>Vélemény:</label>
+            <textarea name="velemeny" maxlength="200"></textarea>
+        </div>
+
+        <div class="form-item">
+            <input type="submit" name="ok" value="Küldés">
+        </div>
+    </form>
+</div>
+
+<?php
+} else {
+    echo "Ehhez a funkcióhoz bejelentkezés szükséges!<br>";
+    echo '<a href="index.php?menupont=belepes" class="gombika">Bejelentkezés</a><br>';
+}
+?>
 </div>
 
 <div class="rolunk-wrapper">
@@ -317,14 +365,6 @@ footer {
       </div>
     </div>
 </div>
-<div class="autoink-wrapper">
-    <div class="autoink" id="autoink">
-        <div class="a">
-            <p><strong>Válogass az autóink között!</strong></p>
-            <a href="index.php?menupont=autokmegtekintese">Járművek megtekintése</a>
-        </div>
-    </div>
-</div>
 <p class="kapcsolat_felirat">Kapcsolat</p>
 <div class="kapcsolat-wrapper">
 
@@ -333,24 +373,20 @@ footer {
         <i class="fa-solid fa-phone"></i>
         <div class="text">
           <p><strong>Telefon</strong></p>
-          <p>+36 70 555 9999</p>
+          <p>+36 20 391 2188</p>
         </div>
       </div>
       <div class="kontakt-item">
         <i class="fa-solid fa-envelope"></i>
         <div class="text">
           <p><strong>Email</strong></p>
-          <p>berauto24@gmail.com</p>
+          <p>autoberloelbiralas@gmail.com</p>
         </div>
       </div>
     </div>
 
     <div class="terkep">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2693.4168464738905!2d19.071458126789896!3d47.54021525008869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1771420415506!5m2!1shu!2shu"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
+        <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Szilf%C3%A1kalja%20Hajd%C3%BAszoboszl%C3%B3+(B%C3%A9rAut%C3%B324)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
     </div>
 
 </div>
@@ -358,16 +394,5 @@ footer {
     © 2026 BérAutó24 | Minden jog fenntartva<br><br>
     Ez az oldal kizárólag demonstrációs célokat szolgál. Az itt megjelenített adatok nem valósak!
 </footer>
-<script>
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {  // 50px után jön a háttér
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
-</script>
 </body>
 </html>

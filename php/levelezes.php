@@ -31,7 +31,7 @@ class levelkuld{
       $this->postas=new PHPMailer(true);
       //nyelv beallitasa
       $this->postas->CharSet= "UTF-8";
-      // $this->postas->SMTPDebug = 3;
+      $this->postas->SMTPDebug = 3;
       //ahhoz h levelet tudjunkkuldeni, kell egy smtp kiszolgalo, ami kapcsolodni tud a kulonbozo kiszolgalokhoz pl.:Google
       $this->postas->isSMTP();
       //szuksegunk lesz a megfelel kiszolgalo beallitasokra
@@ -44,7 +44,7 @@ class levelkuld{
       $this->postas->Port=587;
 
       // Teszteléshez kell
-      $this->postas->SMTPDebug = 2;         // részletes SMTP log
+      $this->postas->SMTPDebug = 0;         // részletes SMTP log
       $this->postas->Debugoutput = 'html';  // böngészőben olvasható formátum
   }
   // Destruktor
@@ -76,6 +76,7 @@ class levelkuld{
           if(!$ERRORStop) {
               $this->postas->clearAddresses(); // mindig frissítjük
               $this->postas->setFrom($this->postas->Username, "BérAuto24");
+	      $this->postas->Sender=$this->postas->Username;
               $this->postas->addAddress($cimzett);
               $this->postas->addReplyTo($this->postas->Username,"BérAuto24");
               $this->postas->isHTML(true);

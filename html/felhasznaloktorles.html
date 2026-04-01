@@ -1,6 +1,10 @@
-<h1>Biztosan törölni kívánja?</h1>
-<form action="index.php?menupont=felhasznalotorles" method="POST">
-	<input type="hidden" name="id" value="<?php echo($_POST['id']) ?>">
-	<input type="submit" name="torol" value="Igen">
-	<a href="index.php?menupont=felhasznalok">Nem</a>
+<form action="index.php?menupont=felhasznalotorles" method="post">
+	<div class="vcd">
+		<div class="bcd">
+		<h1>Biztosan törölni szeretnéd a kiválasztott felhasználót?</h1>
+		<input type="hidden" name="id" value="<?php echo($_POST['id']) ?>" class="cancel">
+		<input type="submit" name="torol" value="Igen" class="cancel">
+		<a href="index.php?menupont=felhasznalok" class="cancel">Nem</a>
+		</div>
+	</div>
 </form>

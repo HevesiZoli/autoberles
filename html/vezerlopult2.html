@@ -1,25 +1,25 @@
 <nav id="navbar">
-    <ul>
-        <li><a href="#rolunk">Rólunk</a></li>
-        <li><a href="#kapcsolat">Kapcsolat</a></li>
-        <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="#rolunk">Rólunk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kapcsolat">Kapcsolat</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
         <?php
-        if ($belepve == false) {
-            echo '<li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>';
-        } 
-        else 
-        {
-            echo '<li class="kilep">
-                    <a href="index.php?logout">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Kijelentkezés
-                    </a>
-                  </li>';
+        if ($belepve == true) {
             $isAdmin = $munkamenettarolo->parameter_olvas('admin', '0');
             if ($isAdmin == '1') {
-            echo '<li><a href="index.php?menupont=adminpanel">Admin Panel</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="index.php?menupont=adminpanel">Admin Panel</a></li>';
             }
+            echo '<li class="nav-item kilep">
+                    <a class="nav-link" href="index.php?logout">Kijelentkezés</a>
+                  </li>';
             $username = $munkamenettarolo->parameter_olvas('username','');
-            echo ('<li class="felhasznalo">Szia, '. htmlspecialchars($username).'</li>');
+            echo '<li class="nav-item" style="color:white; padding:16px 0;">Szia, '. htmlspecialchars($username).'</li>';
         }
         ?>
     </ul>

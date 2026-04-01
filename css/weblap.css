@@ -1,6 +1,6 @@
 body {
     font-family: Bahnschrift, sans-serif;
-    background-color: #f5f7fa;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -10,58 +10,60 @@ footer
     text-align: center;
     padding: 15px;
 }
-
 nav {
-    background-color: #222;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 30px 40px;
-    box-sizing: border-box;
+    padding: 30px 40px;      /* vízszintes padding: 40px */
+    box-sizing: border-box;  /* fontos, hogy a padding ne “tolja ki” a szélességet */
     transition: all 0.3s ease;
-    background-color: transparent;
+    background-color: rgba(34,34,34);
     z-index: 1000;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #6b9c6f;
+    text-decoration: none !important;
 }
 nav ul {
-    background-color: #222;
     list-style: none;
     margin: 0 auto;          /* középre igazítás */
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* vagy center, ha teljesen középre akarod */
     align-items: center;
-    border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: #6b9c6f;
+    text-decoration: none !important;
 }
-nav li:last-child {
-    margin-left: auto;       /* ha van jobbra húzó elem, pl. Bejelentkezés */
-}
+
 nav li {
     margin-right: 20px;
+    text-decoration: none !important;
 }
+
 nav a {
-    position: relative;
+    position: relative;       /* fontos, hogy a ::after pozícionálható legyen */
     color: white;
     margin-left: 30px;
-    text-decoration: none;
+    text-decoration: none;    /* ne legyen alap aláhúzás */
     transition: color 0.3s;
 }
 nav a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 nav a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;              
-    background-color: #6b9c6f;   
-    transition: width 0.4s ease; 
+    bottom: 0;                /* link alján */
+    width: 0%;                /* kezdetben nulla széles */
+    height: 2px;              /* vastagság */
+    background-color: #6b9c6f;   /* vonal színe */
+    transition: width 0.4s ease;
+    text-decoration: none !important;
 }
+/* Hover effekt – szélesség 100%-ra nő */
 nav a:hover::after {
     width: 100%;
+    text-decoration: none !important;
 }
 /* Wrapper a kocsiknak */
 .autok-wrapper {
@@ -94,7 +96,7 @@ nav a:hover::after {
 }
 .kepek img {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
     display: block;
     transition: transform 0.8s ease;
@@ -118,7 +120,7 @@ nav a:hover::after {
     color: #6b9c6f
 }
 .adatok p {
-    font-size: 18px;
+    font-size: 15px;
     color: #444;
     margin: 0;
 }
@@ -147,12 +149,966 @@ nav a:hover::after {
     font-weight: bold;
     font-size: 1.1em;
 }
-
 .autogomb:hover {
     background-color: #5a885c;  /* sötétebb árnyalat hoverre */
     transform: translateY(-2px);
 }
-.felhasznalo
-{
-    color: white;
+.auto-nagy-wrapper {
+    max-width: 1600px;
+    margin-top: 10px !important;
+    margin: 100px auto;
+    padding: 20px;
 }
+
+/* ---------- AUTO NAGY ---------- */
+.auto-nagy {
+    margin-top: 70px !important;
+    display: flex;
+    flex-direction: column; /* képek sorban + adatok alatta */
+    gap: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+.auto-nagy h1
+{
+    font-size: 40px;
+    color: #6b9c6f;
+    margin: 0;
+}
+.kep-sor {
+    display: flex;            /* két oszlop: fő kép + kis képek */
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* Fő kép */
+.auto-nagy-fokep img {
+    width: 1000px; /* nagyobb fő kép */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Kis képek jobb oldalt */
+.tobbikep {
+    display: flex;
+    flex-direction: column; /* egymás alatt */
+    gap: 7px;
+}
+
+.tobbikep img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.tobbikep img:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+/* adatok */
+.auto-nagy-adatok {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.auto-nagy-adatok h1 {
+    font-size: 40px;
+    color: #6b9c6f;
+    margin: 0;
+}
+
+.auto-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 30px;
+}
+
+.auto-info-grid p {
+    font-size: 18px;
+    color: #444;
+    margin: 0;
+}
+
+.auto-info-grid p{
+    font-size:18px;
+    color:#444;
+}
+
+/* ár + gomb */
+.auto-ar-gomb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.auto-ar {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.foglalas-gomb {
+    padding: 15px 35px;
+    background: #6b9c6f;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.foglalas-gomb:hover {
+    background: #5a885c;
+}
+.csuszo-kontener {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.doboz-csoport {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* csak az aktív látszik */
+.doboz-csoport:not(.active){
+    display:none;
+}
+
+.doboz {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+/* vélemény stílus */
+.doboz strong {
+    color: #333;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.doboz p {
+    font-style: italic;
+    color: #555;
+    font-size: 0.95em;
+    overflow-wrap: break-word;
+    word-break: break-all; /* Ez kényszeríti ki a törést a sok 'a' betűnél */
+}
+
+
+.doboz span {
+    color: #f1c40f;
+    font-size: 1.2em;
+}
+
+/* ---------- ANIMÁCIÓ ---------- */
+
+@keyframes kartyaKi{
+    0%{
+        transform:translateX(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateX(-50px);
+        opacity:0;
+    }
+}
+
+@keyframes kartyaBe{
+    0%{
+        transform:translateX(50px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+.kartya-ki{
+    animation:kartyaKi 0.8s forwards;
+}
+
+.kartya-be{
+    animation:kartyaBe 0.8s forwards;
+}
+
+#velemenyDoboz{
+    display:none;
+}
+
+#velemenyDoboz.active{
+    display:block;
+}
+
+.velemeny-box{
+    width: 900px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.velemeny-box h1{
+    text-align:center;
+    margin-top:0;
+    margin-bottom:25px;
+}
+
+.velemeny-box form{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.velemeny-box label{
+    font-size:20px;
+    font-weight:600;
+    display:block;
+    margin-bottom:5px;
+}
+
+.form-item{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+}
+
+.form-item.full{
+    width:100%;
+    align-items:center;
+}
+
+.velemeny-box input,
+.velemeny-box select,
+.velemeny-box textarea{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.velemeny-box textarea{
+    width:500px;
+    height:120px;
+}
+
+.velemeny-box input[type="date"]{
+    width:220px;
+}
+
+.velemeny-box input[type="submit"]{
+    background:#6b9c6f;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+.velemeny-box input[type="submit"]:hover{
+    background:#5a885c;
+}
+
+input.range {
+  -webkit-appearance: none;
+  bottom: -10px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+input.range:focus {
+  outline: 0;
+}
+
+input.range::-moz-focus-outer {
+  border: 0;
+}
+
+input.range::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px black, 0px 0px 1px black;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.5px;
+}
+
+input.range::-moz-range-thumb {
+  box-shadow: 1px 1px 1px black, 0px 0px 1px black;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+input.range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+  background: #666;
+  border-radius: 20px;
+  border: 0;
+}
+
+input.range::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+  background: #666;
+  border-radius: 20px;
+  border: 0;
+}
+
+input.range::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input.range::-ms-thumb {
+  box-shadow: 1px 1px 1px black, 0px 0px 1px black;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  height: 5px;
+}
+
+input.range::-ms-fill-lower,
+input.range::-ms-fill-upper {
+  background: #666;
+  border: 0;
+  border-radius: 40px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+}
+
+.range__tick {
+  fill: #a0a0a0;
+}
+
+.range__tick:first-child {
+  transform: translateX(2px);
+}
+
+.range__tick:last-child {
+  transform: translateX(-3px);
+}
+
+.range__field {
+  border: 0;
+}
+
+.range__point {
+  fill: #FFD700;
+  font-size: 20px;
+}
+
+.jarmu{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jarmu h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.jarmu label{
+    font-weight: bold;
+    color: #333;
+}
+
+.jarmu input[type="text"]{
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.jarmu input[type="text"]:focus{
+    border-color: #FFD700;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,215,0,0.6);
+}
+
+.jarmu input[type="file"]{
+    margin-bottom: 15px;
+}
+
+.jarmu input[type="submit"]{
+    display: inline-block;
+    background-color: #6b9c6f; 
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.8s ease;
+    width: 100%;
+}
+
+.jarmu a{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #6a0dad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.jarmu a:hover{
+    text-decoration: underline;
+}
+
+.foglalas{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 35px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foglalas h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.foglalas label{
+    font-weight: bold;
+    color: #333;
+}
+
+.foglalas input,
+.foglalas select{
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.foglalas input:focus,
+.foglalas select:focus{
+    border-color: #FFD700;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,215,0,0.6);
+}
+
+.foglalas input[type="submit"]{
+    display: inline-block;
+    background-color: #6b9c6f; 
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.8s ease;
+    width: 100%;
+}
+
+.foglalas a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #6a0dad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.foglalas a:hover{
+    text-decoration: underline;
+}
+
+.felhasznalofelv{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 35px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.felhasznalofelv h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.felhasznalofelv label{
+    font-weight: bold;
+    color: #333;
+}
+
+.felhasznalofelv input{
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.felhasznalofelv input:focus{
+    border-color: #FFD700;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,215,0,0.6);
+}
+
+.felhasznalofelv input[type="submit"]{
+    display: inline-block;
+    background-color: #6b9c6f; 
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.8s ease;
+    width: 100%;
+}
+
+.felhasznalofelv a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #6a0dad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.felhasznalofelv a:hover{
+    text-decoration: underline;
+}
+
+.muveletek1,
+.muveletek2,
+.muveletek3{
+    margin-bottom:8px;
+}
+
+.muveletek1 input[type="submit"],
+.muveletek2 input[type="submit"],
+.muveletek3 input[type="submit"]{
+    border:none;
+    background:#f4f4f4;
+    font-size:18px;
+    padding:6px 10px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.muveletek1 input[type="submit"]:hover{
+    background:#FFD700;
+    transform:scale(1.15);
+}
+
+.muveletek2 input[type="submit"]:hover{
+    background:#ffb3b3;
+    transform:scale(1.15);
+}
+
+.muveletek3 input[type="submit"]:hover{
+    background:#b3ffb3;
+    transform:scale(1.15);
+}
+
+.velemeny{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 35px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.velemeny h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.velemeny label{
+    font-weight: bold;
+    color: #333;
+}
+
+.velemeny .form-item{
+    margin-bottom: 20px;
+}
+
+.velemeny input[type="email"],
+.velemeny textarea{
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.velemeny textarea{
+    height: 100px;
+    resize: none;
+}
+
+.velemeny input:focus,
+.velemeny textarea:focus{
+    border-color: #FFD700;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,215,0,0.6);
+}
+
+.velemeny input[type="submit"]{
+    display: inline-block;
+    background-color: #6b9c6f; 
+    color: white;
+    padding: 15px 30px;
+    margin: 15px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.8s ease;
+    width: 100%;
+}
+
+.velemeny a{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #6a0dad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.velemeny a:hover{
+    text-decoration: underline;
+}
+
+.range__field{
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.gomb
+{
+    display: block;
+    margin: 20px auto;
+    background-color: #6b9c6f; 
+    color: white;
+    width: 200px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.8s ease;
+}
+.gomb:hover {
+    background-color: #5a885c; 
+    transform: scale(1);
+}
+.panel{
+    width: 100%;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 35px 30px;
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.code-inputs{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin:15px 0;
+}
+
+.code-inputs input{
+    width:35px;
+    height:35px;
+    font-size:20px;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.code-inputs input:focus{
+    border-color:#007bff;
+    outline:none;
+}
+/* ---------- FOGLALÁS WRAPPER ---------- */
+
+.foglalas-form-wrapper {
+    max-width: 1600px;        /* ugyanaz mint az auto wrapper */
+    margin: 40px auto;        /* középre igazítás */
+    padding: 10px;
+    font-family: Bahnschrift, sans-serif;
+}
+
+/* maga a form kártya */
+
+.foglalas-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 0 auto;           /* ez teszi középre a formot */
+}
+
+/* cím */
+
+.foglalas-form h2 {
+    margin-top: 0;
+    color: #6b9c6f;
+    font-size: 32px;
+}
+
+/* label */
+
+.foglalas-form label {
+    font-weight: 600;
+    display: block;
+    margin-top: 18px;
+    color: #444;
+}
+
+/* input mezők */
+
+.foglalas-form input[type="text"],
+.foglalas-form input[type="email"],
+.foglalas-form input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.foglalas-form input:focus {
+    border-color: #6b9c6f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(107,156,111,0.4);
+}
+
+/* gomb */
+
+.foglalas-form input[type="submit"] {
+    margin-top: 25px;
+    background: #6b9c6f;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.foglalas-form input[type="submit"]:hover {
+    background: #5a875d;
+}
+
+.foglalas-form input[type="submit"]:active {
+    transform: scale(0.97);
+}
+.vcd {
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 10px;
+    font-family: Bahnschrift, sans-serif;
+}
+.bcd {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 0 auto;  
+    text-align: center;         
+}
+.exit {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #c93e3e;
+    background-color: #c93e3e;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(107, 156, 111, 0.3);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.exit:hover {
+    border: 2px solid #af2323;
+    background-color: #af2323;
+}
+
+/* Mégsem link – zöld, lekerekített, árnyékos */
+.cancel {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #6b9c6f;
+    background-color: #6b9c6f;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(107, 156, 111, 0.3);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.cancel:hover {
+    border: 2px solid #5a885c;
+    background-color: #5a885c;
+}
+/* Mindkét gomb ugyanakkora legyen */
+.link-row a.input.login.button {
+    flex: 1;           /* mindkettő ugyanakkora szélesség */
+    text-align: center;
+    padding: 14px 0;
+    background-color: #6b9c6f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-row a.input.login.button:hover {
+    background-color: #567a5c;
+    box-shadow: 0 5px 15px rgba(107, 156, 111, 0.3);
+}
+.regitelo {
+    display: none; 
+    background-color: white;
+    color: red;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+}
+.ribbon {
+    position: fixed;
+    /* Ezeket az értékeket negatív irányba kell tolni a nagyobb méret miatt */
+    top: 40px;            
+    right: -70px;         
+    width: 300px;         /* Kicsit szélesebb, hogy a 45 fokos forgatás ne vágja le a sarkait */
+    
+    text-align: center;
+    transform: rotate(45deg);
+    background: red;
+    color: #ffffff;
+    line-height: 45px;    
+    
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-size: 18px;      
+    letter-spacing: 2px;  
+    text-transform: uppercase;
+    
+    /* Fontos: ne zavarja a kattintást az alatta lévő gombokon */
+    pointer-events: none; 
+    z-index: 2000;
+}
+
+.user-name {
+    color: #6b9c6f !important; /* Zöldes szín, hogy elüssön a linkektől */
+    font-size: 18px !important;
+    margin-top: 10px;
+}
+
+/* Kijelentkezés gomb pirossal */
+.kilep a {
+    color: #ff4d4d !important;
+    font-size: 18px !important;
+}
+
+/* A kiemelt fehér gomb stílusa */
+.kiemelt-gomb a {
+    background-color: white !important;
+    color: #1a1a1a !important;
+    padding: 15px 30px !important;
+    border-radius: 12px !important;
+    display: block !important;
+    width: 80% !important;
+    margin: 20px auto 0 !important;
+}
+

@@ -1,3 +1,4 @@
+<div class="felhasznalofelv">
 <h1>Felhasználó felvétel</h1>
 <?php
        //ha kapok id akkkor frissítem az adatokat így akkor szerkesztés van és nem kell a jelszó
@@ -33,6 +34,9 @@
               <input type="text" name="reminder" value="'.$felhasznalok->reminder.'"><br>');
 }      
 ?>
+       <div class="g-recaptcha" data-sitekey="6LfOHaEsAAAAADISTBlvKiXqyXlVPflW-4D9Hyik"></div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <input type="submit" name="ok" value="Mentés"><br>
 <a href="index.php?menupont=felhasznalok">Mégsem</a>
 </form>
+</div>

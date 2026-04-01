@@ -8,7 +8,7 @@
        }
        else
        {
-              echo('<form action="index.php?menupont=foglalasokment" method="POST">');
+          echo('<form action="index.php?menupont=foglalasokment" method="POST">');
        }
 ?>
 
@@ -17,9 +17,11 @@
 <label>Név:</label><br>
 <input type="text" name="nev" value="<?php echo($foglalasok->nev); ?>"><br>
 <label>E-mail:</label><br>
-<input type="text" name="email" value="<?php echo($foglalasok->email); ?>"><br>
+<input type="email" name="email" value="<?php echo($foglalasok->email); ?>"><br>
 <label>Telefonszám:</label><br>
 <input type="text" name="telefonszam" value="<?php echo($foglalasok->telefonszam); ?>"><br>
+<label>Jogosítvány száma:</label><br>
+<input type="text" name="jogositvany" value="<?php echo($foglalasok->jogositvany); ?>"><br>
 <label>Jármű:</label><br>
 <select name="jarmu">
 <?php
@@ -31,7 +33,7 @@ $SQLeredmeny = mysqli_query($db_kapcsolat->_kapcsolat(), $SQLlekerdezes);
 
 while ($row = mysqli_fetch_assoc($SQLeredmeny)) {
 
-    echo '<option value="'.$row['auto_id'].'">'
+    echo '<option value="'.$row['marka'].' '.$row['modell'].'">'
             .$row['marka'].' '.$row['modell'].
          '</option>';
 }
@@ -41,8 +43,6 @@ while ($row = mysqli_fetch_assoc($SQLeredmeny)) {
 <input type="date" name="kezdet" value="<?php echo($foglalasok->kezdet); ?>"><br>
 <label>Vége:</label><br>
 <input type="date" name="vege" value="<?php echo($foglalasok->vege); ?>"><br>
-<label>Létrehozva:</label><br>
-<input type="date" name="letrehozva" value="<?php echo($foglalasok->letrehozva); ?>"><br>
 <input type="submit" name="ok" value="Mentés"><br>
 <a href="index.php?menupont=foglalasok">Mégsem</a> 
 </form>

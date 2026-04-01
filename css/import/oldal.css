@@ -36,6 +36,9 @@ nav ul {
 
 nav li:last-child {
     margin-left: auto;       /* ha van jobbra húzó elem, pl. Bejelentkezés */
+    margin-right: 150px;
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -96,17 +99,7 @@ nav a:hover {
 }
 /* ===== HERO ===== */
 .hero {
-    height: calc(100vh - 70px); /* teljes képernyő - menü */
-    margin-top: 0px; /* menü magasság */
-    background-image: url("img/2.png"); /* NE png legyen */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-align: center;
+    background-image: url("img/5.jpg");
 }
 
 .hero-box {
@@ -133,6 +126,12 @@ nav a:hover {
 .cim {
     font-size: 50px;
     margin: 0;
+    background-color: #000000bd;
+    border-color: #0000007d;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .alcim {

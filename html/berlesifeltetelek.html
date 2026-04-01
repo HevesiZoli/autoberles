@@ -1,22 +1,24 @@
 <nav id="navbar">
-        <ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
             <li><a href="index.php?menupont=kezdolap">Kezdőlap</a></li>
             <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
             <?php
-            if ($belepve == false) {
-                echo '<li><a href="index.php?menupont=belepes">Bejelentkezés</a></li>';
-            } 
-            else 
+            if ($belepve == true) 
             {
-            echo '<li class="kilep">
-                <a href="index.php?logout">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Kijelentkezés
-                </a>
-              </li>';
-            $username = $munkamenettarolo->parameter_olvas('username','');
-            echo ('<li class="felhasznalo">Szia, '. htmlspecialchars($username).'</li>');
-        }
-        ?>
+                echo '<li class="kilep">
+                    <a href="index.php?logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Kijelentkezés
+                    </a>
+                  </li>';
+                $username = $munkamenettarolo->parameter_olvas('username','');
+                echo ('<li class="felhasznalo">Szia, '. htmlspecialchars($username).'</li>');
+            }
+            ?>
         </ul>
 </nav>
 <!DOCTYPE html>
@@ -112,7 +114,7 @@
                     flex-direction: column; /* egymás alá */
                     gap: 30px;              /* távolság a blokkok között */
                     padding: 80px 20px;     /* belső margó */
-                    background-color: #f5f7fa;
+                    background-color: #ffffff;
                     max-width: 1000px;      /* ne legyen túl széles a szöveg */
                     margin: 0 auto;         /* középre igazítás */
                 }
@@ -146,7 +148,6 @@
                     margin: 8px 0;
                     color: #444;
                 }
-
                 /* Mobilbarát */
                 @media (max-width: 600px) {
                     .szabalyok-wrapper {
@@ -212,8 +213,8 @@
         </div>
         <div class="fizetes">
                 <h1>Fizetés</h1>
-                <p>Bankkártya / átutalás / készpénz.</p>
-                <p>A bérleti díj előre fizetendő.</p>
+                <p>Kizárólag készpénz elfogadott</p>
+                <p>A bérlés kezdeti napján, az autó átvétele előtt kell fizetni.</p>
         </div>
    </div>
 <footer>

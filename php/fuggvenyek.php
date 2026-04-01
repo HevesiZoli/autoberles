@@ -36,5 +36,4 @@ function veletlenkaraktersor($prefix = "")
 	// A kapott veletlen_karaktersort tartalmazó tömböt string formátummá konvertáljuk.
 	return $prefix.implode("", $veletlen_karaktersor);
 }
-
 ?>

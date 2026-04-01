@@ -1,36 +1,347 @@
-/* Mindkét gomb ugyanakkora legyen */
-.link-row a.input.login.button {
-    flex: 1;           /* mindkettő ugyanakkora szélesség */
-    text-align: center;
-    padding: 14px 0;
-    background-color: #6b9c6f;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+/* Ez felel a hamburgermenuert */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 1100;
 }
 
-.link-row a.input.login.button:hover {
-    background-color: #567a5c;
-    box-shadow: 0 5px 15px rgba(107, 156, 111, 0.3);
+/* Ez felel a hamburgermenu csíkjaiért */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
-/* Mobilra: egymás alá kerüljenek */
-@media (max-width: 500px) {
-    .link-row {
+/* Ez felel a sima görgetésért az oldalon */
+html {
+    scroll-behavior: smooth; 
+}
+
+/* Ez felel a horgonyugrások pontos helyéért*/
+#rolunk, #kapcsolat {
+    scroll-margin-top: 100px;
+}
+
+/* Ez felel a közepes kijelzők stílusáért */
+@media only screen and (max-width: 1000px) and (min-width: 300px) {
+    
+    /* Ez felel a mobil navigációs sáv megjelenéséért */
+    #navbar {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #222 !important;
+        height: 70px;
+        padding: 0 20px !important;
+        position: fixed;
+        z-index: 1100;
+    }
+
+    /* Ez felel a legördülő menü alaphelyzetéért */
+    .nav-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        position: fixed;
+        left: -100%;
+        top: 70px; 
+        width: 100%;
+        height: auto; 
+        background-color: #262626;
+        padding: 20px 0 !important;
+        transition: 0.3s ease-in-out;
+        z-index: 1000;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    }
+
+    /* Ez felel a menü beúszásáért, ha aktív */
+    .nav-menu.active {
+        left: 0 !important;
+    }
+
+    /* Ez felel a hamburgermenu láthatóságáért mobilon */
+    .hamburger {
+        display: flex !important;
         flex-direction: column;
     }
-}
-@media (max-width: 500px) {
-    .panel.login {
-        margin: 80px 20px;
-        padding: 25px 20px;
+
+    /* Ezek felelnek a hamburgermenu X-szé alakulásáért */
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* Ez felel a menüpontok függőleges elrendezéséért */
+    .nav-item {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        list-style: none;
     }
 
-@media (max-width: 600px) {
-  .hero-box {
-    padding: 25px 20px;
-  }
+    /* Ez felel az autó kártyák mobil elrendezéséért */
+    .auto {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* Ez felel a tartalom vízszintes túllógásának megakadályozásáért */
+    .auto-nagy-wrapper {
+        width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important; 
+    }
+
+    /* Ez felel a nagy autó nézet középre igazításáért */
+    .auto-nagy {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* Ez felel a képek oszlopba rendezéséért */
+    .kep-sor {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px;
+    }
+
+    /* Ez felel a főkép és galéria teljes szélességéért */
+    .auto-nagy-fokep, .tobbikep {
+        width: 100% !important;
+    }
+
+    /* Ez felel a főkép lekerekítéséért és méretéért */
+    .auto-nagy-fokep img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 10px;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Ez felel a többi kép egymás mellé rendezéséért mobilon */
+    .tobbikep {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important; 
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Ez felel a galéria képeinek méretéért és kattinthatóságáért */
+    .tobbikep img {
+        width: 30% !important;
+        min-width: 80px;
+        height: auto !important;
+        margin: 0 !important;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; 
+        transition: transform 0.2s ease, opacity 0.2s;
+    }
+
+    /* Ez felel a gombnyomás vizuális visszajelzéséért */
+    .tobbikep img:active {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+    /* Ez felel a sortörések eltüntetéséért a képek közül */
+    .tobbikep br {
+        display: none;
+    }
+
+    /* Ez felel az autó adatainak rácsos elrendezéséért */
+    .auto-info-grid, .adatok {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;    
+        justify-content: center !important;
+        width: 100% !important;
+        gap: 10px !important;
+        margin-top: 20px;
+        padding: 0 !important;
+    }
+
+    /* Ez felel az egyes adatdobozok  kinézetéért */
+    .auto-info-grid p, .adatok p, .adatok div {
+        flex: 1 1 130px !important; 
+        max-width: 100% !important;
+        background: #f9f9f9;
+        padding: 12px 8px !important;
+        border-radius: 5px;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        font-size: 13px !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 60px;
+    }
+
+    /* Ez felel az ársáv és a foglalás gomb elhelyezkedéséért */
+    .auto-ar-gomb {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px;
+        margin-top: 25px;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    /* Ez felel az ár kiemeléséért */
+    .auto-ar {
+        font-size: 22px !important;
+        font-weight: bold;
+    }
+
+    /* Ez felel a foglalás gomb méretéért */
+    .foglalas-gomb {
+        width: 100% !important;
+        max-width: 300px;
+        padding: 15px !important;
+    }
+
+    /* Ez felel a szövegbeviteli mezők szélességéért */
+    textarea, 
+    #velemenyDoboz textarea,
+    .velemeny-kontener textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    /* Ez felel a véleményező rész keretéért */
+    #velemenyDoboz, .velemeny-wrapper {
+        width: 95% !important;
+        margin: 0 auto !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    /* Ez felel a captcha technikai elemeinek elrejtéséért */
+    textarea#g-recaptcha-response, .g-recaptcha-response {
+        display: none !important;
+    }
+
+    /* Ez felel a hosszú szövegek olvashatóságáért és töréséért */
+    .szoveg {
+        font-size: 15px !important;        
+        line-height: 1.5 !important;
+        width: 100% !important;
+        padding: 10px 15px !important;
+        box-sizing: border-box !important;
+        word-wrap: break-word !important;  
+    }
+    
+    /* Ez felel a képek méretezéséért a leírásokban */
+    .kepek img { width: 100% !important; height: auto !important; }
+}
+
+/* Ez felel az extrém kicsi kijelzők (300px alatt) stílusáért */
+@media only screen and (max-width: 299px) {
+    
+    /* Ez felel a navbar szűkített méretéért */
+    #navbar {
+        display: flex !important;
+        background-color: #222 !important;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px !important;
+        z-index: 1100;
+    }
+
+    /* Ez felel a legördülő menü elhelyezéséért kicsi képernyőn */
+    .nav-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        position: fixed;
+        left: -100%;
+        top: 60px; 
+        width: 100%;
+        height: auto;
+        background-color: #262626;
+        padding: 15px 0 !important;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    /* Ez felel a menü megjelenítéséért kicsi képernyőn */
+    .nav-menu.active {
+        left: 0 !important;
+    }
+
+    /* Ez felel a hamburgermenu megjelenéséért */
+    .hamburger {
+        display: block !important;
+    }
+
+    /* Ez felel a főbb szekciók elrejtéséért nagyon kicsi kijelzőn */
+    .hero, .autok-wrapper, .auto, .auto-nagy-wrapper, .csuszo-kontener, footer {
+        display: none !important;
+    }
+
+    /* Ezek felelnek az X animációért kicsi képernyőn is */
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* Ez felel a tartalék tartalom megjelenítéséért */
+    .regitelo {
+        display: block;
+    }
+
+    /* Ez felel a belépési felületek elrejtéséért */
+    body .panel.login {
+       display: none;
+    }
+    .felhasznalofelv{
+        display: none;
+    }
+
+    /* Ez felel az összes többi felesleges elem szigorú elrejtéséért */
+    #navbar,
+    .szabalyok-wrapper, 
+    .hero, 
+    .autok-wrapper, 
+    .auto, 
+    .auto-nagy-wrapper,   
+    .auto-nagy,           
+    .csuszo-kontener, 
+    #velemenyBetolt, 
+    #velemenyDoboz, 
+    .rolunk-wrapper, 
+    .kapcsolat_felirat, 
+    .kapcsolat-wrapper, 
+    .vcd,
+    .bcd,
+    .ribbon,
+    footer {
+        display: none !important;
+    }
+
+    /* Ez felel a vcd utáni összes elem láthatatlanná tételéért */
+    .vcd ~ * {
+        color: transparent !important;
+        display: none !important;
+    }
+
+    /* Ez felel a menüváltó elrejtéséért */
+    .menu-toggle {
+        display: none;
+    }
 }

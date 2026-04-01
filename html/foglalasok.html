@@ -1,7 +1,17 @@
-<a href="index.php?menupont=ujfoglalas" class="ujfoglalas Butn Primary">
-    <i class="fa-solid fa-plus"></i> Jármű lefoglalása
-</a>
 <table>
-	<tr><td>Név:</td><td>E-mail:</td><td>Telefonszám:</td><td>Jármű:</td><td>Kezdet:</td><td>Vége:</td><td>Létrehozva:</td><td>Műveletek:</td></tr>
-	<?php echo($foglalasok->_foglalasok_lista()); ?>
+<tr>
+<td>Név:</td>
+<td>E-mail:</td>
+<td>Telefonszám:</td>
+<td>Jogosítvány:</td>
+<td>Jármű:</td>
+<td>Kezdet:</td>
+<td>Vége:</td>
+<td>Létrehozva:</td>
+<td>Állapot:</td>
+<td></td>
+</tr>
+
+<?php echo($foglalasok->_foglalasok_lista()); ?>
+
 </table>

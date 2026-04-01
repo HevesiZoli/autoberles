@@ -1,3 +1,4 @@
+<div class="jarmu">
 <h1>Jármű hozzáadása</h1>
 <?php
        //ha kapok id akkkor frissítem az adatokat így akkor szerkesztés van és nem kell a jelszó
@@ -23,23 +24,30 @@
        <input type="text" name="szallithato_szemelyek" value="<?php echo($autok->szallithato_szemelyek); ?>"><br>
        <label>Üzemanyag:</label><br>
        <input type="text" name="uzemanyag" value="<?php echo($autok->uzemanyag); ?>"><br>
-       <label>Teljesítmény:</label><br>
-       <input type="text" name="teljesitmeny" value="<?php echo($autok->teljesitmeny); ?>"> LE<br>
+       <label>Teljesítmény (LE):</label><br>
+       <input type="text" name="teljesitmeny" value="<?php echo($autok->teljesitmeny); ?>"><br>
        <label>Sebességváltó típusa:</label><br>
        <input type="text" name="sebessegvalto_tipusa" value="<?php echo($autok->sebessegvalto_tipusa); ?>"><br>
-       <label>Hengerűrtartalom:</label><br>
-       <input type="text" name="hengerurtartalom" value="<?php echo($autok->hengerurtartalom); ?>"> cm³<br>
-       <label>Vegyes fogyasztás (tól-ig):</label><br>
+       <label>Hengerűrtartalom (cm³):</label><br>
+       <input type="text" name="hengerurtartalom" value="<?php echo($autok->hengerurtartalom); ?>"><br>
+       <label>Vegyes fogyasztás (l/100 km): </label><br>
        <input type="text" name="vegyes_fogyasztastol" value="<?php echo($autok->vegyes_fogyasztastol); ?>"> -
-       <input type="text" name="vegyes_fogyasztasig" value="<?php echo($autok->vegyes_fogyasztasig); ?>"> l/100 km<br>
+       <input type="text" name="vegyes_fogyasztasig" value="<?php echo($autok->vegyes_fogyasztasig); ?>"><br>
        <label>Alvázszám:</label><br>
        <input type="text" name="alvazszam" value="<?php echo($autok->alvazszam); ?>"><br>
        <label>Rendszám:</label><br>
        <input type="text" name="rendszam" value="<?php echo($autok->rendszam); ?>"><br>
        <label>Napi díj (Ft):</label><br>
        <input type="text" name="napi_dij" value="<?php echo($autok->napi_dij); ?>"><br>
-       <label>Kép:</label><br>
-       <input type="file" name="kep"><br>
+       <label>Fő Kép:</label><br>
+       <input type="file" name="fokep"><br>
+       <label>Kép hátúlról:</label><br>
+       <input type="file" name="kep_hatulrol"><br>
+       <label>Kép sofőr ülésről:</label><br>
+       <input type="file" name="kep_soforules"><br>
+       <label>Kép hátsó ülésről:</label><br>
+       <input type="file" name="kep_hatsoules"><br>
 <input type="submit" name="ok" value="Mentés"><br>
 <a href="index.php?menupont=jarmuvek">Mégsem</a>
 </form>
+</div>

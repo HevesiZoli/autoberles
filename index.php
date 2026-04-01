@@ -37,14 +37,15 @@
 <head>
 	<title>BérAutó24</title>
 	<link rel="stylesheet" type="text/css" href="css/stilus.css">
-	<link rel="stylesheet" type="text/css" href="css/weblap.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<script type="text/javascript" src="js/import/ckeditor/ckeditor.js"></script>
-	<script type="text/javascript" src="js/import/jquery/jQuery_3_7_1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="js/jQuery_3_7_1.js"></script>
 	<script type="text/javascript" src="js/mezo_check.js"></script>
 	<script type="text/javascript" src="js/sajat.js"></script>
 </head>
 <body>
+	 <div class="ribbon">DEMO</div>
 	<?php
 	 if ($belepve == true)
 	  { if (isset($_GET['logout']))
@@ -55,10 +56,11 @@
 		 	 {$menupont = $_GET['menupont'];}
 		 	else 
 		 	 {$menupont = '';}
-		 	include('html/vezerlopult.html');
+		 	//include('html/vezerlopult.html');
 		 	switch ($menupont) {
 		 		case 'felhasznalok' : // Beillesztjük a felhasználók kezeléséért felelelős objektumot!
  									  include('php/felhasznalok.php');
+ 									  include('html/vezerlopult.html');
 		 							  include('html/felhasznalok.html');
 		 							  break;
 		 		case 'ujfelhasznalo' : include('php/felhasznalok.php');
@@ -83,30 +85,35 @@
 		 										include('html/felhasznalofelvetel.html');
 		 									}
 		 									break;
-		 		case 'torolfelhasznalo' :   include('html/felhasznaloktorles.html');
+		 		case 'torolfelhasznalo' :   include('html/vezerlopult.html');
+		 									include('html/felhasznaloktorles.html');
 		 									break;
-		 		case 'felhasznalotorles' :  include('php/felhasznalok.php');
+		 		case 'felhasznalotorles' :  include('html/vezerlopult.html');
+		 									include('php/felhasznalok.php');
 		 									$felhasznalok->torles($_POST['id']);
 		 									include('html/felhasznalok.html');
 		 									break;
 		 		case 'aktivalfelhasznalo' :	include('php/felhasznalok.php');
 		 									$felhasznalok->felhasznalo_aktival($_POST['id']);
+		 									include('html/vezerlopult.html');
 		 									include('html/felhasznalok.html');
 		 									break;
 		 		case 'tartalmak' :			include('php/tartalom.php');
 		 									//include('html/tartalmak.html');
 		 									break;
 		 		case 'jarmuvek' :   include('php/jarmuvek.php');
+		 							include('html/vezerlopult.html');
 		 							include('html/jarmuvek.html');
 		 						  	break;
-		 		case 'dashboard' :  include('php/dashboard.php');
+		 		//case 'dashboard' :  include('php/dashboard.php');
 		 							break;
 		 		case 'ujjarmu' : 	include('php/jarmuvek.php');
 		 							include('html/jarmufelvetel.html');
 		 							   break;
 		 		case 'autokment' :  include('php/jarmuvek.php');
 		 							if ($autok->automentes() == true)
-		 							      {include('html/jarmuvek.html');}
+		 							      {include('html/jarmuvek.html');
+		 									include('html/vezerlopult.html');}
 		 							     else {include('html/jarmufelvetel.html');}
 		 							     break;
 		 		case 'autoszerkeszt' : 	include('php/jarmuvek.php');
@@ -115,34 +122,35 @@
 		 								break;
 		 		case 'autokfrissit' :   include('php/jarmuvek.php');
 		 								if ($autok->automodosit($_POST['id']) == true)
-		 										{include('html/jarmuvek.html');}
+		 										{	include('html/vezerlopult.html');
+		 											include('html/jarmuvek.html');}
 		 									else
 		 									{
 		 										include('html/jarmufelvetel.html');
 		 									}
 		 									break;
 		 		case 'autotorol' :   		include('php/jarmuvek.php');
+		 									include('html/vezerlopult.html');
 		 									include('html/torlesmegerosites.html');
 		 									break;
 		 		case 'autoktorles' :  		include('php/jarmuvek.php');
 		 									$autok->torles($_POST['id']);
+		 									include('html/vezerlopult.html');
 		 									include('html/jarmuvek.html');
 		 									break;
-		 									
+		 		case 'autoallapot' : 		include('php/jarmuvek.php');
+		 									$autok->autoallapot($_POST['id']);
+		 									include('html/vezerlopult.html');
+		 									include('html/jarmuvek.html');
+		 									break;
 		 		case 'foglalasok':			include('php/foglalaskezeles.php');
+		 									include('html/vezerlopult.html');
 		 									include('html/foglalasok.html');
 		 									break;
 
 		 		case 'ujfoglalas':			include('php/foglalaskezeles.php');
 		 									include('php/foglalasfelvetel.php');
 		 									break;
-
-		 		case 'foglalasokment' :  include('php/foglalaskezeles.php');
-		 								 if ($foglalasok->ment() == true)
-		 							     {include('html/foglalasok.html');}
-		 							     else {include('php/foglalasfelvetel.php');}
-		 							     break;
-
 		 	 	case 'foglalasokszerkeszt' :include('php/foglalaskezeles.php');
 		 									$foglalasok->szerkeszt($_POST['id']);	
 		 									include('php/foglalasfelvetel.php');
@@ -158,12 +166,17 @@
 		 									 break;
 
 		 		case 'foglalastorol' :   	include('php/foglalaskezeles.php');
+		 									include('html/vezerlopult.html');
 		 									include('html/foglalas_torlesmegerosito.html');
 		 									break;
-
 		 		case 'foglalastorles' :  	include('php/foglalaskezeles.php');
 		 									$foglalasok->torles($_POST['id']);
+		 									include('html/vezerlopult.html');
 		 									include('html/foglalasok.html');
+		 									break;
+		 		case 'foglalaslemondasa' :  include('php/foglalaskezeles.php');
+		 									$foglalasok->torles($_POST['id']);
+		 									include('html/sikeresfoglalaslemondas.html');
 		 									break;
 		 		case 'adminpanel' :         include('html/vezerlopult.html');
 		 									break;
@@ -173,17 +186,72 @@
 		 									include('html/autoklista.html');
 		 								    break;
 		 		case 'dashboard'	  : include('php/dashboard.php');
+		 								include('html/vezerlopult.html');
 		 								include('html/dashboard.html');
 		 								break;
 		 		case 'ujvelemeny':			include('php/dashboard.php');
 		 									include('html/velemeny.html');
 		 									break;
-		 		case 'velemenyekment' :  include('php/dashboard.php');
-		 								 if ($ertekeles->uj_ertekeles() == true)
-		 							     {include('html/dashboard.html');}
-		 							     else {include('html/velemeny.html');}
-		 							     break;
-		 		default : 				include('html/vezerlopult2.html');
+				case 'velemenyekszerkeszt' :
+										    include('php/dashboard.php');
+										    $ertekeles->szerkeszt($_POST['id']);
+										    include('html/velemeny.html');
+										    break;
+
+				case 'velemenyekfrissit' :
+										    include('php/dashboard.php');
+										    if ($ertekeles->modosit($_POST['id']) == true)
+										    {
+										        include('html/dashboard.html');
+										    }
+										    else
+										    {
+										        include('html/velemeny.html');
+										    }
+										    break;
+
+				case 'velemenytorles' :	include('php/dashboard.php');
+										include('html/velemeny_torlesmegerosito.html');
+										break;
+
+				case 'velemenyektorles' :	include('php/dashboard.php');
+										    $ertekeles->torles($_POST['id']);
+										    include('html/oldal.html');
+										    break;
+
+		 		case 'automegjelnitesnagyban' : include('php/jarmuvek.php');
+		 										include('php/foglalaskezeles.php');
+		 										include('html/autokmegjelenitesnagyban.html');
+		 										break;
+		 		case 'velemenyekment' :	include('php/dashboard.php');
+									    if ($ertekeles->uj_ertekeles() == true)
+									    {
+									        include('html/vezerlopult2.html');
+									        include('html/oldal.html');
+									    }
+									    else
+									    {
+									        include('html/vezerlopult2.html');
+									        include('html/oldal.html');
+									    }
+									    break;
+		 		case 'jarmufoglalas' :	include('php/dashboard.php');
+		 								include('php/foglalaskezeles.php');
+									    if ($foglalasok->autoberles() == true)
+									    {
+									        include('html/sikeresfoglalas.html');
+									    }
+									    else
+									    {
+									        include('html/vezerlopult2.html');
+									        include('html/oldal.html');
+									    }
+									    break;
+				case 'foglalasmegtekintes' : 	include('php/foglalaskezeles.php');
+												include('html/foglalasmegtekintes.html');
+											 	break;
+		 		default : 				include('php/dashboard.php');
+		 								include('html/vezerlopult2.html');
 		 								include('html/oldal.html');
 		 								break;
 		 	}
@@ -200,8 +268,7 @@
 		switch ($menupont) 
 		{	
 		 	case 'regisztracio' :include('php/felhasznalok.php');
-		 						 include('html/felhasznalofelvetel.html');
-		 						 echo '<a href="index.php">Vissza</a>';			
+		 						 include('html/felhasznalofelvetel.html');		
 		 						 break;
 
 		 	case 'felhasznaloment' : include('php/felhasznalok.php');
@@ -224,13 +291,23 @@
 		 						break; 
 		 	case 'berlesifeltetel': include('html/berlesifeltetelek.html');
 		 							break;
+		 	case 'automegjelnitesnagyban' : include('php/jarmuvek.php');
+		 									include('php/foglalaskezeles.php');
+		 									include('html/autokmegjelenitesnagyban.html');
+		 									break;
+		 	case 'foglalasmegtekintes' : 	include('php/foglalaskezeles.php');
+		 									include('html/foglalasmegtekintes.html');
+										 	break;
 		 	case 'kezdolap' : 
-		 	default : 	include('php/tartalom.php');
+		 	default : 	include('php/dashboard.php');
 		 				include('html/vezerlopult2.html');
 		 				include('html/oldal.html');	    
 		 				break;
 		}
 	}
 ?>
+<div class="regitelo">
+		<h2>Készüléke elavult</h2>
+	</div>
 </body>
 </html>

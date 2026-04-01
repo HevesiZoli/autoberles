@@ -1,0 +1,122 @@
+<nav id="navbar">
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.php?menupont=kezdolap">Kezdőlap</a></li>
+            <li><a href="index.php?menupont=berlesifeltetel">Bérlési tájékoztató</a></li>
+            <li><a href="index.php?menupont=autokmegtekintese">Vissza</a></li>
+            <?php
+            if ($belepve == true) 
+            {
+                echo '<li class="kilep">
+                    <a href="index.php?logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Kijelentkezés
+                    </a>
+                  </li>';
+                $username = $munkamenettarolo->parameter_olvas('username','');
+                echo ('<li class="felhasznalo">Szia, '. htmlspecialchars($username).'</li>');
+            }
+            ?>
+        </ul>
+</nav>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<?php echo($autok->autok_mejelenites_nagyban()); ?>
+    <div class="" id="velemenyDoboz" style="display:none;">
+    <?php
+        if($belepve == true)
+        {
+            $auto_id = intval($_GET['auto_id'] ?? 0);
+
+
+            echo('<div class="foglalas-form-wrapper" id="asd">
+                    <div class="foglalas-form">
+                        <form action="index.php?menupont=jarmufoglalas" method="POST">
+                            <input type="hidden" name="auto_id" value="'.$auto_id.'"> 
+
+                            <label>Teljes név:</label>
+                            <input type="text" name="nev">
+
+                            <label>E-mail cím:</label>
+                            <input type="email" name="email">
+
+                            <label>Telefonszám:</label>
+                            <input type="text" name="telefonszam">
+
+                            <label>Jogosítvány száma:</label>
+                            <input type="text" name="jogositvanyszam" maxlength="8">
+
+                            <label>Bérlés kezdete:</label>
+                            <input type="date" name="kezdet">
+
+                            <label>Bérlés vége:</label>
+                            <input type="date" name="vege">
+
+                            <input type="submit" name="ok" value="Foglalás">
+                        </form>
+                    </div>
+                </div>');
+        }
+        else
+        {
+            echo("Foglalás előtt kérem jelentkezzen be!<br>");
+            echo('<a href="index.php?menupont=belepes" class="gombika">Bejelentkezés</a>');
+        }
+?>
+    </div>
+<div class="kapcsolat-wrapper">
+
+    <div class="kapcsolat" id="kapcsolat">
+      <div class="kontakt-item">
+        <i class="fa-solid fa-phone"></i>
+        <div class="text">
+          <p><strong>Telefon</strong></p>
+          <p>+36 203 91 2188</p>
+        </div>
+      </div>
+      <div class="kontakt-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="text">
+          <p><strong>Email</strong></p>
+          <p>autoberloelbiralas@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="terkep">
+        <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Szilf%C3%A1kalja%20Hajd%C3%BAszoboszl%C3%B3+(B%C3%A9rAut%C3%B324)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+
+</div>
+<footer>
+    © 2026 BérAutó24 | Minden jog fenntartva<br><br>
+    Ez az oldal kizárólag demonstrációs célokat szolgál. Az itt megjelenített adatok nem valósak!
+</footer>
+<script>
+const fokep = document.getElementById("fokep");
+const eredeti = fokep.src;
+
+document.querySelectorAll(".tobbikep img").forEach(img => {
+
+    img.addEventListener("mouseenter", function(){
+        fokep.src = this.src;
+    });
+
+    img.addEventListener("mouseleave", function(){
+        fokep.src = eredeti;
+    });
+
+});
+</script>
+</body>
+</html>
